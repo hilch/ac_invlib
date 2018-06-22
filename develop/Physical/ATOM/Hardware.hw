@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.6.57 SP?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="8I74xxxxxxx.01P-1" Type="8I74xxxxxxx.01P-1" Version="1.4.0.0">
+    <Connection Connector="PLK1" TargetModule="8I84xxxxxxx.01P-1" TargetConnector="PLK2" NodeNumber="10">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="DownloadParameters" Value="no" />
+    <Parameter ID="ACC" Value="10" />
+    <Parameter ID="DEC" Value="10" />
+  </Module>
+  <Module Name="8I84xxxxxxx.01P-1" Type="8I84xxxxxxx.01P-1" Version="1.0.9.2">
+    <Connection Connector="PLK1" TargetModule="PLC1" TargetConnector="IF3" NodeNumber="4">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Connection Connector="PLK2" TargetModule="8I74xxxxxxx.01P-1" TargetConnector="PLK1" NodeNumber="4">
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
+    </Connection>
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="packedETAD" Value="packed" />
+    <Parameter ID="packedETI" Value="packed" />
+    <Parameter ID="packedCMDD" Value="packed" />
+    <Parameter ID="packedCMI" Value="packed" />
+    <Parameter ID="DownloadParameters" Value="no" />
+    <Parameter ID="AUT" Value="1" />
+  </Module>
+  <Module Name="PLC1" Type="X20CP3585" Version="1.4.2.0">
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.10" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="InaNodeNumber" Value="1" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="develop_ATOM" />
+  </Module>
+</Hardware>

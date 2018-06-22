@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.1.14.40 SP?>
+<Library Version="1.10.1" Description="ACOPOSinverter Library" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">ac_invlib.typ</File>
+    <File Description="Exported constants">ac_invlib.var</File>
+    <File Description="Exported functions and function blocks">ac_invlib.fun</File>
+    <File>ac_inv_global.h</File>
+    <File>ac_invhelp.c</File>
+    <File>ac_invparameter.c</File>
+    <File Description="inverter">ac_inv.c</File>
+    <File>ac_inv_alloc.c</File>
+    <File>ac_invparameter.h</File>
+    <File>P84_registers.h</File>
+    <File>P84_enumerations.h</File>
+    <File>P74_registers.h</File>
+    <File>P74_enumerations.h</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="AsEPL" />
+    <Dependency ObjectName="sys_lib" />
+    <Dependency ObjectName="DataObj" />
+    <Dependency ObjectName="AsArLog" />
+    <Dependency ObjectName="brsystem" />
+    <Dependency ObjectName="AsCANopen" />
+  </Dependencies>
+</Library>

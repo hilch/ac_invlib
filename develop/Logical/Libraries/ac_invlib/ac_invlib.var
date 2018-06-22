@@ -1,0 +1,7 @@
+VAR CONSTANT
+	ac_invlibERR_CFI : UINT := 50005; (*one or more parameter were corrected by the drive due to consistency check*)
+	ac_invlibERR_WRONG_ARVERSION : UINT := 50003; (*wrong Automation Runtime version*)
+	ac_invlibERR_PARNOTFOUND : UINT := 50002; (*wrong parameter name*)
+	ac_invlibERR_ILLEGAL_AXIDENT : UINT := 50001; (*invalid ax_ident*)
+	ac_invlibERR_NETWORK : UINT := 50004; (*network timeout*)
+END_VAR

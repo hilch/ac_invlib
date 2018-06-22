@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>ac_inv_AxIdent</title>
+      <meta name="ORDER" content="0">
+      <link rel="StyleSheet" href="styles.css">
+   </head>
+   <body>
+      <h1>ac_invlib - ac_inv_AxIdent</h1>(internal data type for debugging only !)
+      <table border="1" class="parameter_tab">
+         <tr>
+            <th class="parameter_tab">
+               <div><b>Parameter</b></div>
+            </th>
+            <th class="parameter_tab">
+               <div><b>Data Type</b></div>
+            </th>
+            <th class="parameter_tab">
+               <div><b>Value</b></div>
+            </th>
+            <th class="parameter_tab">
+               <div><b>Description</b></div>
+            </th>
+         </tr>
+         <tr>
+            <td class="parameter_tab">p_alloc</td>
+            <td class="parameter_tab">REFERENCE TO ac_inv_alloc</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">pointer to fub instance</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">step_init</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">initialization step</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">errorstep</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">step in which the internal error occured</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">step_read_data</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">step for reading data from drive</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">fub_sdoread</td>
+            <td class="parameter_tab">EplSDORead</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">fub instance</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">fub_sdowrite</td>
+            <td class="parameter_tab">EplSDOWrite</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">fub instance</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">fub_canopen_sdoread</td>
+            <td class="parameter_tab">CANopenSDOReadData</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">fub instance</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">fub_canopen_sdowrite</td>
+            <td class="parameter_tab">CANopenSDOWriteData</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">fub instance</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">node_number</td>
+            <td class="parameter_tab">USINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">powerlink node number or canopen node number of inverter</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">interface</td>
+            <td class="parameter_tab">STRING[20]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">interface name</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">ctrl_on_internal</td>
+            <td class="parameter_tab">BOOL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">internal command for 'ctrl_on'</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_read_step</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDORead: step and command interface</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_read_par_name</td>
+            <td class="parameter_tab">STRING[10]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDORead: name of the inverter parameter</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_read_value</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDORead: numeric parameter value</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_read_value_constant</td>
+            <td class="parameter_tab">STRING[20]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDORead: parameter value constant</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_read_status</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDORead: status result</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_read_errorinfo</td>
+            <td class="parameter_tab">UDINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDORead: additional error information</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_write_step</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDOWrite: step and command interface</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_write_par_name</td>
+            <td class="parameter_tab">STRING[10]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDOWrite: name of the inverter parameter</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_write_value</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDOWrite: numeric parameter value</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_write_value_constant</td>
+            <td class="parameter_tab">STRING[20]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDOWrite: parameter value constant</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_write_status</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDOWrite: status result</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">sdo_write_errorinfo</td>
+            <td class="parameter_tab">UDINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDOWrite: additional error information</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">fub_datobjinfo</td>
+            <td class="parameter_tab">DatObjInfo</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">fub instance</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">number_of_parameters</td>
+            <td class="parameter_tab">UDINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">number of parameters in dataobject</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">parameterlist_index</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">parameter list: index of the actual parameter</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">p_sorted_parameters</td>
+            <td class="parameter_tab">ARRAY[0..99]OF UDINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">pointer to list with the sorted parameters</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">dont_sort_parameters</td>
+            <td class="parameter_tab">BOOL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">don't sort parameters from datamodules</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">write_parameterlist_step</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">write parameter list: step and command interface</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">write_parameterlist_status</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">write parameter list: status result</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">compare_parameterlist_step</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab"> Compare paameterlist: step and command interface </td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">compare_parameterlist_status</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab"> Compare parameterlist: status result </td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">compare_parameterlist_index</td>
+            <td class="parameter_tab">USINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab"> compare parameterlist: index of the actual parameter </td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">compare_value_constant</td>
+            <td class="parameter_tab">STRING[20]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">SDORead: parameter value constant</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">log_info</td>
+            <td class="parameter_tab">STRING[60]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">row in logging information</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">fub_log_write</td>
+            <td class="parameter_tab">AsArLogWrite</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">fub instance</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">kv_old</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">gain speed controller in %</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">ti_old</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">integral time speed controller in %</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">counter_cyclic_data</td>
+            <td class="parameter_tab">USINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">cycle counter for cyclic read data</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">HMIS_old</td>
+            <td class="parameter_tab">INT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">&nbsp;</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">rated_motor_frequency</td>
+            <td class="parameter_tab">REAL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">FrS</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">rated_motor_speed</td>
+            <td class="parameter_tab">REAL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">nSP</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">maximum_output_frequency</td>
+            <td class="parameter_tab">REAL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">tFr</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">polepairs</td>
+            <td class="parameter_tab">USINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">no of motor polepairs</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">use_rpm</td>
+            <td class="parameter_tab">BOOL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">1 = use rpm instead Hertz for motor speeds</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">t_limit_old</td>
+            <td class="parameter_tab">ARRAY[0..1]OF REAL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">&nbsp;</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">cycleTime</td>
+            <td class="parameter_tab">REAL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">cycle time of the task</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">timer</td>
+            <td class="parameter_tab">REAL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">timer for waiting actions</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">device_name</td>
+            <td class="parameter_tab">STRING[20]
+               					
+            </td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">Device- Name from Powerlink Object 0x1008</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">drive_type</td>
+            <td class="parameter_tab">USINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">0 = unknown, 1 = P84, 2 = P74</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">isCANopen</td>
+            <td class="parameter_tab">BOOL</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">1 = is a CANopen- device</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">tempUINT</td>
+            <td class="parameter_tab">UINT</td>
+            <td class="parameter_tab">&nbsp;</td>
+            <td class="parameter_tab">&nbsp;</td>
+         </tr>
+      </table>
+      <div position="fixed" bottom="0px"></div>
+   </body>
+</html>

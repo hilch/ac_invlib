@@ -1,0 +1,135 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Library: AsCANopen
+ * File: AsCANopen.var
+ * Author: B+R
+********************************************************************
+ * Local variables of library AsCANopen
+********************************************************************)
+                                                                     
+(*Errors for CANopen FUB status output*)
+VAR CONSTANT
+	ERR_CANopen_EMERGENCY_RECEIVED:	UINT := 30820; 	(*no emergency message received*)
+	ERR_CANOPEN_DEVICE_NOT_FOUND: 	UINT := 30840; 	(*specified device could not be found*)
+	ERR_CANOPEN_DEVICE_NOT_OPENED: 	UINT := 30841; 	(*specified device could not be opened*)
+	ERR_CANOPEN_INVALID_POINTER: 	UINT := 30842; 	(*invalid pointer (NULL)*)
+	ERR_CANOPEN_INVALID_NODEID:		UINT :=	30843; 	(*invalid CAN Node ID (must be 0 <= NodeID <= 127)*)
+	ERR_CANOPEN_FB_CAL_ERROR:		UINT := 30844; 	(*a library internal error occured executing the CANopen function block*)
+	ERR_CANOPEN_INVALID_COBID:		UINT :=	30845; 	(*invalid CAN COB ID (must be 0 <= COBID <= 2047)*)
+	ERR_CANOPEN_INVALID_DATALENGTH:	UINT := 30846; 	(*invalid length of data to be transfered*)
+	ERR_CANOPEN_NO_DATA_AVAILABLE:	UINT := 30847; 	(*no data available*)
+END_VAR
+
+
+(*COP_KERNEL_STATE according DS-405 V2.0*)   
+VAR CONSTANT
+	coINIT           : UINT := 0;					(*INIT*)
+	coRESET_COMM     : UINT := 1;					(*RESET_COMM*)
+	coRESETAPP       : UINT := 2;					(*RESET_APP*)
+	coPREOPERATIONAL : UINT := 3;					(*PRE_OPERATIONAL*)
+	coSTOPPED        : UINT := 4;					(*STOPPED*)
+	coOPERATIONAL    : UINT := 5;					(*OPERATIONAL*)
+	coUNKNOWN        : UINT := 6;					(*UNKNOWN*)
+	coNOTAVAIL       : UINT := 7;					(*NOT_AVAILABLE*)
+END_VAR
+
+(*Slave state*)   
+VAR CONSTANT
+	coSTATE_WAIT_FOR_BOOTUP        : UINT := 0;		(*CANopen master waits for bootup message from the slave*)
+	coSTATE_WAIT_FOR_CONFIGURATION : UINT := 1;		(*CANopen master waits for configuring the slave*)
+	coSTATE_CONFIGURATION_RUNNING  : UINT := 2;		(*slave configuration is running*)
+	coSTATE_CONFIGURATION_READY    : UINT := 3;		(*slave configuration is completed*)
+	coSTATE_RUN                    : UINT := 4;		(*slave is in run state (operational)*)
+	coSTATE_MISSING                : UINT := 5;		(*slave is missing*)
+	coSTATE_STOPPED                : UINT := 6;		(*slave has been stopped*)
+	coSTATE_CONFIGURATION_FAILED   : UINT := 7;		(*slave configuration failed*)
+END_VAR
+
+(* COP_TRANSITION_STATE according DS-405 V2.0*) 
+VAR CONSTANT
+	coSTART_REMOTE_NODE     : UINT := 0;			(*START_REMOTE_NODE*)
+	coSTOP_REMOTE_NODE      : UINT := 1;			(*STOP_REMOTE_NODE*)
+	coENTER_PRE_OPERATIONAL : UINT := 2;			(*ENTER_PRE_OPERATIONAL*)
+	coRESET_NODE           : UINT := 3;				(*RESET_NODE*)
+	coRESET_COMMUNICATION  : UINT := 4;				(*RESET_COMMUNICATION*)
+END_VAR
+
+
+(*CIA405_CANOPEN_KERNEL_ERROR according DS-405 V2.0*) 
+VAR CONSTANT
+	coNO_ERROR         : UINT := 16#0000;			(*NO_ERROR*)	
+	coOTHER_ERROR     : UINT := 16#0001;			(*OTHER_ERROR*)
+	coDATA_OVERFLOW    : UINT := 16#0002;			(*DATA_OVERFLOW*)
+	coTIME_OUT         : UINT := 16#0003;			(*TIME_OUT*)
+	coBUS_OFF          : UINT := 16#0010;			(*CAN_BUS_OFF*)
+	coERROR_PASSIVE    : UINT := 16#0011;			(*CAN_ERROR_PASSIVE*)
+	coGENERIC_ERROR    : UINT := 16#0021;			(*GENERIC_ERROR (SYSTEC-specific)*)
+	coNOT_AVAILABLE    : UINT := 16#0022;			(*FUNCTION_NOT_AVAILABLE*)
+	coNO_MASTER_MODE    : UINT := 16#0023;			(*NO_MASTER_MODE*)
+	coINVALID_NODE_ID   : UINT := 16#0024;			(*INVALID_DEVICE*)
+	coTRANSFER_BUSY    : UINT := 16#0025;			(*TRANSFER_BUSY*)
+	coNET_NOT_AVAILABLE : UINT := 16#0026;			(*net not available*)
+	coNO_SDO_CHANNEL    : UINT := 16#0030;			(*NO_SDO_CHANNEL_AVAILABLE*)
+	coSDO_BUSY         : UINT := 16#0031;			(*SDO_BUSY*)
+	coSDO_INITIALIZE   : UINT := 16#0032;			(*SDO_INITIALIZE_ERROR*)
+	coSDO_LENGTH       : UINT := 16#0033;			(*SDO_LENGTH_ERROR*)
+	coSDO_ERROR        : UINT := 16#0034;			(*SDO ERROR*)
+	coNO_VALID_DATA     : UINT := 16#0040;			(*NO_VALID_DATA_AVAILABLE*)
+	coALREADY_EXIST    : UINT := 16#0041;			(*COBID_ALREADY_REGISTERED*)
+	coNO_FREE_ENTRY     : UINT := 16#0042;			(*NO_FREE_COBID_TABLE_ENTRY*)
+	coNO_SUCH_COB_ID     : UINT := 16#0043;			(*NO_SUCH_COBID_REGISTERED*)
+	coNO_FREE_CHANNEL   : UINT := 16#0044;			(*NO_FREE_RECEIVE_CHANNEL*)
+	coZERO_NOT_ALLOWED  : UINT := 16#0045;			(*ZERO_NOT_ALLOWED*)
+	coINVALID_COB_ID    : UINT := 16#0046;			(*INVALID_COB_ID*)
+	coNG_NODE_MISSING   : UINT := 16#0050;			(*NG_NODE_MISSING*)
+END_VAR			
+
+
+
+(*SDO abort codes according to CIA DS-301 V4.0.2*) 
+VAR CONSTANT	
+	coTOG_NOT_ALT : UDINT := 16#05030000; 			(*toggle bit not alternated*)	
+	coSDO_PROT_TIMEOUT : UDINT := 16#05040000; 		(*SDO protocol timed out*)
+	coCMD_SPEC_INV : UDINT := 16#05040001; 			(*client/server command specifier not valid or unknown*)
+	coINV_BLCK_SIZE : UDINT := 16#05040002; 		(*invalid block size (block mode only)*)
+	coINV_SEQ_NMBR : UDINT := 16#05040003; 			(*invalid sequence number (block mode only)*)
+	coCRC_ERROR : UDINT := 16#05040004; 			(*CRC error (block mode only)*)
+	coOUT_OF_MEM : UDINT := 16#05040005; 			(*out of memory*)
+	coUNSUP_OBJ_ACCESS : UDINT := 16#06010000; 		(*unsupported access to an object*)
+	coWRITE_ONLY_OBJ : UDINT := 16#06010001; 		(*attempt to read a write only object*)
+	coREAD_ONLY_OBJ : UDINT := 16#06010002; 		(*attempt to write a read only object*)
+	coOBJ_NOT_EXISTING : UDINT := 16#06020000; 		(*object does not exist in the object dictionary*)
+	coNO_OBJ_MAP : UDINT := 16#06040041; 			(*object cannot be mapped to the PDO*)
+	coEXCEED_PDO_LGTH : UDINT := 16#06040042; 		(*the number and length of the objects to be mapped would exeed PDO length*)
+	coGEN_PRM_INCMPTBL : UDINT := 16#06040043; 		(*general parameter incompatiblity reason*)
+	coGEN_DEV_INCPTBL : UDINT := 16#06040047; 		(*general internal incompatibility in the device*)
+	coHW_ERR : UDINT := 16#06060000; 				(*access failed due to an hardware error*)
+	coTYPE_NO_MATCH : UDINT := 16#06070010; 		(*data type does not match, length of service parameter does not match*)
+	coTYPE_TOO_HIGH : UDINT := 16#06070012; 		(*data type does not match, length of service parameter too high*)
+	coTYPE_TOO_LOW : UDINT := 16#06070013; 			(*data type does not match, length of service parameter too low*)
+	coINV_SUBIDX : UDINT := 16#06090011; 			(*sub-index does not exist*)
+	coVAL_RANGE_EXCEED : UDINT := 16#06090030; 		(*value range of parameter exceeded (only for write access)*)
+	coVAL_TOO_HIGH : UDINT := 16#06090031; 			(*value of parameter written too high*)
+	coVAL_TOO_LOW : UDINT := 16#06090032; 			(*value of parameter written too low*)
+	coVAL_MAX_MIN : UDINT := 16#06090036; 			(*maximum value is less than minimum value*)
+	coGENERAL_ERROR : UDINT := 16#08000000; 		(*general error*)
+	coTRANSFER_ERROR : UDINT := 16#08000020; 		(*data cannot be transferred or stored to the application*)
+	coTRANSFER_ERROR_LOC_CTRL : UDINT := 16#08000021; 	(*data cannot be transferred or stored to the application because of local control*)
+	coTRANSFER_ERROR_DEV_STATE : UDINT := 16#08000022; 	(*data cannot be transferred or stored to the application because of the present device state*)
+	coDYN_OBJDICT_GEN_ERROR : UDINT := 16#08000023; 	(*object dictionary dynamic generation fails or no object dictionary is present*)
+END_VAR
+
+
+(*SDO Transfer Modes*)
+VAR CONSTANT
+	coSDO_TYPE_AUTO_BEST_CASE 	  : USINT := 0;		(*automatic choice of SDO transfer mode*)
+	coSDO_TYPE_SEGMENTED_TRANSFER : USINT := 1;		(*SDO segmented transfer mode*)
+	coSDO_TYPE_BLOCK_TRANSFER	  : USINT := 2;		(*SDO Blocktransfermode*)
+END_VAR
+
+(*Monitoring constants*)
+VAR CONSTANT 
+	coMONITORING_TYPE_HEARTBEAT		  : USINT := 1;		(*heartbeat*)
+	coMONITORING_TYPE_LIFEGUARDING	  : USINT := 2;		(*lifeguarding*)
+END_VAR

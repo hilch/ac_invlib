@@ -1,0 +1,1093 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>ac_inv()
+         
+      </title>
+      <meta name="ORDER" content="0">
+      <link rel="StyleSheet" href="styles.css"><script language="JavaScript" src="/_content_folding.js"></script></head>
+   <body>
+      <h1>ac_invlib - ac_inv()
+         
+      </h1>cyclic execution
+      <p onClick="collapse_expand('section1','imgCOL_FB','imgEXP_FB')"><u><font color="#3333CC">Graphic view</font></u><img id="imgEXP_FB" src="/_images/_expand.png" border="0" width="12" height="11" style="display:none"><img id="imgCOL_FB" src="/_images/_collapse.png" border="0" width="12" height="11" style="display:inline"></p>
+      <div id="section1" style="display:inline">
+         <p align="center">
+            <p onClick="checkbox('tableWithoutOptionContainer','tableWithOptionContainer','fubWithoutOption','fubWithOption','imgCHE_FB','imgUNC_FB')"><img id="imgCHE_FB" src="/_images/_checked.png" border="0" width="16" height="16" style="display:none"><img id="imgUNC_FB" src="/_images/_unchecked.png" border="0" width="16" height="16" style="display:inline">
+               Optional parameters
+               
+            </p>
+            <table id="fubWithoutOption" cellspacing="0" class="fubLayout" style="display: inline;">
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <th class="fubDataTypeIn">&nbsp;</th>
+                  <th colspan="2" class="fubGradBlue">ac_inv</th>
+                  <th class="fubDataTypeOut">&nbsp;</th>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">UDINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft">ax_ident</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">REAL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradGrey1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft">n_set</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradGrey2">
+                     <table class="fubOut">
+                        <tr>
+                           <td class="fubElementRight">ctrl_ready</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">power_line</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">ctrl_is_on</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">initialized</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">alarm</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">fault</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">n_act</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">t_act</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">current</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">thst_motor</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">udc</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">drive_state</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">fault_code</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">LFT</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">status</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData">
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">STRING[4]
+                              					
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">STRING[4]
+                              					
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UINT</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UINT</td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradWhite1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft">quickstop</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">ctrl_on</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">f_quit</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradWhite2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+            </table>
+            <table id="fubWithOption" cellspacing="0" class="fubLayout" style="display:none;">
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               <th class="fubDataTypeIn">&nbsp;</th>
+               <th colspan="2" class="fubGradBlue">ac_inv</th>
+               <th class="fubDataTypeOut">&nbsp;</th>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">UDINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">STRING[4]
+                              					
+                           </td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft">ax_ident</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">parameter_name
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">UINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">UINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">REAL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">REAL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">ARRAY[0..1]OF REAL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradGrey1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">kv
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">ti
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">n_set</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">t_set
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">t_limit
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">C211
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">C212
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">C213
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">C214
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">C215
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">activate_tuning
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradGrey2">
+                     <table class="fubOut">
+                        <tr>
+                           <td class="fubElementRight">ctrl_ready</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">power_line</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">ctrl_is_on</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">initialized</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">alarm</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">fault</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">PRA_detected<img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12"></td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">n_act</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">t_act</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">current</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">thst_drive<img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12"></td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">thst_motor</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">udc</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">encoder_value<img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12"></td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">drive_state</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">fault_code</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">LFT</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">status</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData">
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">BOOL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">REAL</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UINT</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">STRING[4]
+                              					
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">STRING[4]
+                              					
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UINT</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UINT</td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">USINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">USINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">STRING[15]
+                              					
+                           </td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradWhite1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft">quickstop</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">ctrl_on</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">f_quit</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">write_parameter
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">read_parameter
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">parameter_value
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradWhite2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+            </table>
+         </p>
+      </div>
+      <p onClick="collapse_expand('table','imgCOL_IF','imgEXP_IF')"><u><font color="#3333CC">Table</font></u><img id="imgEXP_IF" src="/_images/_expand.png" border="0" width="12" height="11" style="display:inline"><img id="imgCOL_IF" src="/_images/_collapse.png" border="0" width="12" height="11" style="display:none"></p>
+      <div id="table" style="display:none">
+         <div id="tableWithoutOptionContainer">
+            <table id="tableWithoutOption" class="parameter_tab fubTable" border="1">
+               <tr>
+                  <th class="parameter_tab">
+                     <div align="center"><b>I/O</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Parameter</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Data Type</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Description</b></div>
+                  </th>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">ax_ident</td>
+                  <td valign="TOP" class="parameter_tab">UDINT</td>
+                  <td valign="TOP" class="parameter_tab">axis identifier (handle) from ac_inv_alloc()</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">quickstop</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">0 = perform fast stop</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">ctrl_on</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">switch controller (power stage) on/off</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">f_quit</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">quit inverter fault</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">n_set</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">set speed (% of tFr or rpm)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">ctrl_ready</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">controller is ready to be switched on</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">power_line</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">power line present = 1</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">ctrl_is_on</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">controller (power stage) is on/off</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">initialized</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">drive initialized</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">alarm</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">alarm</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">fault</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">inverter fault see 'fault code'</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">n_act</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">actual speed (% of tFr or rpm)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">t_act</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">torque in % of nominal motor torque</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">current</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">current in A</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">thst_motor</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">thermal state motor in %</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">udc</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">dc voltage in V</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">drive_state</td>
+                  <td valign="TOP" class="parameter_tab">STRING[4]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">drive state</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">fault_code</td>
+                  <td valign="TOP" class="parameter_tab">STRING[4]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">fault code (LFT) as string</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">LFT</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">LFT</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">status</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">fub status</td>
+               </tr>
+            </table>
+         </div>
+         <div id="tableWithOptionContainer" style="display:none;">
+            <table id="tableWithOption" class="parameter_tab fubTable" border="1">
+               <tr>
+                  <th class="parameter_tab">
+                     <div align="center"><b>I/O</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Parameter</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Data Type</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Description</b></div>
+                  </th>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">ax_ident</td>
+                  <td valign="TOP" class="parameter_tab">UDINT</td>
+                  <td valign="TOP" class="parameter_tab">axis identifier (handle) from ac_inv_alloc()</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">quickstop</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">0 = perform fast stop</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">ctrl_on</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">switch controller (power stage) on/off</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">f_quit</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">quit inverter fault</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">kv</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">gain speed controller in %</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">ti</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">Integral time speed controller in %</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">n_set</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">set speed (% of tFr or rpm)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">t_set</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">set torque in % nominal motor torque (P84 only)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">t_limit</td>
+                  <td valign="TOP" class="parameter_tab">ARRAY[0..1]OF REAL</td>
+                  <td valign="TOP" class="parameter_tab">torque limit</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">write_parameter</td>
+                  <td valign="TOP" class="parameter_tab">USINT</td>
+                  <td valign="TOP" class="parameter_tab">write a parameter to the drive (see 'parameter_name' and 'parameter_value')</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">read_parameter</td>
+                  <td valign="TOP" class="parameter_tab">USINT</td>
+                  <td valign="TOP" class="parameter_tab">read a parameter from the drive (see 'parameter_name' and 'parameter_value')</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">parameter_name</td>
+                  <td valign="TOP" class="parameter_tab">STRING[4]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">name of the inverter parameter to be written or to be read</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">parameter_value</td>
+                  <td valign="TOP" class="parameter_tab">STRING[15]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">value of the inverter parameter to be written or to be read</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">C211</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">Control Bit</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">C212</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">Control Bit</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">C213</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">Control Bit</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">C214</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">Control Bit</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">C215</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">Control Bit</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">activate_tuning</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">1 = set motor tuning active. tuning will be activated with 'ctrl_on=true'</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">ctrl_ready</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">controller is ready to be switched on</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">power_line</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">power line present = 1</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">ctrl_is_on</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">controller (power stage) is on/off</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">initialized</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">drive initialized</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">alarm</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">alarm</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">fault</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">inverter fault see 'fault code'</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">PRA_detected</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">Power removal (PRA) was detected -> reset ctrl_on</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">n_act</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">actual speed (% of tFr or rpm)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">t_act</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">torque in % of nominal motor torque</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">current</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">current in A</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">thst_drive</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">thermal state drive in %</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">thst_motor</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">thermal state motor in %</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">udc</td>
+                  <td valign="TOP" class="parameter_tab">REAL</td>
+                  <td valign="TOP" class="parameter_tab">dc voltage in V</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">encoder_value</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">encoder value (P84 only)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">drive_state</td>
+                  <td valign="TOP" class="parameter_tab">STRING[4]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">drive state</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">fault_code</td>
+                  <td valign="TOP" class="parameter_tab">STRING[4]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">fault code (LFT) as string</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">LFT</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">LFT</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">status</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">fub status</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div position="fixed" bottom="0px"></div>
+   </body>
+</html>

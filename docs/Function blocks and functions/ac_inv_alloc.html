@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>ac_inv_alloc()
+         
+      </title>
+      <meta name="ORDER" content="0">
+      <link rel="StyleSheet" href="styles.css"><script language="JavaScript" src="/_content_folding.js"></script></head>
+   <body>
+      <h1>ac_invlib - ac_inv_alloc()
+         
+      </h1>axis allocation
+      <p onClick="collapse_expand('section1','imgCOL_FB','imgEXP_FB')"><u><font color="#3333CC">Graphic view</font></u><img id="imgEXP_FB" src="/_images/_expand.png" border="0" width="12" height="11" style="display:none"><img id="imgCOL_FB" src="/_images/_collapse.png" border="0" width="12" height="11" style="display:inline"></p>
+      <div id="section1" style="display:inline">
+         <p align="center">
+            <p onClick="checkbox('tableWithoutOptionContainer','tableWithOptionContainer','fubWithoutOption','fubWithOption','imgCHE_FB','imgUNC_FB')"><img id="imgCHE_FB" src="/_images/_checked.png" border="0" width="16" height="16" style="display:none"><img id="imgUNC_FB" src="/_images/_unchecked.png" border="0" width="16" height="16" style="display:inline">
+               Optional parameters
+               
+            </p>
+            <table id="fubWithoutOption" cellspacing="0" class="fubLayout" style="display: inline;">
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               <tr>
+                  <th class="fubDataTypeIn">&nbsp;</th>
+                  <th colspan="2" class="fubGradBlue">ac_inv_alloc</th>
+                  <th class="fubDataTypeOut">&nbsp;</th>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">UDINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">ARRAY[0..2]OF UDINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight"><a xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" href="\Data types and constants\Data types\ac_inv_Mapping.html">ac_inv_Mapping</a></td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft">pDevice</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">pcfgpar</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">io_mapping</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData"></table>
+                  </td>
+                  <td class="fubGradGrey1">
+                     <table class="fubIn"></table>
+                  </td>
+                  <td class="fubGradGrey2">
+                     <table class="fubOut">
+                        <tr>
+                           <td class="fubElementRight">status</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">message</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">ax_ident</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData">
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UINT</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">STRING[80]
+                              					
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UDINT</td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData"></table>
+                  </td>
+                  <td class="fubGradWhite1">
+                     <table class="fubIn"></table>
+                  </td>
+                  <td class="fubGradWhite2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+            </table>
+            <table id="fubWithOption" cellspacing="0" class="fubLayout" style="display:none;">
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td class="fubTop">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+               <th class="fubDataTypeIn">&nbsp;</th>
+               <th colspan="2" class="fubGradBlue">ac_inv_alloc</th>
+               <th class="fubDataTypeOut">&nbsp;</th>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData">
+                        <tr>
+                           <td class="fubElementRight">UDINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">ARRAY[0..2]OF UDINT</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight"><a xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" href="\Data types and constants\Data types\ac_inv_Mapping.html">ac_inv_Mapping</a></td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">BOOL</td>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="rigth">
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange1">
+                     <table class="fubIn">
+                        <tr>
+                           <td class="fubElementLeft">pDevice</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">pcfgpar</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft">io_mapping</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">rpm
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementLeft"><img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12">no_parameter_sort
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubGradOrange2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData"></table>
+                  </td>
+                  <td class="fubGradGrey1">
+                     <table class="fubIn"></table>
+                  </td>
+                  <td class="fubGradGrey2">
+                     <table class="fubOut">
+                        <tr>
+                           <td class="fubElementRight">status</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">message</td>
+                        </tr>
+                        <tr>
+                           <td class="fubElementRight">ax_ident</td>
+                        </tr>
+                     </table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData">
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UINT</td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">STRING[80]
+                              					
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="10">
+                              <hr width="20px" size="1" color="#000000" align="left">
+                           </td>
+                           <td class="fubElementLeft">UDINT</td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="fubDataTypeIn">
+                     <table class="fubData"></table>
+                  </td>
+                  <td class="fubGradWhite1">
+                     <table class="fubIn"></table>
+                  </td>
+                  <td class="fubGradWhite2">
+                     <table class="fubOut"></table>
+                  </td>
+                  <td class="fubDataTypeOut">
+                     <table class="fubData"></table>
+                  </td>
+               </tr>
+               <tr>
+                  <td>&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td class="fubBottom">&nbsp;</td>
+                  <td>&nbsp;</td>
+               </tr>
+            </table>
+         </p>
+      </div>
+      <p onClick="collapse_expand('table','imgCOL_IF','imgEXP_IF')"><u><font color="#3333CC">Table</font></u><img id="imgEXP_IF" src="/_images/_expand.png" border="0" width="12" height="11" style="display:inline"><img id="imgCOL_IF" src="/_images/_collapse.png" border="0" width="12" height="11" style="display:none"></p>
+      <div id="table" style="display:none">
+         <div id="tableWithoutOptionContainer">
+            <table id="tableWithoutOption" class="parameter_tab fubTable" border="1">
+               <tr>
+                  <th class="parameter_tab">
+                     <div align="center"><b>I/O</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Parameter</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Data Type</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Description</b></div>
+                  </th>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">pDevice</td>
+                  <td valign="TOP" class="parameter_tab">UDINT</td>
+                  <td valign="TOP" class="parameter_tab">pointer to name of device i.e. 'IF3.ST4'</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">pcfgpar</td>
+                  <td valign="TOP" class="parameter_tab">ARRAY[0..2]OF UDINT</td>
+                  <td valign="TOP" class="parameter_tab">pointer to name of parameter data objects</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">io_mapping</td>
+                  <td valign="TOP" class="parameter_tab"><a xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" href="\Data types and constants\Data types\ac_inv_Mapping.html">ac_inv_Mapping</a></td>
+                  <td valign="TOP" class="parameter_tab">IO- mapping (must be connected in physical view)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">status</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">fub status</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">message</td>
+                  <td valign="TOP" class="parameter_tab">STRING[80]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">error message, when allocation fails</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">ax_ident</td>
+                  <td valign="TOP" class="parameter_tab">UDINT</td>
+                  <td valign="TOP" class="parameter_tab">axis identifier ('handle') for function blocks</td>
+               </tr>
+            </table>
+         </div>
+         <div id="tableWithOptionContainer" style="display:none;">
+            <table id="tableWithOption" class="parameter_tab fubTable" border="1">
+               <tr>
+                  <th class="parameter_tab">
+                     <div align="center"><b>I/O</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Parameter</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Data Type</b></div>
+                  </th>
+                  <th class="parameter_tab">
+                     <div align="center"><b>Description</b></div>
+                  </th>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">pDevice</td>
+                  <td valign="TOP" class="parameter_tab">UDINT</td>
+                  <td valign="TOP" class="parameter_tab">pointer to name of device i.e. 'IF3.ST4'</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">pcfgpar</td>
+                  <td valign="TOP" class="parameter_tab">ARRAY[0..2]OF UDINT</td>
+                  <td valign="TOP" class="parameter_tab">pointer to name of parameter data objects</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN</td>
+                  <td valign="TOP" class="parameter_tab">io_mapping</td>
+                  <td valign="TOP" class="parameter_tab"><a xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" href="\Data types and constants\Data types\ac_inv_Mapping.html">ac_inv_Mapping</a></td>
+                  <td valign="TOP" class="parameter_tab">IO- mapping (must be connected in physical view)</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">rpm</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">use rpm instead of Hertz for n_set and n_act</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">no_parameter_sort</td>
+                  <td valign="TOP" class="parameter_tab">BOOL</td>
+                  <td valign="TOP" class="parameter_tab">1 = don't sort parameters from datamodules</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">status</td>
+                  <td valign="TOP" class="parameter_tab">UINT</td>
+                  <td valign="TOP" class="parameter_tab">fub status</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">message</td>
+                  <td valign="TOP" class="parameter_tab">STRING[80]
+                     					
+                  </td>
+                  <td valign="TOP" class="parameter_tab">error message, when allocation fails</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">ax_ident</td>
+                  <td valign="TOP" class="parameter_tab">UDINT</td>
+                  <td valign="TOP" class="parameter_tab">axis identifier ('handle') for function blocks</td>
+               </tr>
+            </table>
+         </div>
+      </div>
+      <div position="fixed" bottom="0px"></div>
+   </body>
+</html>

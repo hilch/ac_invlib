@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="VB Script TE">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+   <OBJECT type="text/site properties">
+     <param name="Window Styles" value="0x800025">
+     <param name="comment" value="title:Online Help">
+     <param name="comment" value="base:index.htm">
+   </OBJECT>
+   <UL>
+      <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="ac_invlib">
+            <param name="Local" value="ac_invlib.html">
+            <param name="ImageNumber" value="1">
+          </OBJECT>
+      <UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="General Information">
+      <param name="Local" value="General%20Information/General%20Information.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Information For C Programmers">
+      <param name="Local" value="General%20Information/Information%20for%20C%20Programmers.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Error Numbers">
+      <param name="Local" value="General%20Information/Error%20Numbers.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Version History">
+      <param name="Local" value="General%20Information/Version%20History.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="System Requirements">
+      <param name="Local" value="General%20Information/System%20Requirements.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Function blocks and functions">
+      <param name="Local" value="Function%20blocks%20and%20functions/Function%20blocks%20and%20functions.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="ac_inv()
+         
+      ">
+      <param name="Local" value="Function%20blocks%20and%20functions/ac_inv.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="ac_inv_alloc()
+         
+      ">
+      <param name="Local" value="Function%20blocks%20and%20functions/ac_inv_alloc.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Data types and constants">
+      <param name="Local" value="Data%20types%20and%20constants/Data%20types%20and%20constants.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Constants">
+      <param name="Local" value="Data%20types%20and%20constants/Constants.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Directly Derived Types">
+      <param name="Local" value="Data%20types%20and%20constants/Directly%20Derived%20Data%20Types.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Enumerators">
+      <param name="Local" value="Data%20types%20and%20constants/Enumerators/Enumerators.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Data types">
+      <param name="Local" value="Data%20types%20and%20constants/Data%20types/Data%20types.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="ac_inv_AxIdent">
+      <param name="Local" value="Data%20types%20and%20constants/Data%20types/ac_inv_AxIdent.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="ac_inv_Mapping">
+      <param name="Local" value="Data%20types%20and%20constants/Data%20types/ac_inv_Mapping.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="How To Use">
+      <param name="Local" value="How%20To%20Use/How%20To%20Use.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Powerlink device configuration">
+      <param name="Local" value="How%20To%20Use/Powerlink%20device%20configuration.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="CANopen device configuration">
+      <param name="Local" value="How%20To%20Use/CANopen%20device%20configuration.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Parameter Logging">
+      <param name="Local" value="How%20To%20Use/Parameter%20Logging.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Inverter configuration data object">
+      <param name="Local" value="How%20To%20Use/Inverter%20configuration%20data%20object.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="ACOPOSinverter Parameter">
+      <param name="Local" value="ACOPOSinverter%20Parameter/ACOPOSinverter%20Parameter.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Examples">
+      <param name="Local" value="Examples/Examples.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Automation Basic">
+      <param name="Local" value="Examples/Automation%20Basic/Automation%20Basic.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P84">
+      <param name="Local" value="Examples/Automation%20Basic/P84/P84.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P84.var ">
+      <param name="Local" value="Examples/Automation%20Basic/P84/P84.var.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P84Cyclic.ab ">
+      <param name="Local" value="Examples/Automation%20Basic/P84/P84Cyclic.ab.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P84Init.ab ">
+      <param name="Local" value="Examples/Automation%20Basic/P84/P84Init.ab.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Structured Text">
+      <param name="Local" value="Examples/Structured%20Text/Structured%20Text.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P74">
+      <param name="Local" value="Examples/Structured%20Text/P74/P74.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P74.var ">
+      <param name="Local" value="Examples/Structured%20Text/P74/P74.var.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P74Cyclic.st ">
+      <param name="Local" value="Examples/Structured%20Text/P74/P74Cyclic.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P74Init.st ">
+      <param name="Local" value="Examples/Structured%20Text/P74/P74Init.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="Data Objects">
+      <param name="Local" value="Examples/Data%20Objects/Data%20Objects.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P74config">
+      <param name="Local" value="Examples/Data%20Objects/P74config/P74config.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P74config.dat ">
+      <param name="Local" value="Examples/Data%20Objects/P74config/P74config.dat.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P84config">
+      <param name="Local" value="Examples/Data%20Objects/P84config/P84config.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P84config.dat ">
+      <param name="Local" value="Examples/Data%20Objects/P84config/P84config.dat.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+</UL>
+</UL>
+      </UL>
+   </UL>
+</BODY>
+</HTML>

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="VB Script TE">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties"></OBJECT>
+<UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Information For C Programmers">
+		<param name="Local" value="General%20Information/Information%20for%20C%20Programmers.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Error Numbers">
+		<param name="Local" value="General%20Information/Error%20Numbers.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Version History">
+		<param name="Local" value="General%20Information/Version%20History.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="System Requirements">
+		<param name="Local" value="General%20Information/System%20Requirements.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="ac_inv()
+         
+      ">
+		<param name="Local" value="Function%20blocks%20and%20functions/ac_inv.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="ac_inv_alloc()
+         
+      ">
+		<param name="Local" value="Function%20blocks%20and%20functions/ac_inv_alloc.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Constants">
+		<param name="Local" value="Data%20types%20and%20constants/Constants.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Directly Derived Types">
+		<param name="Local" value="Data%20types%20and%20constants/Directly%20Derived%20Data%20Types.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="ac_inv_AxIdent">
+		<param name="Local" value="Data%20types%20and%20constants/Data%20types/ac_inv_AxIdent.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="ac_inv_Mapping">
+		<param name="Local" value="Data%20types%20and%20constants/Data%20types/ac_inv_Mapping.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Powerlink device configuration">
+		<param name="Local" value="How%20To%20Use/Powerlink%20device%20configuration.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="CANopen device configuration">
+		<param name="Local" value="How%20To%20Use/CANopen%20device%20configuration.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Parameter Logging">
+		<param name="Local" value="How%20To%20Use/Parameter%20Logging.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Inverter configuration data object">
+		<param name="Local" value="How%20To%20Use/Inverter%20configuration%20data%20object.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P84.var ">
+		<param name="Local" value="Examples/Automation%20Basic/P84/P84.var.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P84Cyclic.ab ">
+		<param name="Local" value="Examples/Automation%20Basic/P84/P84Cyclic.ab.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P84Init.ab ">
+		<param name="Local" value="Examples/Automation%20Basic/P84/P84Init.ab.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P74.var ">
+		<param name="Local" value="Examples/Structured%20Text/P74/P74.var.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P74Cyclic.st ">
+		<param name="Local" value="Examples/Structured%20Text/P74/P74Cyclic.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P74Init.st ">
+		<param name="Local" value="Examples/Structured%20Text/P74/P74Init.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P74config.dat ">
+		<param name="Local" value="Examples/Data%20Objects/P74config/P74config.dat.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P84config.dat ">
+		<param name="Local" value="Examples/Data%20Objects/P84config/P84config.dat.html">
+	</OBJECT>
+</UL>
+</BODY>
+</HTML>

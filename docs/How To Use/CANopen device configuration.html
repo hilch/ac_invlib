@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+   <title>CANopen device configuration</title>
+   <meta name="ORDER" content="2">
+   <meta charset="UTF-8">
+   <base href="/" target="_blank">
+   <link rel="stylesheet" href="styles.css">   
+  </head>
+  <body>
+	<p><h1>Configuration of an ACOPOSinverter connected to CANopen:</h1>
+	<p><h2>Tools/ Import Field Device<h2>
+	<p><a href="/ACOPOSinverter_P84.eds">EDS data sheet <right click, save as...></a>
+	<p><b>description of the device name can be read from the physical view:</b>
+	<p><img src="/canopen_device_path.jpg"  align=TOP hspace=8>
+	<p><h2>Open the I/O - Configuration and change the 'Channels' section.</h2>
+	<p>the following parameters have to be changed compard to their default values:</b>
+	<p><b>ETI</b>
+	<p><img src="/canopen_mapping_configuration_ETI.png" align=TOP hspace=8>
+	<p><b>THD</b>	
+	<p><img src="/canopen_mapping_configuration_THD.png" align=TOP hspace=8>
+	<p><b>OL1R</b>	
+	<p><img src="/canopen_mapping_configuration_OL1R.png" align=TOP hspace=8>
+	<p><b>AO1R</b>	
+	<p><img src="/canopen_mapping_configuration_AO1R.png" align=TOP hspace=8>
+	<p><b>LFT</b>	
+	<p><img src="/canopen_mapping_configuration_LFT.png" align=TOP hspace=8>	
+	<p><b>THR</b>	
+	<p><img src="/canopen_mapping_configuration_THR.png" align=TOP hspace=8>		
+	<p><b>OTR</b>	
+	<p><img src="/canopen_mapping_configuration_OTR.png" align=TOP hspace=8>		
+	<p><b>Change the 'Network management parameters' - section to active the 'Heart beat'
+	<p><img src="/canopen_network_management.png" align=TOP hspace=8>	
+	<p><h2>Open the I/O - Mapping and connect the 'io_mapping'- elements</h2>
+	<p><img src="/canopen_io_mapping.png" align=TOP hspace=8>
+  </body>
+</html>

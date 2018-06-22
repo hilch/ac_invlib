@@ -1,0 +1,36 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * File: IoMap.iom
+ * Author: hilchenbachc
+ * Created: September 05, 2012
+ ********************************************************************
+ * IO mapping file
+ ********************************************************************)
+VAR_CONFIG
+	::P84:ac_inv_alloc_0.io_mapping.ModuleOK AT %IX."8I84xxxxxxx.01P-1".ModuleOk;
+	P84:ac_inv_alloc_0.io_mapping.ETAD AT %IW."8I84xxxxxxx.01P-1".ETAD_Input;
+	P84:ac_inv_alloc_0.io_mapping.HMIS AT %IW."8I84xxxxxxx.01P-1".HMIS_Input;
+	P84:ac_inv_alloc_0.io_mapping.LCR AT %IW."8I84xxxxxxx.01P-1".LCR_Input;
+	P84:ac_inv_alloc_0.io_mapping.THD AT %IW."8I84xxxxxxx.01P-1".THD_Input;
+	P84:ac_inv_alloc_0.io_mapping.THR AT %IW."8I84xxxxxxx.01P-1".THR_Input;
+	P84:ac_inv_alloc_0.io_mapping.CMDD AT %QW."8I84xxxxxxx.01P-1".CMDD_Output;
+	P84:ac_inv_alloc_0.io_mapping.CMI AT %QW."8I84xxxxxxx.01P-1".CMI_Output;
+	P84:ac_inv_alloc_0.io_mapping.LFRD AT %QW."8I84xxxxxxx.01P-1".LFRD_Output;
+	P84:ac_inv_alloc_0.io_mapping.LTR AT %QW."8I84xxxxxxx.01P-1".LTR_Output;
+	P84:ac_inv_alloc_0.io_mapping.LFT AT %IW."8I84xxxxxxx.01P-1".LFT_Input;
+	P84:ac_inv_alloc_0.io_mapping.RFRD AT %IW."8I84xxxxxxx.01P-1".RFRD_Input;
+	P84:ac_inv_alloc_0.io_mapping.OTR AT %IW."8I84xxxxxxx.01P-1".OTR_Input;
+	P74:ac_inv_alloc_0.io_mapping.ETAD AT %IW."8I74xxxxxxx.01P-1".ETAD_Input;
+	P74:ac_inv_alloc_0.io_mapping.HMIS AT %IW."8I74xxxxxxx.01P-1".HMIS_Input;
+	P74:ac_inv_alloc_0.io_mapping.LCR AT %IW."8I74xxxxxxx.01P-1".LCR_Input;
+	P74:ac_inv_alloc_0.io_mapping.RFRD AT %IW."8I74xxxxxxx.01P-1".RFRD_Input;
+	P74:ac_inv_alloc_0.io_mapping.OTR AT %IW."8I74xxxxxxx.01P-1".OTR_Input;
+	P74:ac_inv_alloc_0.io_mapping.THD AT %IW."8I74xxxxxxx.01P-1".THD_Input;
+	P74:ac_inv_alloc_0.io_mapping.THR AT %IW."8I74xxxxxxx.01P-1".THR_Input;
+	P74:ac_inv_alloc_0.io_mapping.LFT AT %IW."8I74xxxxxxx.01P-1".LFT_Input;
+	P74:ac_inv_alloc_0.io_mapping.CMDD AT %QW."8I74xxxxxxx.01P-1".CMDD_Output;
+	P74:ac_inv_alloc_0.io_mapping.CMI AT %QW."8I74xxxxxxx.01P-1".CMI_Output;
+	P74:ac_inv_alloc_0.io_mapping.LFRD AT %QW."8I74xxxxxxx.01P-1".LFRD_Output;
+	P74:ac_inv_alloc_0.io_mapping.ModuleOK AT %IX."8I74xxxxxxx.01P-1".ModuleOk;
+END_VAR

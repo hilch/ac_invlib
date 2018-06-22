@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <TITLE>Version History</TITLE>
+      <META name="ORDER" content="2">
+      <link rel="StyleSheet" href="styles.css">
+   </head>
+   <body>
+      <h1>ac_invlib -  Version History</h1>
+      <p>The ac_invlib Library provides the following history:</p>
+      <table border="1" class="parameter_tab">
+         <tr>
+            <th class="parameter_tab">
+               <div><b>Version</b></div>
+            </th>
+            <th class="parameter_tab">
+               <div><b>Description</b></div>
+            </th>
+            <th class="parameter_tab">
+               <div><b>Date</b></div>
+            </th>
+         </tr>
+         <tr>
+            <td class="parameter_tab">0.4 .0</td>
+            <td class="parameter_tab">First Release</td>
+            <td class="parameter_tab">09.02.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">0.5 .0</td>
+            <td class="parameter_tab">solved: problems when reading and writing unsigned parameters<br>changes: ac_inv.parameter_value
+               has 15 characters now
+            </td>
+            <td class="parameter_tab">10.02.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">0.6 .0</td>
+            <td class="parameter_tab">Datatypes of CMDD, HMIS, ETAD changes from INT to UINT</td>
+            <td class="parameter_tab">18.02.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">0.7 .0</td>
+            <td class="parameter_tab">new output „PRA_detected“<br>a rising edge on ctrl_on is required to reset PRA (Power
+               removal)
+            </td>
+            <td class="parameter_tab">01.06.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">0.8 .0</td>
+            <td class="parameter_tab">solved: problems with some device names</td>
+            <td class="parameter_tab">11.06.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">0.9 .0</td>
+            <td class="parameter_tab">added Parameter „EN8“</td>
+            <td class="parameter_tab">30.07.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.0 .0</td>
+            <td class="parameter_tab">ac_inv(): added output LFT</td>
+            <td class="parameter_tab">06.09.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.01.0</td>
+            <td class="parameter_tab">solved: Using with GCC2.95 was not possible.</td>
+            <td class="parameter_tab">16.12.2010</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.02.0</td>
+            <td class="parameter_tab">an entry in the system logbook will be created, when Module_OK = false</td>
+            <td class="parameter_tab">22.06.2011</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.03.0</td>
+            <td class="parameter_tab">ac_inv(): output ctrl_ready corrected.<br>new output ‚power_line‘</td>
+            <td class="parameter_tab">14.10.2011</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.04.0</td>
+            <td class="parameter_tab">ac_inv():<br>add CMI to mapping.<br><br>add disabling parameter consistency check.<br><br>all
+               parameters will be uploaded compard to their set values after download.<br><br>Compiled
+               with GCC4.11
+            </td>
+            <td class="parameter_tab">17.02.2012</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.05.0</td>
+            <td class="parameter_tab">ac_inv():<br>Parameter ‚LAC‘ (access level) added for read/write access</td>
+            <td class="parameter_tab">03.04.2012</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.06.0</td>
+            <td class="parameter_tab">solved: change of t_limit[1] leads to continous writing</td>
+            <td class="parameter_tab">25.03.2013</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.07.0</td>
+            <td class="parameter_tab">library can now used with CANopen -EDS</td>
+            <td class="parameter_tab">20.08.2013</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.08.0</td>
+            <td class="parameter_tab">added P74 support (via EPL)</td>
+            <td class="parameter_tab">20.08.2014</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.09.0</td>
+            <td class="parameter_tab">new function: parameters from the datamodules are sorted by default now (function
+               can be switched off). This leads to a correct download sequence.<br>new function:
+               new input 'activate tuning' can be used to start the motor tuning as this was not
+               possible via network yet.<br>
+            </td>
+            <td class="parameter_tab">18.06.2015</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.10.0</td>
+            <td class="parameter_tab">solved issue:<br>if io- mapping is faster than FBK- Cycle, <br>CMDD can contain zero.<br>CMDD
+               is written once per cycle now.<br>ETAD and HMIS are read once per cycle now.
+            </td>
+            <td class="parameter_tab">21.01.2016</td>
+         </tr>
+         <tr>
+            <td class="parameter_tab">1.10.1</td>
+            <td class="parameter_tab">added parameter FCAO for P84</td>
+            <td class="parameter_tab">02.11.2017</td>
+         </tr>
+      </table>
+      <div position="fixed" bottom="0px"></div>
+   </body>
+</html>
