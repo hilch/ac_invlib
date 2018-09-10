@@ -7,7 +7,7 @@ This Library controls an ACOPOSinverter without SDC. Supported drives: P84 (EPL)
 For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 /develop/:
-Automation Studio project for testing the library
+Automation Studio project for compiling and debugging the library
 
 /docs/
 documetation project for Microsoft HTML Workshop
