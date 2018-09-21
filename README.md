@@ -1,5 +1,8 @@
 # ac_invlib
-B&amp;R Automation Studio Library for ACOPOSinverter
+[B&amp;R](https://www.br-automation.com) Automation Studio Library for ACOPOSinverter
+
+(https://github.com/hilch/ac_invlib/blob/master/Screenshot1.PNG)
+
 
 Purpose of the library:
 
