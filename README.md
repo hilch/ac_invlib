@@ -11,7 +11,15 @@ For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 ![Online-help](https://github.com/hilch/ac_invlib/tree/master/develop/Logical/Libraries/ac_invlib/Help/Libac_invlib.chm)
 
-# directories:
+# Features
+* simple handling of ACOPOSinverters with minimal cpu load.
+* simple handling parameters 
+ * use data modules
+ * read and write parameters via service channel
+ * use symbolic names instead of numbers for parameters
+* logging parameters (similar to ACOPOS network command trace)
+
+# Directories:
 
 /develop/:
 Automation Studio project for compiling and debugging the library
