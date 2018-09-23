@@ -14,9 +14,9 @@ For additional information refer to the builtin *.chm help file (Press F1 in AS)
 # Features
 * simple handling of ACOPOSinverters with minimal cpu load.
 * simple handling parameters 
- * use data modules
- * read and write parameters via service channel
- * use symbolic names instead of numbers for parameters
+  * use data modules
+  * read and write parameters via service channel
+  * use symbolic names instead of numbers for parameters
 * logging parameters (similar to ACOPOS network command trace)
 
 # Directories:
