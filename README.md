@@ -17,7 +17,7 @@ For additional information refer to the builtin *.chm help file (Press F1 in AS)
 Automation Studio project for compiling and debugging the library
 
 /docs/
-documetation project for Microsoft HTML Workshop (respectively "documentation studio" from [B&amp;R] switzerland)
+documetation project for Microsoft HTML Workshop (respectively "documentation studio" from B&amp;R switzerland)
 
 https://www.microsoft.com/en-us/download/details.aspx?id=21138
 
