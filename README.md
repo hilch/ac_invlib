@@ -13,7 +13,7 @@ For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 # Features
 * simple handling of ACOPOSinverters with minimal cpu load.
-* simple handling parameters 
+* simple handling of inverter parameters:
   * use data modules
   * read and write parameters via service channel
   * use symbolic names instead of numbers for parameters
