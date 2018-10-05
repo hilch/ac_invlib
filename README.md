@@ -11,6 +11,10 @@ For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 ![Online-help](https://github.com/hilch/ac_invlib/tree/master/develop/Logical/Libraries/ac_invlib/Help/Libac_invlib.chm)
 
+# Warranty
+
+This library is not an official B&amp;R product! For this reason the use is at your own risk and there is NO claim on support or maintenance.
+
 # Features
 * simple handling of ACOPOSinverters with minimal cpu load.
 * use data modules for parameters ![dataobject](https://github.com/hilch/ac_invlib/blob/master/docs/sample_data_object.jpg)
