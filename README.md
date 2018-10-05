@@ -17,7 +17,7 @@ For additional information refer to the builtin *.chm help file (Press F1 in AS)
   * use data modules
   * read and write parameters via service channel
   * use symbolic names instead of numbers for parameters
-* logging parameter actions and errors on CPU (similar to ACOPOS network command trace)
+* logging parameter actions and errors on CPU (similar to ACOPOS network command trace) ![logging](https://github.com/hilch/ac_invlib/blob/master/docs/logging_import2.jpg)
 
 # Directories:
 
