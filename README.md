@@ -13,10 +13,10 @@ For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 # Features
 * simple handling of ACOPOSinverters with minimal cpu load.
-* simple handling of inverter parameters:
-  * use data modules
-  * read and write parameters via service channel
+* use data modules for parameters ![dataobject](https://github.com/hilch/ac_invlib/blob/master/docs/sample_data_object.jpg)
   * use symbolic names instead of numbers for parameters
+* read and write parameters via 'service channel'
+
 * logging parameter actions and errors on CPU (similar to ACOPOS network command trace) ![logging](https://github.com/hilch/ac_invlib/blob/master/docs/logging_import2.jpg)
 
 # Directories:
