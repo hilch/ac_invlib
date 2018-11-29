@@ -18,7 +18,8 @@ This library is not an official B&amp;R product! For this reason the use is at y
 # Features
 * simple handling of ACOPOSinverters with minimal cpu load.
 * use data modules for parameters ![dataobject](https://github.com/hilch/ac_invlib/blob/master/docs/sample_data_object.jpg)
-  * use symbolic names instead of numbers for parameters
+  - use symbolic names instead of numbers for parameters
+  - change motor parameters at runtime
 * read and write parameters via 'service channel' ![servicechannel](https://github.com/hilch/ac_invlib/blob/master/docs/service_channel.PNG)
 
 * logging parameter actions and errors on CPU (similar to ACOPOS network command trace) ![logging](https://github.com/hilch/ac_invlib/blob/master/docs/logging_import2.jpg)
