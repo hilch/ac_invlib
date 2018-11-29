@@ -33,4 +33,12 @@ VAR_CONFIG
 	P74:ac_inv_alloc_0.io_mapping.CMI AT %QW."8I74xxxxxxx.01P-1".CMI_Output;
 	P74:ac_inv_alloc_0.io_mapping.LFRD AT %QW."8I74xxxxxxx.01P-1".LFRD_Output;
 	P74:ac_inv_alloc_0.io_mapping.ModuleOK AT %IX."8I74xxxxxxx.01P-1".ModuleOk;
+	::P76:ac_inv_alloc_0.io_mapping.ETAD AT %IW."8I76xxxxxxx.0P".ETAD_Input;
+	::P76:ac_inv_alloc_0.io_mapping.CMDD AT %QW."8I76xxxxxxx.0P".CMDD_Output;
+	::P76:ac_inv_alloc_0.io_mapping.LFRD AT %QW."8I76xxxxxxx.0P".LFRD_Output;
+	::P76:ac_inv_alloc_0.io_mapping.RFRD AT %IW."8I76xxxxxxx.0P".RFRD_Input;
+	::P76:ac_inv_alloc_0.io_mapping.OTR AT %IW."8I76xxxxxxx.0P".OTR_Input;
+	::P76:ac_inv_alloc_0.io_mapping.LCR AT %IW."8I76xxxxxxx.0P".LCR_Input;
+	::P76:ac_inv_alloc_0.io_mapping.HMIS AT %IW."8I76xxxxxxx.0P".HMIS_Input;
+	::P76:ac_inv_alloc_0.io_mapping.ModuleOK AT %IX."8I76xxxxxxx.0P".ModuleOk;
 END_VAR

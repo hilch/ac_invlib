@@ -6,7 +6,7 @@
 #include <ac_invparameter.h>
 #include <P84_registers.h>
 #include <P74_registers.h>
-
+#include <P76_registers.h>
 
 
 /* -----------------------------------------------------------------------------------
@@ -18,8 +18,15 @@
 int find_parameter( char *name, UINT *index, USINT *subindex, USINT drive_type )
 {
 	int i = 0;
-	acpireg *regs = drive_type == 2 ? p74reg : p84reg;
+	acpireg *regs;
 
+	switch( drive_type )
+	{
+		default: 	regs = p84reg; break;
+		case 2: 	regs = p74reg; break;
+		case 3: 	regs = p76reg; break;
+	}
+	
 	while( regs[i].name )
 	{
 		if( strcasecmp( regs[i].name, name ) == 0 )   /* found ? */
@@ -44,7 +51,14 @@ int find_parameter( char *name, UINT *index, USINT *subindex, USINT drive_type )
 int find_download_index( char *name,  USINT drive_type )
 {
 	int i = 0;
-	char **list = drive_type == 2 ? P74_download_index : P84_download_index;
+	char **list;
+	
+	switch( drive_type )
+	{
+		default: list = P84_download_index; break;
+		case 2: list = P74_download_index; break;
+		case 3: list = P76_download_index; break;
+	}
 
 	while( list[i] )
 	{
@@ -69,7 +83,16 @@ char *find_value_constant( char *name, UINT value, USINT drive_type )
 	int index;
 	static char s[20];
 	char sign = 'u';
-	acpireg *regs = drive_type == 2 ? p74reg : p84reg;
+
+	acpireg *regs;
+
+	switch( drive_type )
+	{
+		default: 	regs = p84reg; break;
+		case 2: 	regs = p74reg; break;
+		case 3: 	regs = p76reg; break;
+	}
+
 
 	index = find_parameter( name, 0, 0, drive_type );
 	if( index >= 0 )
@@ -106,7 +129,15 @@ char *find_value_constant( char *name, UINT value, USINT drive_type )
 int find_numeric_value( char *name, char *constant, USINT drive_type )
 {
 	int index;
-	acpireg *regs = drive_type == 2 ? p74reg : p84reg;
+	acpireg *regs;
+
+	switch( drive_type )
+	{
+		default: 	regs = p84reg; break;
+		case 2: 	regs = p74reg; break;
+		case 3: 	regs = p76reg; break;
+	}
+
 
 	index = find_parameter( name, 0, 0, drive_type );
 	if( index >= 0 )

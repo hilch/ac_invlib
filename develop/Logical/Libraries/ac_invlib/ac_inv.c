@@ -68,10 +68,13 @@ void ac_inv(struct ac_inv* inst)
 		case STEP_READ_DEVICE_NAME:  /* read device name */
 			if( ax_ident->sdo_read_step == 0 )
 			{
+				/*0 = unknown, 1 = P84, 2 = P74, 3 = P76 */
 				if( !strcmp( ax_ident->device_name, "ACOPOS Inverter P74" ) )
 					ax_ident->drive_type = 2;
 				else if( !strcmp( ax_ident->device_name, "8I0IF248.300-1" ) )
 					ax_ident->drive_type = 1;
+				else if( !strcmp( ax_ident->device_name, "8I0IF108.400-2" ) )
+					ax_ident->drive_type = 3;
 				else
 					ax_ident->drive_type = 0;
 				ax_ident->step_init = STEP_LOG_DEVICE_TYPE;
@@ -117,6 +120,13 @@ void ac_inv(struct ac_inv* inst)
 					strcpy( ax_ident->sdo_write_value_constant,  "InI" );
 					ax_ident->sdo_write_step = 1;
 					ax_ident->step_init = STEP_W_FACTORY_RESET_P74;
+				}
+				else if( ax_ident->drive_type == 3 )  /* P76 */
+				{
+					strcpy( ax_ident->sdo_write_par_name, "CMI" );
+					strcpy( ax_ident->sdo_write_value_constant,  "32768" );   /* 32768 = 0x8000 = disable parameter checking */
+					ax_ident->sdo_write_step = 1;
+					ax_ident->step_init = STEP_W_DISABLE_PCHECK_P76;
 				}
 				else    /* P84 */
 				{
@@ -204,7 +214,57 @@ void ac_inv(struct ac_inv* inst)
 			}
 			break;
 
-			/* ------------------ P74 & P84 ------------------------- */
+
+			/* ------------------  P76 ------------------------- */
+		case STEP_W_DISABLE_PCHECK_P76:  /* wait CMI is written */
+			if( ax_ident->sdo_write_step == 0 )
+			{
+				ax_ident->timer = 0;
+				strcpy( ax_ident->sdo_write_par_name, "FCS" );
+				strcpy( ax_ident->sdo_write_value_constant,  "InI" );
+				ax_ident->sdo_write_step = 1;
+				ax_ident->step_init = STEP_W_FACTORY_RESET_P76;
+			}
+			break;
+
+		case STEP_W_FACTORY_RESET_P76: /* wait, until factory settings done (P74) */
+			if( ax_ident->sdo_write_step == 0 && ax_ident->timer > 5.0 )
+			{
+				strcpy( ax_ident->sdo_write_par_name, "Fr1" );
+				strcpy( ax_ident->sdo_write_value_constant,  "nEt" );
+				ax_ident->sdo_write_step = 1;
+				ax_ident->step_init = STEP_W_P76_CONFIG_1;
+			}
+			break;
+
+		case STEP_W_P76_CONFIG_1:
+			if( ax_ident->sdo_write_step == 0 )
+			{
+				strcpy( ax_ident->sdo_write_par_name, "Cd1" );
+				strcpy( ax_ident->sdo_write_value_constant,  "nEt" );
+				ax_ident->sdo_write_step = 1;
+				ax_ident->step_init = STEP_W_P76_CONFIG_2;
+			}
+			break;
+
+		case STEP_W_P76_CONFIG_2:
+			if( ax_ident->sdo_write_step == 0 )
+			{
+				strcpy( ax_ident->sdo_write_par_name, "Cd2" );
+				strcpy( ax_ident->sdo_write_value_constant,  "tEr" );
+				ax_ident->sdo_write_step = 1;
+
+				if( (etad & 0x0f) == 0x8 && _LFT == 7 )    /* "CNF" at bootup- time ? */
+				{
+					cmdd |= 0x80;
+				}
+				ax_ident->step_init = STEP_W_REFERENCE_CHANNEL_SET;
+			}
+			break;
+
+
+
+			/* ------------------ P74 & P84 & P76 ------------------------- */
 
 		case STEP_W_REFERENCE_CHANNEL_SET: /* wait until reference channel is set */
 			if( !MODULE_OK )
@@ -254,7 +314,17 @@ void ac_inv(struct ac_inv* inst)
 					if( inst->status == 0 )
 					{
 						ax_ident->timer = 0;
-						ax_ident->step_init = STEP_CHECK_PARAMETER_LIST;
+						if( ax_ident->drive_type == 3 )  
+						{   /* P76 */
+							strcpy( ax_ident->sdo_write_par_name, "CMI" );
+							strcpy( ax_ident->sdo_write_value_constant,  "0" );   /* 0 = enable parameter checking */
+							ax_ident->sdo_write_step = 1;
+							ax_ident->step_init = STEP_W_ENABLE_PCHECK_P76;						
+						}
+						else
+						{
+							ax_ident->step_init = STEP_CHECK_PARAMETER_LIST;
+						}
 					}
 					else
 					{
@@ -264,6 +334,12 @@ void ac_inv(struct ac_inv* inst)
 			}
 			break;
 
+		case STEP_W_ENABLE_PCHECK_P76:
+			if( ax_ident->sdo_write_step == 0 )
+			{
+				ax_ident->step_init = STEP_CHECK_PARAMETER_LIST;
+			}				
+			break;
 
 		case STEP_CHECK_PARAMETER_LIST:
 			CMI = 0; /* enable parameter checking */
@@ -631,7 +707,7 @@ void ac_inv(struct ac_inv* inst)
 				else if( (etad & 0xff) == 0x37  )   /* movement enabled */
 				{
 					cmdd = 0xf;
-					if( ax_ident->use_rpm )
+					if( ax_ident->use_rpm || (ax_ident->drive_type == 3) /* P76 */ )
 					{
 						LFRD = (INT) inst->n_set;
 					}
@@ -667,7 +743,7 @@ void ac_inv(struct ac_inv* inst)
 
 
 			/* actual values */
-			if( ax_ident->use_rpm )
+			if( ax_ident->use_rpm || (ax_ident->drive_type == 3) /* P76 */ )
 			{
 				inst->n_act = RFRD;
 			}

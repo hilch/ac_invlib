@@ -1,24 +1,35 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-   <title>Powerlink device configuration</title>
+    <title>Powerlink device configuration</title>
    <meta name="ORDER" content="1">
    <meta charset="UTF-8">
-<title>Powerlink device configuration</title>
-   <base href="/" target="_blank">
-   <link rel="stylesheet" href="styles.css">
+    <title>Powerlink device configuration</title>
+    <base href="/" target="_blank">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<p><h1>Configuration of an ACOPOSinverter connected to Powerlink:</h1>
-<p><b>description of the device name can be read from the physical view:</b>
-<p><img src="/powerlink_device_path.jpg"  align=TOP hspace=8>
-<p><b>Open the I/O - Configuration and set &#8218;ETAT&#8216;, &#8218;ETI&#8216;, &#8218;CMDD&#8216; and &#8218;CMI&#8216; to
-&#8218;packed&#8216;:
-<p>Set 'Download parameters' to 'no'</b>
-<p><img src="/powerlink_mapping_configuration.png" align=TOP hspace=8>
-<p><b>Open the I/O - Mapping and connect the 'io_mapping'- elements (P84)</b>
-<p><img src="/powerlink_iomapping.png" align=TOP hspace=8>
-<p><b>Open the I/O - Mapping and connect the 'io_mapping'- elements (P74)</b>
-<p><img src="/powerlink_iomapping_P74.png" align=TOP hspace=8>
+    <p>
+        <h1>Configuration of an ACOPOSinverter connected to Powerlink:</h1>
+        <p><b>description of the device name can be read from the physical view:</b></p>
+        <p><img src="/powerlink_device_path.jpg" align=TOP hspace=8></p>
+        <p><b>P84 and P74: Open the I/O - Configuration and set &#8218;ETAT&#8216;, &#8218;ETI&#8216;, &#8218;CMDD&#8216; and &#8218;CMI&#8216; to
+&#8218;packed&#8216;</p>
+        <p>and 'Download parameters' to 'no':</b></p>
+        <p><img src="/powerlink_mapping_configuration.png" align=TOP hspace=8></p>
+        <p><b>P76:Open the I/O - Configuration and add &#8218;HMIS&#8216;, &#8218;LFT&#8216;, &#8218;OTR&#8216;, &#8218;LCR&#8216; and &#8218;THD&#8216; to
+                                &#8218;additional cyclc data points&#8216;<p></p>and set 'Download ACPi parameter set' to 'no':</b></p>
+        <p>Set 'Download parameters' to 'no'</b>
+        </p>
+        <p><img src="/P76_Configuration.png" align=TOP hspace=8></p>
+        <p><b>Open the I/O - Mapping and connect the 'io_mapping'- elements (P84)</b></p>
+        <p><img src="/powerlink_iomapping.png" align=TOP hspace=8></p>
+        <p><b>Open the I/O - Mapping and connect the 'io_mapping'- elements (P74)</b></p>
+        <p><img src="/powerlink_iomapping_P74.png" align=TOP hspace=8></p>
+        <p><b>Open the I/O - Mapping and connect the 'io_mapping'- elements (P76)</b></p>
+        <p><img src="/P76_IO_Mapping.png" align=TOP hspace=8></p>
 </body>
+
 </html>

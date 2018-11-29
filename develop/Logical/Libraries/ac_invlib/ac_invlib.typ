@@ -60,7 +60,7 @@ TYPE
 		cycleTime : REAL; (*cycle time of the task*)
 		timer : REAL; (*timer for waiting actions*)
 		device_name : STRING[20]; (*Device- Name from Powerlink Object 0x1008*)
-		drive_type : USINT; (*0 = unknown, 1 = P84, 2 = P74*)
+		drive_type : USINT; (*0 = unknown, 1 = P84, 2 = P74, 3 = P76 *)
 		isCANopen : BOOL; (*1 = is a CANopen- device*)
 		tempUINT : UINT;
 	END_STRUCT;

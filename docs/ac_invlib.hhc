@@ -203,6 +203,28 @@
       <param name="ImageNumber" value="11">
     </OBJECT>
 </UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P76">
+      <param name="Local" value="Examples/Structured%20Text/P76/P76.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P76.var ">
+      <param name="Local" value="Examples/Structured%20Text/P76/P76.var.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P76Cyclic.st ">
+      <param name="Local" value="Examples/Structured%20Text/P76/P76Cyclic.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P76Init.st ">
+      <param name="Local" value="Examples/Structured%20Text/P76/P76Init.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
 </UL>
 <LI><OBJECT type="text/sitemap">
       <param name="Name" value="Data Objects">
@@ -219,6 +241,18 @@
 <LI><OBJECT type="text/sitemap">
       <param name="Name" value="P74config.dat ">
       <param name="Local" value="Examples/Data%20Objects/P74config/P74config.dat.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P76config">
+      <param name="Local" value="Examples/Data%20Objects/P76config/P76config.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P76config.dat ">
+      <param name="Local" value="Examples/Data%20Objects/P76config/P76config.dat.html">
       <param name="ImageNumber" value="11">
     </OBJECT>
 </UL>

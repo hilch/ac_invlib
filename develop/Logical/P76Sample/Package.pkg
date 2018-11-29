@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.8.58 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="DataObject" Language="Simple" Description="Inverter- Parameter">P76config</Object>
+    <Object Type="Program" Language="IEC" Description="P76 - Sample">P76</Object>
+  </Objects>
+</Package>

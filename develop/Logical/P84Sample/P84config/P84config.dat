@@ -4,25 +4,23 @@
  * Author: 
  * Created: 
  ********************************************************************
- * Allgemeine Syntax:
- * "<Parametername> = <Wert>"   oder
- * "<Parametername> = <symbolische Konstante>
- * Werte sind als Dezimalzahlen einzugeben
+ * syntax:
+ * "<parametername> = <value>"   or
+ * "<parametername> = <symbolic constant>
+ * values are given in decimal notation
  ********************************************************************)
-"bFr = 50"		; Standard- Motorfrequenz [50/60]
-"IPL = nO"		; Verlust Netzphase
-"nPr = 18"		; Motornennleistung [* 10W]
-"UnS = 400"		; Motornennspannung [V]
-"nCr = 14"		; Motornennstrom [* 0.1 A]
-"FrS = 500"		; Motornennfrequenz [* 0.1 Hz]
-"nSP = 880"	    ; Motornenndrehzahl [1/min]
-"tFr = 600"		; maximale Ausgangsfrequenz [* 0.1 Hz]
-"tUn = YES"		; Motormessung [nO/YES]
-"PHr = AbC"		; Phasendrehung [AbC/ACb]
+"bFr = 50"		; Standard mot. freq [50/60]
+"IPL = nO"		; Input phase loss (3ph only)
+"nPr = 18"		; Rated motor power [* 10W]
+"UnS = 400"		; Rated motor volt. [V]
+"nCr = 14"		; Rated mot. current [* 0.1 A]
+"FrS = 500"		; Rated motor freq. [* 0.1 Hz]
+"nSP = 880"     ; Rated motor speed [1/min]
+"tFr = 600"		; Max frequency [* 0.1 Hz]
+"tUn = YES"		; Auto tuning [nO/YES]
+"PHr = AbC"		; Output Phase rotation [AbC/ACb]
 "ItH = 12"		; Thermischer Motornennstrom [* 0.1A]
-"ACC = 5"		; Sollwertrampe-Hochlaufzeit [s]
-"dEC = 5"		; Sollwertrampe-Auslaufzeit [s]
-"LSP = 0"		; Motorfrequenz mit minimalem Sollwert [* 0.1 Hz]
-"HSP = 600"		; Motorfrequenz mit maximalem Sollwert [* 0.1 Hz]
-
-
+"ACC = 5"		; Acceleration [s]
+"dEC = 5"		; Deceleration [s]
+"LSP = 0"		; Low speed [* 0.1 Hz]
+"HSP = 600"		; High speed [* 0.1 Hz]

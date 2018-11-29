@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.3.6.57 SP?>
+<?AutomationStudio Version=4.3.8.58 SP?>
 <Cpu xmlns="http://br-automation.co.at/AS/Cpu">
   <Objects>
     <Object Type="File" Description="Software configuration">Cpu.sw</Object>
@@ -8,7 +8,7 @@
     <Object Type="File" Description="PV mapping file">PvMap.vvm</Object>
   </Objects>
   <Configuration ClassID="X20CP3585" GeneratePPCode="false" HasNcOperatingSystem="true" LocalVariablesMemory="MemoryPool" ModuleId="X20CP3585" ModuleID="CP3585" OnlineConfigurationName="myNode221" Target="SG4">
-    <AutomationRuntime Version="L4.10" />
+    <AutomationRuntime Version="R4.10" />
     <Build GccVersion="2.95.3" />
     <DefaultTargetMemory DataObjects="UserROM" Libraries="UserROM" Tasks="UserROM" />
     <TaskClasses DefaultIoTaskClass="Automatic" DefaultTaskClass="Cyclic4" />
