@@ -9,11 +9,8 @@
 This Library controls an ACOPOSinverter without use of SDC ("smart device control"). Supported drives: P84 (EPL), P84 (CANopen), P74 (EPL) , P76 (EPL)
 For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
- - Configuration of an EPL device:
-   ![howToEPLDeviceConfiguration](https://github.com/hilch/ac_invlib/blob/master/howToEPLDeviceConfiguration.md)
-
- - Configuration of an CANopen device:
-   ![howToEPLDeviceConfiguration](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md)
+ - [Configuration of an EPL device](https://github.com/hilch/ac_invlib/blob/master/howToEPLDeviceConfiguration.md)
+ - [Configuration of an CANopen device:](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md)
    
 
 # Warranty
