@@ -9,7 +9,7 @@ This Library controls an ACOPOSinverter without use of SDC ("smart device contro
 For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 ## Warranty
-This library is not an official B&amp;R product! For this reason the use is at your own risk and there is NO claim on support or maintenance.
+This library is **not an official B&amp;R product!** For this reason the use is at your own risk and there is NO claim on support or maintenance.
 
 ## Features
 * simple handling of ACOPOSinverters with minimal cpu load.
