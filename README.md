@@ -4,27 +4,33 @@
 ![ac_inv()](https://github.com/hilch/ac_invlib/blob/master/Screenshot1.PNG)
 
 
-# Mission of the library:
+## Mission of the library:
 This Library controls an ACOPOSinverter without use of SDC ("smart device control"). Supported drives: P84 (EPL), P84 (CANopen), P74 (EPL) , P76 (EPL)
 For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
-# Warranty
+## Warranty
 This library is not an official B&amp;R product! For this reason the use is at your own risk and there is NO claim on support or maintenance.
 
-# Features
+## Features
 * simple handling of ACOPOSinverters with minimal cpu load.
-* use data modules for parameters ![dataobject](https://github.com/hilch/ac_invlib/blob/master/docs/sample_data_object.jpg)
+* use data modules for parameters
+
+![dataobject](https://github.com/hilch/ac_invlib/blob/master/docs/sample_data_object.jpg)
+
   - use symbolic names instead of numbers for parameters
   - change motor parameters at runtime
-* read and write parameters via 'service channel' ![servicechannel](https://github.com/hilch/ac_invlib/blob/master/docs/service_channel.PNG)
-* logging parameter actions and errors on CPU (similar to ACOPOS network command trace) ![logging](https://github.com/hilch/ac_invlib/blob/master/docs/logging_import2.jpg)
+* read and write parameters via 'service channel'
+![servicechannel](https://github.com/hilch/ac_invlib/blob/master/docs/service_channel.PNG)
 
-# HowTo
+* logging parameter actions and errors on CPU (similar to ACOPOS network command trace)
+![logging](https://github.com/hilch/ac_invlib/blob/master/docs/logging_import2.jpg)
+
+## HowTo
  - [Configuration of an EPL device](https://github.com/hilch/ac_invlib/blob/master/howToEPLDeviceConfiguration.md)
  - [Configuration of an CANopen device:](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md) 
  - [Parameter Logging](https://github.com/hilch/ac_invlib/blob/master/howToLogging.md)
 
-# Developement
+## Development
 /develop/:
 Automation Studio project for compiling and debugging the library
 
