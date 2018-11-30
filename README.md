@@ -27,7 +27,7 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 
 ## HowTo
  - [Configuration of an EPL device](https://github.com/hilch/ac_invlib/blob/master/howToEPLDeviceConfiguration.md)
- - [Configuration of an CANopen device:](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md) 
+ - [Configuration of a CANopen device:](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md) 
  - [Parameter Logging](https://github.com/hilch/ac_invlib/blob/master/howToLogging.md)
 
 ## Development
