@@ -26,6 +26,9 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 ![logging](https://github.com/hilch/ac_invlib/blob/master/docs/logging_import2.jpg)
 
 ## HowTo
+
+- 1. extract ZIP to temporary folder, 2. Add Object - Existing library, 3. Navigate to folder "ac_invlib
+
  - [Configuration of an EPL device](https://github.com/hilch/ac_invlib/blob/master/howToEPLDeviceConfiguration.md)
  - [Configuration of a CANopen device:](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md) 
  - [Parameter Logging](https://github.com/hilch/ac_invlib/blob/master/howToLogging.md)
@@ -33,6 +36,7 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 ## Development
 /develop/:
 Automation Studio project for compiling and debugging the library
+![AddObject](https://github.com/hilch/ac_invlib/blob/master/docs/AddObject_ExistingLibrary.png)
 
 /docs/
 documetation project for Microsoft HTML Workshop
