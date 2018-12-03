@@ -28,6 +28,7 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 ## HowTo
 
 - 1. extract ZIP to temporary folder, 2. Add Object - Existing library, 3. Navigate to folder "ac_invlib
+![addobject](https://github.com/hilch/ac_invlib/blob/master/docs/AddObject_ExistingLibrary.PNG)
 
  - [Configuration of an EPL device](https://github.com/hilch/ac_invlib/blob/master/howToEPLDeviceConfiguration.md)
  - [Configuration of a CANopen device:](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md) 
