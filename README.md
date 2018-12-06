@@ -37,7 +37,6 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 ## Development
 /develop/:
 Automation Studio project for compiling and debugging the library
-![AddObject](https://github.com/hilch/ac_invlib/blob/master/docs/AddObject_ExistingLibrary.png)
 
 /docs/
 documetation project for Microsoft HTML Workshop
