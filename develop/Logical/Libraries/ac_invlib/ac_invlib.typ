@@ -25,6 +25,7 @@ TYPE
 		sdo_read_step : UINT; (*SDORead: step and command interface*)
 		sdo_read_par_name : STRING[10]; (*SDORead: name of the inverter parameter*)
 		sdo_read_value : UINT; (*SDORead: numeric parameter value*)
+		sdo_read_transfertype : USINT; (*SDO transfer mode*)
 		sdo_read_value_constant : STRING[20]; (*SDORead: parameter value constant*)
 		sdo_read_status : UINT; (*SDORead: status result*)
 		sdo_read_errorinfo : UDINT; (*SDORead: additional error information*)
@@ -60,7 +61,7 @@ TYPE
 		cycleTime : REAL; (*cycle time of the task*)
 		timer : REAL; (*timer for waiting actions*)
 		device_name : STRING[20]; (*Device- Name from Powerlink Object 0x1008*)
-		drive_type : USINT; (*0 = unknown, 1 = P84, 2 = P74, 3 = P76 *)
+		drive_type : ac_inv_DriveType; (*0 = unknown, 1 = P84, 2 = P74, 3 = P76 *)
 		isCANopen : BOOL; (*1 = is a CANopen- device*)
 		tempUINT : UINT;
 	END_STRUCT;
@@ -80,4 +81,12 @@ TYPE
 		LFRD : INT; (*Speed setpoint (to drive)*)
 		LTR : INT; (*Torque setpoint (to drive) (P84 only)*)
 	END_STRUCT;
+	ac_inv_DriveType : 
+		(
+		ACPiDriveType_unknown := 0,
+		ACPiDriveType_P84 := 1,
+		ACPiDriveType_P74 := 2,
+		ACPiDriveType_P76 := 3,
+		ACPiDriveType_P66 := 4
+		);
 END_TYPE

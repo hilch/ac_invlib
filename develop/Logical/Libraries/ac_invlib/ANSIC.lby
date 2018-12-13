@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio Version=4.3.8.58 SP?>
-<Library Version="1.11.0" Description="ACOPOSinverter Library" xmlns="http://br-automation.co.at/AS/Library">
+<Library Version="1.12.0" Description="ACOPOSinverter Library" xmlns="http://br-automation.co.at/AS/Library">
   <Files>
     <File Description="Exported data types">ac_invlib.typ</File>
     <File Description="Exported constants">ac_invlib.var</File>

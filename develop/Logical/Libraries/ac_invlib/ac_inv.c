@@ -55,10 +55,12 @@ void ac_inv(struct ac_inv* inst)
 			{
 				inst->quickstop = 1;
 				ax_ident->step_init = STEP_READ_DEVICE_NAME;
+				memset( ax_ident->device_name, 0, sizeof(ax_ident->device_name));
 				ax_ident->fub_sdoread.pData = (UDINT) &ax_ident->device_name;
-				ax_ident->fub_sdoread.datalen = sizeof(ax_ident->device_name);
+				ax_ident->fub_sdoread.datalen = sizeof(ax_ident->device_name)-1;
 				ax_ident->fub_sdoread.index = 0x1008;
 				ax_ident->fub_sdoread.subindex = 0;
+				ax_ident->sdo_read_transfertype = coSDO_TYPE_SEGMENTED_TRANSFER;  /* CANopen only */
 				ax_ident->sdo_read_step = 100; /* SDO direct read */
 				ax_ident->HMIS_old = hmis +1;
 			}
@@ -68,15 +70,22 @@ void ac_inv(struct ac_inv* inst)
 		case STEP_READ_DEVICE_NAME:  /* read device name */
 			if( ax_ident->sdo_read_step == 0 )
 			{
-				/*0 = unknown, 1 = P84, 2 = P74, 3 = P76 */
+				/*0 = unknown, 1 = P84, 2 = P74, 3 = P76, 4=P66/CAN */
 				if( !strcmp( ax_ident->device_name, "ACOPOS Inverter P74" ) )
-					ax_ident->drive_type = 2;
+					ax_ident->drive_type = ACPiDriveType_P74;
 				else if( !strcmp( ax_ident->device_name, "8I0IF248.300-1" ) )
-					ax_ident->drive_type = 1;
-				else if( !strcmp( ax_ident->device_name, "8I0IF108.400-2" ) )
-					ax_ident->drive_type = 3;
+					ax_ident->drive_type = ACPiDriveType_P84;
+				else if( !strcmp( ax_ident->device_name, "8I0IF108.400-2" ) || !strncmp( ax_ident->device_name, "8I76", 4 ) )
+				{
+					ax_ident->drive_type = ACPiDriveType_P76;
+					if( !ax_ident->isCANopen )
+						ax_ident->use_rpm = 1;  /* P76 EPL: settings in physical view are used here */
+				}
+				else if( !strncmp( ax_ident->device_name, "8I66", 4 ) )
+					ax_ident->drive_type = ACPiDriveType_P66;
 				else
-					ax_ident->drive_type = 0;
+					ax_ident->drive_type = ACPiDriveType_unknown;
+				inst->drive_type = ax_ident->drive_type;
 				ax_ident->step_init = STEP_LOG_DEVICE_TYPE;
 			}
 			break;
@@ -121,14 +130,14 @@ void ac_inv(struct ac_inv* inst)
 					ax_ident->sdo_write_step = 1;
 					ax_ident->step_init = STEP_W_FACTORY_RESET_P74;
 				}
-				else if( ax_ident->drive_type == 3 )  /* P76 */
+				else if( ax_ident->drive_type == 3 && !ax_ident->isCANopen )  /* P76 */
 				{
 					strcpy( ax_ident->sdo_write_par_name, "CMI" );
 					strcpy( ax_ident->sdo_write_value_constant,  "32768" );   /* 32768 = 0x8000 = disable parameter checking */
 					ax_ident->sdo_write_step = 1;
 					ax_ident->step_init = STEP_W_DISABLE_PCHECK_P76;
 				}
-				else    /* P84 */
+				else    /* P84 and CANopen drives */
 				{
 					ax_ident->step_init = STEP_W_FACTORY_RESET_P84;
 				}
@@ -491,7 +500,7 @@ void ac_inv(struct ac_inv* inst)
 			}
 			else
 			{
-				if( inst->quickstop && inst->activate_tuning && inst->ctrl_is_on == 0 && inst->ctrl_on == 1 && ax_ident->drive_type == 1 )
+				if( inst->quickstop && inst->activate_tuning && inst->ctrl_is_on == 0 && inst->ctrl_on == 1 && ax_ident->drive_type == ACPiDriveType_P84 )
 				{
 					ax_ident->ctrl_on_internal = 0;
 					strcpy( ax_ident->sdo_write_par_name, "tUn" );
@@ -499,7 +508,11 @@ void ac_inv(struct ac_inv* inst)
 					ax_ident->sdo_write_step = 1;										
 					ax_ident->step_init = STEP_P84_WRITE_TUN;									
 				}
-				else if( inst->quickstop && inst->activate_tuning && inst->ctrl_is_on == 0 && inst->ctrl_on == 1 && ax_ident->drive_type == 2 )
+				else if( inst->quickstop && inst->activate_tuning && inst->ctrl_is_on == 0 && inst->ctrl_on == 1 
+							&& (  (ax_ident->drive_type == ACPiDriveType_P74)
+								 || (ax_ident->drive_type == ACPiDriveType_P76)	
+								 || (ax_ident->drive_type == ACPiDriveType_P66)	)
+						)
 				{
 					ax_ident->ctrl_on_internal = 0;
 					ax_ident->timer = 0;					
@@ -694,7 +707,7 @@ void ac_inv(struct ac_inv* inst)
 					if( (ETAD & 0xff) == 0x21 )
 					strcpy( inst->drive_state, "nSt" );
 					else if( (ETAD & 0xff) == 0x31 )
-					strcpy( inst->drive_state, "rDY" );
+					strcpy( inst->drive_state, "rdY" );
 					*/
 				}
 				else if( (etad & 0xff) == 0x33   )   /* switched on */
@@ -702,12 +715,12 @@ void ac_inv(struct ac_inv* inst)
 					cmdd = 0xf;
 					/*LFRD = 0;*/
 					inst->ctrl_is_on = 1;
-					/*strcpy( inst->drive_state, "rDY" );				*/
+					/*strcpy( inst->drive_state, "rdY" );				*/
 				}
 				else if( (etad & 0xff) == 0x37  )   /* movement enabled */
 				{
 					cmdd = 0xf;
-					if( ax_ident->use_rpm || (ax_ident->drive_type == 3) /* P76 */ )
+					if( ax_ident->use_rpm )
 					{
 						LFRD = (INT) inst->n_set;
 					}
@@ -743,7 +756,7 @@ void ac_inv(struct ac_inv* inst)
 
 
 			/* actual values */
-			if( ax_ident->use_rpm || (ax_ident->drive_type == 3) /* P76 */ )
+			if( ax_ident->use_rpm )
 			{
 				inst->n_act = RFRD;
 			}

@@ -55,5 +55,6 @@ FUNCTION_BLOCK ac_inv (*cyclic execution*)
 		fault_code : STRING[4]; (*fault code (LFT) as string*) (* *) (*#CYC*)
 		LFT : UINT; (*LFT*) (* *) (*#CYC*)
 		status : UINT; (*fub status*) (* *) (*#CYC*)
+		drive_type : ac_inv_DriveType; (*ACOPOSinverter type*)
 	END_VAR
 END_FUNCTION_BLOCK

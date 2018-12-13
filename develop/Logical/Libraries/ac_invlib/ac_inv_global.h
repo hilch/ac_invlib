@@ -54,15 +54,16 @@
 
 #define STEP_INTERNAL_ERROR				9999
 
-
+#define STRINGIFY(x) #x
+#define TOSTRING(x) STRINGIFY(x)
 
 char * m_ltoa(long value, char *string, int radix);
 long m_atol(char*);
 /*int strcasecmp( char *s1, char *s2 );*/
-int find_parameter( char *name, UINT *index, USINT *subindex, USINT drive_type );
-int find_download_index( char *name,  USINT drive_type );
-char *find_value_constant( char *name, UINT value, USINT drive_type );
-int find_numeric_value( char *name, char *constant, USINT drive_type );
+int find_parameter( char *name, UINT *index, USINT *subindex, ac_inv_DriveType drive_type );
+int find_download_index( char *name,  ac_inv_DriveType drive_type );
+char *find_value_constant( char *name, UINT value, ac_inv_DriveType drive_type );
+int find_numeric_value( char *name, char *constant, ac_inv_DriveType drive_type );
 void read_parameter( ac_inv_AxIdent *ax_ident );
 void write_parameter( ac_inv_AxIdent *ax_ident );
 void write_parameterlist( ac_inv_AxIdent *ax_ident );

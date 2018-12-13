@@ -10,7 +10,7 @@
 #include <bur/plctypes.h>
 #include "ac_inv_global.h"
 
-
+BOOL g_libraryStarted = 0;
 
 /* -----------------------------------------------------------------------------------
 axis allocation 
@@ -141,6 +141,7 @@ void ac_inv_alloc( struct ac_inv_alloc* inst ){
 
 	
 	ax_ident->use_rpm = inst->rpm;
+
 	ax_ident->dont_sort_parameters = inst->no_parameter_sort;
 
   	rt_info.enable = 1;     /* enables the function */
@@ -153,8 +154,8 @@ void ac_inv_alloc( struct ac_inv_alloc* inst ){
 		memset( &ax_ident->fub_canopen_sdoread, 0, sizeof(ax_ident->fub_canopen_sdoread) );	
 		ax_ident->fub_canopen_sdoread.pDevice = (UDINT) ax_ident->interface;
 		ax_ident->fub_canopen_sdoread.node = ax_ident->node_number;
-	    ax_ident->fub_canopen_sdoread.pRxdata = (UDINT) &ax_ident->sdo_read_value;
-		ax_ident->fub_canopen_sdoread.maxlength = sizeof(ax_ident->sdo_read_value);
+//	    ax_ident->fub_canopen_sdoread.pRxdata = (UDINT) &ax_ident->sdo_read_value;
+//		ax_ident->fub_canopen_sdoread.maxlength = sizeof(ax_ident->sdo_read_value);
 		
 		memset( &ax_ident->fub_canopen_sdowrite, 0, sizeof(ax_ident->fub_canopen_sdowrite) );	
 		ax_ident->fub_canopen_sdowrite.pDevice = (UDINT) ax_ident->interface;
@@ -249,8 +250,19 @@ void ac_inv_alloc( struct ac_inv_alloc* inst ){
 		ax_ident->fub_log_write.enable = 1;		
 	}
 
-	
-	
+	if( !g_libraryStarted )
+	{
+		g_libraryStarted = 1;
+		strcpy( ax_ident->log_info, "https://github.com/hilch/ac_invlib " TOSTRING(_ac_invlib_VERSION) );	
+		ax_ident->fub_log_write.logLevel = arlogLEVEL_INFO;
+		ax_ident->fub_log_write.errornr = 0;
+		ax_ident->fub_log_write.mem = 0;
+		ax_ident->fub_log_write.len = 0;
+		ax_ident->fub_log_write.asciiString = (UDINT) ax_ident->log_info;
+		do 
+			AsArLogWrite( &ax_ident->fub_log_write );
+		while( ax_ident->fub_log_write.status == 0xffff );
+	}
 }
 
 

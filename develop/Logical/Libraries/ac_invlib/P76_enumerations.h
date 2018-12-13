@@ -62,17 +62,17 @@ acpienumeration en_P76_AUT[] = {
 };
 
 acpienumeration en_P76_BDCO[] = {
-	{ "50K",	38	}, /* Baud rate 50kbps */
-	{ "125K",	52	}, /* Baud rate 125kbps */
-	{ "250K",	60	}, /* Baud rate 250kbps */
-	{ "500K",	68	}, /* Baud rate 500kbps */
+	{ "50",	38	}, /* Baud rate 50kbps */
+	{ "125",	52	}, /* Baud rate 125kbps */
+	{ "250",	60	}, /* Baud rate 250kbps */
+	{ "500",	68	}, /* Baud rate 500kbps */
 	{ "1M",	76	}, /* Baud rate 1Mbps */
 	{ 0, 0 }
 };
 
 acpienumeration en_P76_BFR[] = {
-	{ "50Hz",	0	}, /* 50Hz Motor frequency */
-	{ "60Hz",	1	}, /* 60Hz Motor frequency */
+	{ "50",	0	}, /* 50Hz Motor frequency */
+	{ "60",	1	}, /* 60Hz Motor frequency */
 	{ 0, 0 }
 };
 
