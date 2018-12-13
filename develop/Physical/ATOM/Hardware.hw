@@ -19,6 +19,7 @@
     <Connection Connector="PLK1" TargetModule="8I74xxxxxxx.01P-1" TargetConnector="PLK2" NodeNumber="5">
       <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.1" />
     </Connection>
+    <Parameter ID="Supervision" Value="off" />
     <Parameter ID="IOM_AIDP1" Value="HMIS" />
     <Parameter ID="IOM_AIDP2" Value="LFT" />
     <Parameter ID="IOM_AIDP3" Value="OTR" />
@@ -41,6 +42,10 @@
     <Parameter ID="DownloadParameters" Value="no" />
     <Parameter ID="AUT" Value="1" />
   </Module>
+  <Module Name="ACPi_P66_P76" Type="FBC.0x0200005A.320.ACPi_P66_P76" Version="1.1" OrderNumber="ACPi_P66_P76">
+    <Connection Connector="CAN1" TargetModule="X20IF2772" TargetConnector="IF1" />
+    <Parameter ID="pheartbeat_producertime" Value="500" />
+  </Module>
   <Module Name="PLC1" Type="X20CP3585" Version="1.5.0.0">
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
@@ -52,5 +57,14 @@
       <Parameter ID="InaNodeNumber" Value="1" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="develop_ATOM" />
+  </Module>
+  <Module Name="X20IF2772" Type="X20IF2772" Version="1.1.0.0">
+    <Connection Connector="SS" TargetModule="PLC1" TargetConnector="SS1" />
+    <Connector Name="IF1">
+      <Parameter ID="ActivateCANIO" Value="0" />
+      <Parameter ID="ActivateCanOpen" Value="1" />
+      <Parameter ID="p100c_parametervalue" Value="1000" />
+      <Parameter ID="p100d_parametervalue" Value="3" />
+    </Connector>
   </Module>
 </Hardware>

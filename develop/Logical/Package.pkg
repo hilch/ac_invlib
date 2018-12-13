@@ -7,6 +7,7 @@
     <Object Type="Package" Description="Global libraries">Libraries</Object>
     <Object Type="Package" Description="P84 - Sample">P84Sample</Object>
     <Object Type="Package" Description="Sample for ACOPOSinverter P76">P74Sample</Object>
+    <Object Type="Package" Description="Sample for ACOPOSinverter P66 with CAN">P66Sample</Object>
     <Object Type="Package" Description="Sample for ACOPOSinverter P76">P76Sample</Object>
   </Objects>
 </Package>

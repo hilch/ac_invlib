@@ -1,0 +1,28 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Author: 
+ * Created: 
+ ********************************************************************
+ * syntax:
+ * "<parametername> = <value>"   or
+ * "<parametername> = <symbolic constant>
+ * values are given in decimal notation
+ ********************************************************************)
+"bFr = 50"		; Standard mot. freq [50/60]
+"IPL = nO"		; Input phase loss (3ph only)
+"nPr = 18"		; Rated motor power [* 10W]
+"UnS = 230"		; Rated motor volt. [V]
+"nCr = 14"		; Rated mot. current [* 0.1 A]
+"COS = 88"		; Cosinus Phi [0.01]
+"FrS = 500"		; Rated motor freq. [* 0.1 Hz]
+"nSP = 880"     ; Rated motor speed [1/min]
+"tFr = 600"		; Max frequency [* 0.1 Hz]
+"ItH = 14"		; Mot. therm. current [* 0.1A]
+"ACC = 5"		; Acceleration [s]
+"dEC = 5"		; Deceleration [s]
+"LSP = 0"		; Low speed [* 0.1 Hz]
+"HSP = 600"		; High speed [* 0.1 Hz]
+"OPL = nO"		; Output Phase Loss
+
+

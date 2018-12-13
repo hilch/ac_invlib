@@ -41,4 +41,15 @@ VAR_CONFIG
 	::P76:ac_inv_alloc_0.io_mapping.LCR AT %IW."8I76xxxxxxx.0P".LCR_Input;
 	::P76:ac_inv_alloc_0.io_mapping.HMIS AT %IW."8I76xxxxxxx.0P".HMIS_Input;
 	::P76:ac_inv_alloc_0.io_mapping.ModuleOK AT %IX."8I76xxxxxxx.0P".ModuleOk;
+	::P66C:ac_inv_alloc_0.io_mapping.ModuleOK AT %IX."ACPi_P66_P76".ModuleOk;
+	::P66C:ac_inv_alloc_0.io_mapping.LCR AT %IW."ACPi_P66_P76".LCR_2002sub5;
+	::P66C:ac_inv_alloc_0.io_mapping.OTR AT %IW."ACPi_P66_P76".OTR_2002sub6;
+	::P66C:ac_inv_alloc_0.io_mapping.THD AT %IW."ACPi_P66_P76".THD_2002suba;
+	::P66C:ac_inv_alloc_0.io_mapping.HMIS AT %IW."ACPi_P66_P76".HMIS_2002sub29;
+	::P66C:ac_inv_alloc_0.io_mapping._LFT AT %IW."ACPi_P66_P76".LFT_2029sub16;
+	::P66C:ac_inv_alloc_0.io_mapping.THR AT %IW."ACPi_P66_P76".THR_2042sub1f;
+	::P66C:ac_inv_alloc_0.io_mapping.CMDD AT %QW."ACPi_P66_P76".CMDD_6040;
+	::P66C:ac_inv_alloc_0.io_mapping.ETAD AT %IW."ACPi_P66_P76".ETAD_6041;
+	::P66C:ac_inv_alloc_0.io_mapping.LFRD AT %QW."ACPi_P66_P76".LFRD_6042;
+	::P66C:ac_inv_alloc_0.io_mapping.RFRD AT %IW."ACPi_P66_P76".RFRD_6044;
 END_VAR
