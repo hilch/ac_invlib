@@ -55,7 +55,7 @@ import [EDS](https://github.com/hilch/ac_invlib/blob/master/docs/EDS_P66_P76.zip
 ![canopen_device_path](https://github.com/hilch/ac_invlib/blob/master/docs/canopen_device_path.jpg)
 
 
-### Open the I/O - Configuration and change the 'Channels' section.
+### Open the I/O - Configuration
 
 Change 'Node observation' to 'Heart beat'
 
