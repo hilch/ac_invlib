@@ -5,7 +5,7 @@
 
 
 ## Mission of the library:
-This Library controls an ACOPOSinverter without use of SDC ("smart device control"). Supported drives: P84 (EPL), P84 (CANopen), P74 (EPL) , P76 (EPL)
+This Library controls an ACOPOSinverter without use of SDC ("smart device control"). Supported drives: P84 (EPL+CANopen), P74 (EPL) , P76 (EPL+CANopen), P66 (CANopen)
 For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 ## Warranty
