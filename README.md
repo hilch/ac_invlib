@@ -19,6 +19,7 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 
   - use symbolic names instead of numbers for parameters
   - change motor parameters at runtime
+  - activate motor tuning
 * read and write parameters via 'service channel'
 ![servicechannel](https://github.com/hilch/ac_invlib/blob/master/docs/service_channel.PNG)
 
