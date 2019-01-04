@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.3.8.58 SP?>
+<?AutomationStudio Version=4.4.6.71 SP?>
 <Cpu xmlns="http://br-automation.co.at/AS/Cpu">
   <Objects>
     <Object Type="File" Description="Software configuration">Cpu.sw</Object>
@@ -8,11 +8,11 @@
     <Object Type="File" Description="PV mapping file">PvMap.vvm</Object>
   </Objects>
   <Configuration ClassID="X20CP3585" GeneratePPCode="false" HasNcOperatingSystem="true" LocalVariablesMemory="MemoryPool" ModuleId="X20CP3585" ModuleID="CP3585" OnlineConfigurationName="myNode221" Target="SG4">
-    <AutomationRuntime Version="R4.10" />
-    <Build GccVersion="2.95.3" />
+    <AutomationRuntime Version="F4.44" />
+    <Build GccVersion="4.1.2" />
     <DefaultTargetMemory DataObjects="UserROM" Libraries="UserROM" Tasks="UserROM" />
     <TaskClasses DefaultIoTaskClass="Automatic" DefaultTaskClass="Cyclic4" />
-    <Transfer AllowWarmRestart="true" DownloadMode="Overload" GeneratePviTransferList="true" IgnoreBrDependencies="false" IgnoreTargetOnlyObjects="false" PackedArConfig="false" PackedIoMap="false" PromptBeforeProject="false" PromptBeforeTask="false" TransferOnlyRelevantChanges="false" />
+    <Transfer AdditionalUserDir="" AddToUserPart="false" AllowInitialTransfer="false" AllowPartitioning="false" AllowWarmRestart="true" DownloadMode="Overload" ExecuteInitExitProgram="true" ForceInitialTransfer="true" GeneratePviTransferList="true" IdentificationTypeValue="" IgnoreBrDependencies="false" IgnoreTargetOnlyObjects="false" IgnoreVersion="true" KeepNonVolatileMemory="false" ModuleSystemForPip="" PackedArConfig="false" PackedIoMap="false" PreserveVariableValues="false" ProjectConsistent="false" PromptBeforeProject="false" PromptBeforeTask="false" RebootDuringTransfer="false" TargetIdentificationType="Always" TransferOnlyRelevantChanges="false" TryToBootInRunMode="false" UserFilesIgnoreDifference="false" />
     <Vc FirmwareVersion="V4.15.9" />
     <Io ArConfigDataModule="false" ArConfigDataModulePath="$(AS_CPU_PATH)\AS\CfgData.br" IoMapDataModule="false" IoMapDataModulePath="$(AS_CPU_PATH)\AS\IomData.br" />
     <OnlineConfiguration Name="X20CP3585_1" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=113" ConnectionParameters="/RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.10 /REPO=11159 /ANSL=1 /PT=11169" Description="" />

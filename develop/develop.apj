@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version="4.3.8.58 SP"?>
+<?AutomationStudio Version="4.4.6.71 SP"?>
 <Project Version="1.00.0" Edition="Standard" EditionComment="Standard" xmlns="http://br-automation.co.at/AS/Project">
   <Communication />
   <ANSIC DefaultIncludes="true" />
@@ -7,7 +7,4 @@
   <Motion RestartAcoposParameter="true" RestartInitParameter="true" />
   <Project StoreRuntimeInProject="true" />
   <Variables DefaultInitValue="0" DefaultRetain="false" DefaultVolatile="false" />
-  <TechnologyPackages>
-    <Acp10Arnc0 Version="3.18.2" />
-  </TechnologyPackages>
 </Project>

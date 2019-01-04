@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.3.8.58 SP?>
+<?AutomationStudio Version=4.4.6.71 SP?>
 <SwConfiguration CpuAddress="SL1" xmlns="http://br-automation.co.at/AS/SwConfiguration">
   <TaskClass Name="Cyclic#1" />
   <TaskClass Name="Cyclic#2" />
@@ -50,13 +50,10 @@
     <LibraryObject Name="AsCANopen" Source="Libraries.AsCANopen.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="FileIO" Source="Libraries.FileIO.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="powerlnk" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="ncglobal" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="AsUSB" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="acp10sdc" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="wh_regl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="acp10sim" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="wh_aclib" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="acp10par" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="acp10man" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
