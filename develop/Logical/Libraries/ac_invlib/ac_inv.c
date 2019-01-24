@@ -70,7 +70,7 @@ void ac_inv(struct ac_inv* inst)
 		case STEP_READ_DEVICE_NAME:  /* read device name */
 			if( ax_ident->sdo_read_step == 0 )
 			{
-				/*0 = unknown, 1 = P84, 2 = P74, 3 = P76, 4=P66/CAN */
+				/*0 = unknown, 1 = P84, 2 = P74, 3 = P76, 4=P66 */
 				if( !strcmp( ax_ident->device_name, "ACOPOS Inverter P74" ) )
 					ax_ident->drive_type = ACPiDriveType_P74;
 				else if( !strcmp( ax_ident->device_name, "8I0IF248.300-1" ) )
@@ -81,8 +81,12 @@ void ac_inv(struct ac_inv* inst)
 					if( !ax_ident->isCANopen )
 						ax_ident->use_rpm = 1;  /* P76 EPL: settings in physical view are used here */
 				}
-				else if( !strncmp( ax_ident->device_name, "8I66", 4 ) )
+				else if( !strcmp( ax_ident->device_name, "8I0IF108.400-3" ) || !strncmp( ax_ident->device_name, "8I66", 4 ) )
+				{						
 					ax_ident->drive_type = ACPiDriveType_P66;
+					if( !ax_ident->isCANopen )
+						ax_ident->use_rpm = 1;  /* P66 EPL: settings in physical view are used here */
+				}
 				else
 					ax_ident->drive_type = ACPiDriveType_unknown;
 				inst->drive_type = ax_ident->drive_type;
@@ -114,14 +118,14 @@ void ac_inv(struct ac_inv* inst)
 		case STEP_W_LOG_DEVICE_TYPE:
 			if( ax_ident->fub_log_write.status != 65535 )
 			{
-				if( ax_ident->drive_type == 0 )
+				if( ax_ident->drive_type == ACPiDriveType_unknown )
 				{
 					inst->fault = 1;
 					strcpy( inst->drive_state, "????" );
 					strcpy( inst->fault_code, "????" );
 					ax_ident->step_init = STEP_INTERNAL_ERROR;
 				}
-				else if( ax_ident->drive_type == 2 )    /* P74 */
+				else if( ax_ident->drive_type == ACPiDriveType_P74 )    /* P74 */
 				{
 					CMI = 0;
 					ax_ident->timer = 0;
@@ -130,7 +134,8 @@ void ac_inv(struct ac_inv* inst)
 					ax_ident->sdo_write_step = 1;
 					ax_ident->step_init = STEP_W_FACTORY_RESET_P74;
 				}
-				else if( ax_ident->drive_type == 3 && !ax_ident->isCANopen )  /* P76 */
+				/* P76, P66 HWX: CMI is not included */
+				else if(  (ax_ident->drive_type == ACPiDriveType_P76 || ax_ident->drive_type == ACPiDriveType_P66 ) && !ax_ident->isCANopen  )     /* P76, P66 by EPL */
 				{
 					strcpy( ax_ident->sdo_write_par_name, "CMI" );
 					strcpy( ax_ident->sdo_write_value_constant,  "32768" );   /* 32768 = 0x8000 = disable parameter checking */
@@ -209,7 +214,7 @@ void ac_inv(struct ac_inv* inst)
 		case STEP_W_P84_CONFIG_2:  /* set Ref1 channel to Powerlink */
 			if( ax_ident->timer > 1 )
 			{
-				if( ax_ident->drive_type == 2 )   /* P74 */
+				if( ax_ident->drive_type == ACPiDriveType_P74 )   /* P74 */
 				{
 					ax_ident->step_init = STEP_W_REFERENCE_CHANNEL_SET;
 				}
@@ -273,7 +278,7 @@ void ac_inv(struct ac_inv* inst)
 
 
 
-			/* ------------------ P74 & P84 & P76 ------------------------- */
+			/* ------------------ P74 & P84 & P76 & P66 ------------------------- */
 
 		case STEP_W_REFERENCE_CHANNEL_SET: /* wait until reference channel is set */
 			if( !MODULE_OK )
@@ -323,8 +328,8 @@ void ac_inv(struct ac_inv* inst)
 					if( inst->status == 0 )
 					{
 						ax_ident->timer = 0;
-						if( ax_ident->drive_type == 3 )  
-						{   /* P76 */
+						if( ax_ident->drive_type == ACPiDriveType_P76 ||  ax_ident->drive_type == ACPiDriveType_P66 )  
+						{   /* P76 & P66 */
 							strcpy( ax_ident->sdo_write_par_name, "CMI" );
 							strcpy( ax_ident->sdo_write_value_constant,  "0" );   /* 0 = enable parameter checking */
 							ax_ident->sdo_write_step = 1;

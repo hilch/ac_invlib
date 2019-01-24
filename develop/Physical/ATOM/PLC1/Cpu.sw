@@ -5,8 +5,9 @@
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
-    <Task Name="P84" Source="P84Sample.P84.prg" Memory="UserROM" Description="P84 - Sample" Language="IEC" Debugging="true" />
-    <Task Name="P74" Source="P74Sample.P74.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="P84" Source="P84Sample.P84.prg" Memory="UserROM" Description="P84 - EPL- Sample" Language="IEC" Debugging="true" />
+    <Task Name="P74" Source="P74Sample.P74.prg" Memory="UserROM" Description="P74 - EPL- Sample" Language="IEC" Debugging="true" />
+    <Task Name="P66" Source="P66Sample.P66.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="P76" Source="P76Sample.P76.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="P66C" Source="P66Sample.P66C.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
@@ -23,12 +24,13 @@
   </DataObjects>
   <Binaries>
     <BinaryObject Name="udbdef" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="ashwac" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="asfw" Source="" Memory="SystemROM" Language="Binary" />
-    <BinaryObject Name="arconfig" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="TCData" Source="" Memory="SystemROM" Language="Binary" />
     <BinaryObject Name="iomap" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="arconfig" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="asfw" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="sysconf" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="ashwd" Source="" Memory="SystemROM" Language="Binary" />
+    <BinaryObject Name="ashwac" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10cfg" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Acp10map" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="NeueNcMap" Source="" Memory="UserROM" Language="Binary" />
