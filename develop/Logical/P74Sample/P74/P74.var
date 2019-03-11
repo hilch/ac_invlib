@@ -1,4 +1,5 @@
 VAR
+	debug : REFERENCE TO ac_inv_AxIdent;
 	ac_inv_alloc_0 : ac_inv_alloc;
 	ac_inv_0 : ac_inv;
 END_VAR

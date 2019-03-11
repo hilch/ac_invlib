@@ -16,10 +16,10 @@
   <TaskClass Name="Cyclic#7" />
   <TaskClass Name="Cyclic#8" />
   <DataObjects>
-    <DataObject Name="P84config" Source="P84Sample.P84config.dob" Memory="UserROM" Language="Simple" />
-    <DataObject Name="P74config" Source="P74Sample.P74config.dob" Memory="UserROM" Language="Simple" />
-    <DataObject Name="P76config" Source="P76Sample.P76config.dob" Memory="UserROM" Language="Simple" />
-    <DataObject Name="P66config" Source="P66Sample.P66config.dob" Memory="UserROM" Language="Simple" />
+    <DataObject Name="P84config" Source="Parameter.P84config.dob" Memory="UserROM" Language="Simple" />
+    <DataObject Name="P74config" Source="Parameter.P74config.dob" Memory="UserROM" Language="Simple" />
+    <DataObject Name="P76config" Source="Parameter.P76config.dob" Memory="UserROM" Language="Simple" />
+    <DataObject Name="P66config" Source="Parameter.P66config.dob" Memory="UserROM" Language="Simple" />
     <DataObject Name="Acp10sys" Source="" Memory="UserROM" Language="Binary" />
   </DataObjects>
   <Binaries>

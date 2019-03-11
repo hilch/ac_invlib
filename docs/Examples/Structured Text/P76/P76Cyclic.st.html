@@ -11,9 +11,14 @@
 
 <span class='kwd'>PROGRAM</span> <span class='kwd'>_CYCLIC</span>
 
-
- ac_inv_0();
-
+    ac_inv_0();
+    
+    <span class='kwd'>IF</span>( ac_inv_0.initialized <span class='kwd'>AND</span> ac_inv_0.ctrl_ready ) <span class='kwd'>THEN</span>
+        ac_inv_0.ctrl_on := <span class='kwd'>TRUE</span>;
+        <span class='kwd'>IF</span>( ac_inv_0.ctrl_is_on )THEN
+            ac_inv_0.n_set := 100;
+        <span class='kwd'>END_IF</span>
+    <span class='kwd'>END_IF</span>
             
 <span class='kwd'>END_PROGRAM</span>
 </body>

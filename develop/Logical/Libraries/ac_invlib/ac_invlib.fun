@@ -4,7 +4,7 @@ FUNCTION_BLOCK ac_inv_alloc (*axis allocation*)
 		pDevice : UDINT; (*pointer to name of device i.e. 'IF3.ST4'*) (* *) (*#PAR*)
 		pcfgpar : ARRAY[0..2] OF UDINT; (*pointer to name of parameter data objects*) (* *) (*#PAR*)
 		io_mapping : ac_inv_Mapping; (*IO- mapping (must be connected in physical view)*) (* *) (*#PAR*)
-		rpm : BOOL; (*use rpm instead of Hertz for n_set and n_act (P76 not used)*) (* *) (*#PAR#OPT*)
+		rpm : BOOL; (*use rpm instead of %tfr for n_set and n_act (at P76/P66 fixed to 'TRUE')*) (* *) (*#PAR#OPT*)
 		no_parameter_sort : BOOL; (*1 = don't sort parameters from datamodules*) (* *) (*#PAR#OPT*)
 	END_VAR
 	VAR_OUTPUT

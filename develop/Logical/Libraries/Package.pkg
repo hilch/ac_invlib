@@ -17,5 +17,6 @@
     <Object Type="Library" Language="Binary" Description="The AsBrStr Library contains FBKs for memory and character string handling.">AsBrStr</Object>
     <Object Type="Library" Language="Binary" Description="The FileIO library provides function blo">FileIO</Object>
     <Object Type="Library" Language="Binary" Description="This library integrates mathematical functions such as angle functions, rounding off, etc. into the program.">AsBrMath</Object>
+    <Object Type="Package">Package</Object>
   </Objects>
 </Package>

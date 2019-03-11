@@ -44,6 +44,10 @@
 		<param name="Local" value="Data%20types%20and%20constants/Directly%20Derived%20Data%20Types.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="ac_inv_DriveType">
+		<param name="Local" value="Data%20types%20and%20constants/Enumerators/ac_inv_DriveType.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="ac_inv_AxIdent">
 		<param name="Local" value="Data%20types%20and%20constants/Data%20types/ac_inv_AxIdent.html">
 	</OBJECT>
@@ -80,6 +84,30 @@
 		<param name="Local" value="Examples/Automation%20Basic/P84/P84Init.ab.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66.var ">
+		<param name="Local" value="Examples/Structured%20Text/P66/P66.var.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66Cyclic.st ">
+		<param name="Local" value="Examples/Structured%20Text/P66/P66Cyclic.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66Init.st ">
+		<param name="Local" value="Examples/Structured%20Text/P66/P66Init.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66C.var ">
+		<param name="Local" value="Examples/Structured%20Text/P66C/P66C.var.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66CCyclic.st ">
+		<param name="Local" value="Examples/Structured%20Text/P66C/P66CCyclic.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66CInit.st ">
+		<param name="Local" value="Examples/Structured%20Text/P66C/P66CInit.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="P74.var ">
 		<param name="Local" value="Examples/Structured%20Text/P74/P74.var.html">
 	</OBJECT>
@@ -102,6 +130,10 @@
 	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="P76Init.st ">
 		<param name="Local" value="Examples/Structured%20Text/P76/P76Init.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66config.dat ">
+		<param name="Local" value="Examples/Data%20Objects/P66config/P66config.dat.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="P74config.dat ">

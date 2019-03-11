@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>P66CInit.st </title>
+    <meta NAME="Template" CONTENT="text/html; CHARSET=utf-8">
+    <LINK REL="StyleSheet" HREF="../styles.css">
+    <LINK REL="StyleSheet" HREF="../colorcode.css">
+ </head>
+ <body LINK="#0000ff" VLINK="#800080">
+   <h1>ac_invlib -  P66C -  P66CInit.st</h1> <pre class='coloredcode'>
+
+<span class='kwd'>PROGRAM</span> <span class='kwd'>_INIT</span>
+
+    ac_inv_alloc_0.pDevice :=     <span class='kwd'>ADR</span>(<span class='kwdt'>'SS1.IF1.ST2'</span>);     <span class='cmt'>(* X20IF2772 - node 2 *)</span>
+    ac_inv_alloc_0.pcfgpar[0] :=  <span class='kwd'>ADR</span>(<span class='kwdt'>'P66config'</span>);         <span class='cmt'>(* configuration data module *)</span>
+    ac_inv_alloc_0();
+    ac_inv_0.ax_ident := ac_inv_alloc_0.ax_ident;
+<span class='kwd'>END_PROGRAM</span>
+
+</body>
+</html>

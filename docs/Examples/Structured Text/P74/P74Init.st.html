@@ -13,10 +13,10 @@
 
     ac_inv_alloc_0.pDevice :=     <span class='kwd'>ADR</span>(<span class='kwdt'>'IF3.ST10'</span>);              <span class='cmt'>(* X20 CP3585 internal EPL @ node 10 *)</span>
     ac_inv_alloc_0.pcfgpar[0] :=  <span class='kwd'>ADR</span>(<span class='kwdt'>'P74config'</span>);         <span class='cmt'>(* configuration data module *)</span>
-    ac_inv_alloc_0.rpm := <span class='kwd'>TRUE</span>;      <span class='cmt'>(* use rpm instead of Hertz *)</span>
+    ac_inv_alloc_0.rpm := <span class='kwd'>FALSE</span>;      <span class='cmt'>(* use rpm instead of Hertz *)</span>
     ac_inv_alloc_0();
     ac_inv_0.ax_ident := ac_inv_alloc_0.ax_ident;
-
+    debug <span class='kwd'>ACCESS</span> ac_inv_alloc_0.ax_ident;
     
 <span class='kwd'>END_PROGRAM</span>
 

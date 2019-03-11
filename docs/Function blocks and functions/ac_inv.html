@@ -457,7 +457,7 @@
                            <td class="fubElementRight">fault</td>
                         </tr>
                         <tr>
-                           <td class="fubElementRight">PRA_detected<img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12"></td>
+                           <td class="fubElementRight">PRA_detected<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
                         </tr>
                         <tr>
                            <td class="fubElementRight">n_act</td>
@@ -469,7 +469,7 @@
                            <td class="fubElementRight">current</td>
                         </tr>
                         <tr>
-                           <td class="fubElementRight">thst_drive<img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12"></td>
+                           <td class="fubElementRight">thst_drive<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
                         </tr>
                         <tr>
                            <td class="fubElementRight">thst_motor</td>
@@ -478,7 +478,7 @@
                            <td class="fubElementRight">udc</td>
                         </tr>
                         <tr>
-                           <td class="fubElementRight">encoder_value<img src="/_images/_option.png" style="margin-right: 5px" width="12" height="12"></td>
+                           <td class="fubElementRight">encoder_value<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
                         </tr>
                         <tr>
                            <td class="fubElementRight">drive_state</td>
@@ -701,16 +701,16 @@
             <table id="tableWithoutOption" class="parameter_tab fubTable" border="1">
                <tr>
                   <th class="parameter_tab">
-                     <div align="center"><b>I/O</b></div>
+                     <div><b>I/O</b></div>
                   </th>
                   <th class="parameter_tab">
-                     <div align="center"><b>Parameter</b></div>
+                     <div><b>Parameter</b></div>
                   </th>
                   <th class="parameter_tab">
-                     <div align="center"><b>Data Type</b></div>
+                     <div><b>Data Type</b></div>
                   </th>
                   <th class="parameter_tab">
-                     <div align="center"><b>Description</b></div>
+                     <div><b>Description</b></div>
                   </th>
                </tr>
                <tr>
@@ -837,22 +837,28 @@
                   <td valign="TOP" class="parameter_tab">UINT</td>
                   <td valign="TOP" class="parameter_tab">fub status</td>
                </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">drive_type</td>
+                  <td valign="TOP" class="parameter_tab"><a xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" href="\Data types and constants\Enumerators\ac_inv_DriveType.html">ac_inv_DriveType</a></td>
+                  <td valign="TOP" class="parameter_tab">ACOPOSinverter type</td>
+               </tr>
             </table>
          </div>
          <div id="tableWithOptionContainer" style="display:none;">
             <table id="tableWithOption" class="parameter_tab fubTable" border="1">
                <tr>
                   <th class="parameter_tab">
-                     <div align="center"><b>I/O</b></div>
+                     <div><b>I/O</b></div>
                   </th>
                   <th class="parameter_tab">
-                     <div align="center"><b>Parameter</b></div>
+                     <div><b>Parameter</b></div>
                   </th>
                   <th class="parameter_tab">
-                     <div align="center"><b>Data Type</b></div>
+                     <div><b>Data Type</b></div>
                   </th>
                   <th class="parameter_tab">
-                     <div align="center"><b>Description</b></div>
+                     <div><b>Description</b></div>
                   </th>
                </tr>
                <tr>
@@ -880,13 +886,13 @@
                   <td valign="TOP" class="parameter_tab">quit inverter fault</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">kv</td>
                   <td valign="TOP" class="parameter_tab">UINT</td>
                   <td valign="TOP" class="parameter_tab">gain speed controller in %</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">ti</td>
                   <td valign="TOP" class="parameter_tab">UINT</td>
                   <td valign="TOP" class="parameter_tab">Integral time speed controller in %</td>
@@ -898,31 +904,31 @@
                   <td valign="TOP" class="parameter_tab">set speed (% of tFr or rpm)</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">t_set</td>
                   <td valign="TOP" class="parameter_tab">REAL</td>
                   <td valign="TOP" class="parameter_tab">set torque in % nominal motor torque (P84 only)</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">t_limit</td>
                   <td valign="TOP" class="parameter_tab">ARRAY[0..1]OF REAL</td>
                   <td valign="TOP" class="parameter_tab">torque limit</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">write_parameter</td>
                   <td valign="TOP" class="parameter_tab">USINT</td>
                   <td valign="TOP" class="parameter_tab">write a parameter to the drive (see 'parameter_name' and 'parameter_value')</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">read_parameter</td>
                   <td valign="TOP" class="parameter_tab">USINT</td>
                   <td valign="TOP" class="parameter_tab">read a parameter from the drive (see 'parameter_name' and 'parameter_value')</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">parameter_name</td>
                   <td valign="TOP" class="parameter_tab">STRING[4]
                      					
@@ -930,7 +936,7 @@
                   <td valign="TOP" class="parameter_tab">name of the inverter parameter to be written or to be read</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">parameter_value</td>
                   <td valign="TOP" class="parameter_tab">STRING[15]
                      					
@@ -938,37 +944,37 @@
                   <td valign="TOP" class="parameter_tab">value of the inverter parameter to be written or to be read</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">C211</td>
                   <td valign="TOP" class="parameter_tab">BOOL</td>
                   <td valign="TOP" class="parameter_tab">Control Bit</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">C212</td>
                   <td valign="TOP" class="parameter_tab">BOOL</td>
                   <td valign="TOP" class="parameter_tab">Control Bit</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">C213</td>
                   <td valign="TOP" class="parameter_tab">BOOL</td>
                   <td valign="TOP" class="parameter_tab">Control Bit</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">C214</td>
                   <td valign="TOP" class="parameter_tab">BOOL</td>
                   <td valign="TOP" class="parameter_tab">Control Bit</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">C215</td>
                   <td valign="TOP" class="parameter_tab">BOOL</td>
                   <td valign="TOP" class="parameter_tab">Control Bit</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">IN<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">activate_tuning</td>
                   <td valign="TOP" class="parameter_tab">BOOL</td>
                   <td valign="TOP" class="parameter_tab">1 = set motor tuning active. tuning will be activated with 'ctrl_on=true'</td>
@@ -1010,7 +1016,7 @@
                   <td valign="TOP" class="parameter_tab">inverter fault see 'fault code'</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">PRA_detected</td>
                   <td valign="TOP" class="parameter_tab">BOOL</td>
                   <td valign="TOP" class="parameter_tab">Power removal (PRA) was detected -> reset ctrl_on</td>
@@ -1034,7 +1040,7 @@
                   <td valign="TOP" class="parameter_tab">current in A</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">thst_drive</td>
                   <td valign="TOP" class="parameter_tab">REAL</td>
                   <td valign="TOP" class="parameter_tab">thermal state drive in %</td>
@@ -1052,7 +1058,7 @@
                   <td valign="TOP" class="parameter_tab">dc voltage in V</td>
                </tr>
                <tr>
-                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-left: 5px" width="12" height="12"></td>
+                  <td valign="TOP" class="parameter_tab">OUT<img src="/_images/_option.png" style="margin-right: 5px; margin-left: 5px;" width="12" height="12"></td>
                   <td valign="TOP" class="parameter_tab">encoder_value</td>
                   <td valign="TOP" class="parameter_tab">UINT</td>
                   <td valign="TOP" class="parameter_tab">encoder value (P84 only)</td>
@@ -1084,6 +1090,12 @@
                   <td valign="TOP" class="parameter_tab">status</td>
                   <td valign="TOP" class="parameter_tab">UINT</td>
                   <td valign="TOP" class="parameter_tab">fub status</td>
+               </tr>
+               <tr>
+                  <td valign="TOP" class="parameter_tab">OUT</td>
+                  <td valign="TOP" class="parameter_tab">drive_type</td>
+                  <td valign="TOP" class="parameter_tab"><a xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" href="\Data types and constants\Enumerators\ac_inv_DriveType.html">ac_inv_DriveType</a></td>
+                  <td valign="TOP" class="parameter_tab">ACOPOSinverter type</td>
                </tr>
             </table>
          </div>

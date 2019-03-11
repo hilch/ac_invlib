@@ -1,14 +1,14 @@
 (********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Author: 
- * Created: 
- ********************************************************************
- * syntax:
- * "<parametername> = <value>"   or
- * "<parametername> = <symbolic constant>
- * values are given in decimal notation
- ********************************************************************)
+* Parameter for ACOPOSinverter P84 
+********************************************************************
+* Author: github/hilch
+* Created: 
+********************************************************************
+* syntax:
+* "<parametername> = <value>"   or
+* "<parametername> = <symbolic constant>
+* values are given in decimal notation
+********************************************************************)
 "bFr = 50"		; Standard mot. freq [50/60]
 "IPL = nO"		; Input phase loss (3ph only)
 "nPr = 18"		; Rated motor power [* 10W]

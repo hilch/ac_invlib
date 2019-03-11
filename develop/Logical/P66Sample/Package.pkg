@@ -2,7 +2,6 @@
 <?AutomationStudio Version=4.4.6.71 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
-    <Object Type="DataObject" Language="Simple" Description="Inverter- Parameter">P66config</Object>
     <Object Type="Program" Language="IEC" Description="P66 with CAN - Sample">P66C</Object>
     <Object Type="Program" Language="IEC" Description="P66 - EPL- Sample">P66</Object>
   </Objects>

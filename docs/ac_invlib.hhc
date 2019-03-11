@@ -87,6 +87,11 @@
       <param name="ImageNumber" value="1">
     </OBJECT>
 <UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="ac_inv_DriveType">
+      <param name="Local" value="Data%20types%20and%20constants/Enumerators/ac_inv_DriveType.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
 </UL>
 <LI><OBJECT type="text/sitemap">
       <param name="Name" value="Data types">
@@ -134,13 +139,6 @@
     </OBJECT>
 </UL>
 <LI><OBJECT type="text/sitemap">
-      <param name="Name" value="ACOPOSinverter Parameter">
-      <param name="Local" value="ACOPOSinverter%20Parameter/ACOPOSinverter%20Parameter.html">
-      <param name="ImageNumber" value="1">
-    </OBJECT>
-<UL>
-</UL>
-<LI><OBJECT type="text/sitemap">
       <param name="Name" value="Examples">
       <param name="Local" value="Examples/Examples.html">
       <param name="ImageNumber" value="1">
@@ -181,6 +179,50 @@
       <param name="ImageNumber" value="1">
     </OBJECT>
 <UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66">
+      <param name="Local" value="Examples/Structured%20Text/P66/P66.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66.var ">
+      <param name="Local" value="Examples/Structured%20Text/P66/P66.var.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66Cyclic.st ">
+      <param name="Local" value="Examples/Structured%20Text/P66/P66Cyclic.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66Init.st ">
+      <param name="Local" value="Examples/Structured%20Text/P66/P66Init.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66C">
+      <param name="Local" value="Examples/Structured%20Text/P66C/P66C.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66C.var ">
+      <param name="Local" value="Examples/Structured%20Text/P66C/P66C.var.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66CCyclic.st ">
+      <param name="Local" value="Examples/Structured%20Text/P66C/P66CCyclic.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66CInit.st ">
+      <param name="Local" value="Examples/Structured%20Text/P66C/P66CInit.st.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
 <LI><OBJECT type="text/sitemap">
       <param name="Name" value="P74">
       <param name="Local" value="Examples/Structured%20Text/P74/P74.html">
@@ -232,6 +274,18 @@
       <param name="ImageNumber" value="1">
     </OBJECT>
 <UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66config">
+      <param name="Local" value="Examples/Data%20Objects/P66config/P66config.html">
+      <param name="ImageNumber" value="1">
+    </OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap">
+      <param name="Name" value="P66config.dat ">
+      <param name="Local" value="Examples/Data%20Objects/P66config/P66config.dat.html">
+      <param name="ImageNumber" value="11">
+    </OBJECT>
+</UL>
 <LI><OBJECT type="text/sitemap">
       <param name="Name" value="P74config">
       <param name="Local" value="Examples/Data%20Objects/P74config/P74config.html">
