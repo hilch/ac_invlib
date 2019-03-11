@@ -28,19 +28,23 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 
 ## HowTo
 
-- 1. extract ZIP to temporary folder, 2. Add Object - Existing library, 3. Navigate to folder "ac_invlib
+1. download binary library from https://github.com/hilch/ac_invlib/releases
+1. extract ZIP to temporary folder, 2. Add Object - Existing library, 3. Navigate to folder "ac_invlib
 ![addobject](https://github.com/hilch/ac_invlib/blob/master/docs/AddObject_ExistingLibrary.PNG)
 
+1. insert an ACOPOSinverter into physical view (stop axis wizard)
+1. configure IO configuration and IO mapping:
  - [Configuration of an EPL device](https://github.com/hilch/ac_invlib/blob/master/howToEPLDeviceConfiguration.md)
  - [Configuration of a CANopen device:](https://github.com/hilch/ac_invlib/blob/master/howToCanopenDeviceConfiguration.md) 
- - [Parameter Logging](https://github.com/hilch/ac_invlib/blob/master/howToLogging.md)
+ 
+ 1. in case of errors: see parameter logging  [Parameter Logging](https://github.com/hilch/ac_invlib/blob/master/howToLogging.md)
 
 ## Development
 /develop/:
 Automation Studio project for compiling and debugging the library
 
 /docs/
-documetation project for Microsoft HTML Workshop
+documentation project for Microsoft HTML Workshop
 
 https://www.microsoft.com/en-us/download/details.aspx?id=21138
 
