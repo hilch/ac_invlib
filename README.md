@@ -41,7 +41,7 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 
 ## History
 
-see [history](https://github.com/hilch/ac_invlib/blob/master/docs/General%20Information/Version%20History.html)
+see [history](https://rawgit.com/hilch/ac_invlib/blob/master/docs/General%20Information/Version%20History.html)
 
 ## Development
 /develop/:
