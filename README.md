@@ -39,6 +39,10 @@ This library is **not an official B&amp;R product!** For this reason the use is 
  
  1. in case of errors: see parameter logging  [Parameter Logging](https://github.com/hilch/ac_invlib/blob/master/howToLogging.md)
 
+## History
+
+see [history](https://github.com/hilch/ac_invlib/blob/master/docs/General%20Information/Version%20History.html)
+
 ## Development
 /develop/:
 Automation Studio project for compiling and debugging the library
