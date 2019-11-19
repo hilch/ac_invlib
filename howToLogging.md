@@ -16,6 +16,7 @@ Nevertheless some configurations are problematic:
 ###'CFI' after setting 'bLc'
 currently this issue could be solved by setting '.no_parameter_sort' to TRUE and add some 'waits' in
 data module, e.g.
+```
 "ACC = 5"		; Acceleration [s]
 "dEC = 5"		; Deceleration [s]
 "LSP = 0"		; Low speed [* 0.1 Hz]
@@ -39,4 +40,4 @@ data module, e.g.
 "CMI=0"
 "CMI=0"
 "BLC=R2"		; switch on brake function
-
+```
