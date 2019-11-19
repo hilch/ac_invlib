@@ -222,7 +222,7 @@ acpireg p76reg[] = {
 	{ "AO1C",	0x2016,	0x48,	's',	0			},	/* AO1 physical value */
 	{ "FQS",	0x2074,	0x04,	'u',	0			},	/* Pulse input working freq. */
 	{ "AO1R",	0x2016,	0x3E,	's',	0			},	/* Analog output 1 standardized value */
-	{ "ERRD",	0x2038,	0x07,	'u',	0			},	/* CiA402 fault code */
+	{ "ERRD",	0x2038,	0x07,	'u',	en_P76_ERRD	},	/* CiA402 fault code */
 	{ "LFT",	0x2029,	0x16,	'u',	en_P76_LFT	},	/* Last fault occurred */
 	{ "CIC",	0x2029,	0x1F,	'u',	0			},	/* Incorrect configuration */
 	{ "CNF",	0x2029,	0x21,	'u',	0			},	/* Comm. option fault */
@@ -656,7 +656,6 @@ acpireg p76reg[] = {
 	{ "SIR",	0x207E,	0x07,	'u',	0			},	/* Boost level for IPMA alignment */
 	{ "MCR",	0x207E,	0x08,	'u',	0			},	/* Maximum current of PSI alignment */
 	{ "PEC",	0x207E,	0x09,	'u',	0			},	/* Angle position error compensation */
-	{ "BLC",	0x2046,	0x02,	'u',	en_P76_BLC	},	/* Brake logic assignment */
 	{ "BST",	0x2046,	0x09,	'u',	en_P76_BST	},	/* Motion type selection */
 	{ "BCI",	0x2046,	0x0A,	'u',	en_P76_PSLIN	},	/* Brake contact input */
 	{ "BIP",	0x2046,	0x08,	'u',	en_P76_BIP	},	/* Brake release pulse */
@@ -672,6 +671,7 @@ acpireg p76reg[] = {
 	{ "TTR",	0x2046,	0x17,	'u',	0			},	/* Time to restart */
 	{ "BRH",	0x2046,	0x33,	'u',	0			},	/* Brake hidden */
 	{ "BRR",	0x2046,	0x10,	'u',	0			},	/* Current ramp time */
+	{ "BLC",	0x2046,	0x02,	'u',	en_P76_BLC	},	/* Brake logic assignment */
 	{ "HSO",	0x205D,	0x02,	'u',	en_P76_HSO	},	/* High speed hoisting */
 	{ "COF",	0x205D,	0x04,	'u',	0			},	/* Motor speed coefficient */
 	{ "COR",	0x205D,	0x05,	'u',	0			},	/* Generator speed coefficient */

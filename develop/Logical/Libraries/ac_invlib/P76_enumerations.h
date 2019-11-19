@@ -477,6 +477,79 @@ acpienumeration en_P76_ENU[] = {
 	{ 0, 0 }
 };
 
+
+acpienumeration en_P76_ERRD[] = {
+	{	"nOF"		,	0x0000	},	/* [No fault]  */
+	{	"CrF"		,	0x1000	},	/* [Precharge]  */
+	{	"OLF"		,	0x1000	},	/* [Motor overload]  */
+	{	"SOF"		,	0x1000	},	/* [Overspeed]  */
+	{	"dCF"		,	0x1000	},	/* [Diff. I fault]  */
+	{	"HdF"		,	0x1000	},	/* [IGBT desaturation]  */
+	{	"InFE"		,	0x1000	},	/* [internal- CPU]  */
+	{	"CSF"		,	0x1000	},	/* [Ch.sw. fault]  */
+	{	"ASF"		,	0x1000	},	/* [Angle error]  */
+	{	"SCF4"		,	0x2230	},	/* [IGBT short circuit]  */
+	{	"OCF"		,	0x2310	},	/* [Overcurrent]  */
+	{	"OLF"		,	0x2311	},	/* [Proc.Overload Flt]  */
+	{	"SCF1"		,	0x2320	},	/* [Motor short circuit]  */
+	{	"SCF2"		,	0x2320	},	/* [Impedant sh. circuit]  */
+	{	"SCF5"		,	0x2320	},	/* [Motor short circuit]  */
+	{	"SCF3"		,	0x2330	},	/* [Ground short circuit]  */
+	{	"OSF"		,	0x3110	},	/* [Mains overvoltage]  */
+	{	"USF"		,	0x3120	},	/* [Undervoltage]  */
+	{	"PHF"		,	0x3130	},	/* [Input phase loss]  */
+	{	"ObF"		,	0x3310	},	/* [Overbraking]  */
+	{	"OPF1"		,	0x3310	},	/* [1 output phase loss]  */
+	{	"OPF2"		,	0x3310	},	/* [3out ph loss]  */
+	{	"OHF"		,	0x4210	},	/* [Drive overheat]  */
+	{	"tJF"		,	0x4210	},	/* [IGBT overheat]  */
+	{	"OtFL"		,	0x4310	},	/* [PTC fault]  */
+	{	"FCF1"		,	0x5000	},	/* [Out. contact. stuck]  */
+	{	"FCF2"		,	0x5000	},	/* [Out. contact. open.]  */
+	{	"LCF"		,	0x5000	},	/* [input contactor]  */
+	{	"InF9"		,	0x5210	},	/* [Internal- I measure]  */
+	{	"InFA"		,	0x5210	},	/* [Internal-mains circuit]  */
+	{	"InFb"		,	0x5210	},	/* [Internal- th. sensor]  */
+	{	"EEF1"		,	0x5530	},	/* [Control Eeprom]  */
+	{	"EEF2"		,	0x5530	},	/* [Power Eeprom]  */
+	{	"InF"		,	0x6100	},	/* [Calibration error]  */
+	{	"InF1"		,	0x6100	},	/* [Rating error]  */
+	{	"InF2"		,	0x6100	},	/* [PWR Calib.]  */
+	{	"InF3"		,	0x6100	},	/* [Int.serial link]  */
+	{	"InF4"		,	0x6100	},	/* [Int.Mfg area]  */
+	{	"HCF"		,	0x6100	},	/* [Cards pairing]  */
+	{	"CFF"		,	0x6300	},	/* [Incorrect config.]  */
+	{	"CFI"		,	0x6300	},	/* [Invalid config.]  */
+	{	"CFI2"		,	0x6300	},	/* [Bad conf]  */
+	{	"InF6"		,	0x7000	},	/* [Internal-option]  */
+	{	"brF"		,	0x7110	},	/* [Brake feedback]  */
+	{	"PtFL"		,	0x7300	},	/* [LI6=PTC probe]  */
+	{	"AI2F"		,	0x7300	},	/* [AI2 input]  */
+	{	"LFF3"		,	0x7300	},	/* [AI3 4-20mA loss]  */
+	{	"SPF"		,	0x7310	},	/* [Speed fdback loss]  */
+	{	"ECF"		,	0x7310	},	/* [Enc. coupl.]  */
+	{	"FbE"		,	0x7400	},	/* [FB fault]  */
+	{	"FbES"		,	0x7400	},	/* [FB stop flt.]  */
+	{	"SLF1"		,	0x7510	},	/* [Modbus com.]  */
+	{	"SLF3"		,	0x7510	},	/* [HMI com.]  */
+	{	"ILF"		,	0x7520	},	/* [int. com.link]  */
+	{	"CnF"		,	0x7520	},	/* [Com. network]  */
+	{	"SLF2"		,	0x7530	},	/* [PC com.]  */
+	{	"COF"		,	0x8100	},	/* [CAN com.]  */
+	{	"EPF1"		,	0x9000	},	/* [External flt-LI/Bit]  */
+	{	"EPF2"		,	0x9000	},	/* [External fault com.]  */
+	{	"tnF"		,	0xFF00	},	/* [Auto-tuning]  */
+	{	"bLF"		,	0xFF01	},	/* [Brake control]  */
+	{	"SSF"		,	0xFF02	},	/* [Torque/current lim]  */
+	{	"SrF"		,	0xFF02	},	/* [Torque time-out]  */
+	{	"PrF"		,	0xFF03	},	/* [Power removal]  */
+	{	"ULF"		,	0xFF03	},	/* [Pr.Underload.Flt]  */
+	{	"SAFF"		,	0xFF03	},	/* [Safety fault]  */
+	{	"dLF"		,	0xFF80	},	/* [Load fault]  */
+	{ 0,  0 }
+};
+
+
 acpienumeration en_P76_ETHM[] = {
 	{ "MbtP",	0	}, /* ModbusTCP */
 	{ "EtIP",	1	}, /* EthernetIP */
