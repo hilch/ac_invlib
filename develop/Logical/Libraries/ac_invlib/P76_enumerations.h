@@ -384,7 +384,7 @@ acpienumeration en_P76_CSLOUT[] = {
 };
 
 acpienumeration en_P76_CTT[] = {
-	{ "VVC",	0	}, /* Sensorless flux vector V */
+	{ "UUC",	0	}, /* Sensorless flux vector V */
 	{ "Std",	3	}, /* Standard motor law */
 	{ "UF5",	4	}, /* 5 point voltage/frequency */
 	{ "SYn",	5	}, /* Synchronous motor */
