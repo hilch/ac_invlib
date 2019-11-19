@@ -9,12 +9,12 @@ Examples
 
 ## Known problems
 ACOPOSinverters (and original Schneider Altivars) are some sensitive to the order of parameters.
-If input '.no_parameter_sort' is set to FALSE the library will sort the parameters before downloading them
+If input *'.no_parameter_sort'* is set to *FALSE* the library will sort the parameters before downloading them
 to the drive.
 Nevertheless some configurations are problematic:
 
 ###'CFI' after setting 'bLc'
-currently this issue could be solved by setting '.no_parameter_sort' to TRUE and add some 'waits' in
+currently this issue could be solved by setting *'.no_parameter_sort'* to *TRUE* and add some 'waits' in
 data module, e.g.
 ```
 "ACC = 5"		; Acceleration [s]
