@@ -226,42 +226,6 @@ int find_parameter( char *name, UINT *index, USINT *subindex, ac_inv_DriveType d
 }
 
 
-/* -----------------------------------------------------------------------------------
- 	returns the download index of a parameter or -1 in case of failure
-   -----------------------------------------------------------------------------------
-*/
-
-int find_download_index( char *name,  ac_inv_DriveType drive_type )
-{
-	int i = 0;
-	char **list;
-	
-	switch( drive_type )
-	{
-		default: 
-		list = P84_download_index; 
-		break;
-
-		case ACPiDriveType_P74: 
-		list = P74_download_index; 
-		break;
-
-		case ACPiDriveType_P76: 
-		case ACPiDriveType_P66:
-		list = P76_download_index; 
-		break;
-	}
-
-	while( list[i] )
-	{
-		if( strcasecmp(  list[i], name ) == 0 )   /* found ? */
-		{
-			return i;
-		}
-		++i;
-	}
-	return -1; /* not found */
-}
 
 
 
@@ -1095,6 +1059,52 @@ int compare_download_index_P74 (const void * a, const void * b)
 
 
 
+
+int compare_download_index_P76 (const void * a, const void * b)
+{
+	char name[20];
+	char *s, *d;
+	int index_a=0, index_b=0;
+	char **list;
+
+	/* copy parameter name a */
+	s = *(char**) a; d= name;
+	while( *s != ' ' && *s != 0 && *s != '=')
+		*d++ = *s++;
+	*d = 0;
+	
+	list = P76_download_index;
+	while( list[index_a] )
+	{
+		if( strcasecmp(  list[index_a], name ) == 0 )   /* found ? */
+			break;
+		++index_a;
+	}
+
+	/* copy parameter name b */
+	s = *(char**) b; d= name;
+	while( *s != ' ' && *s != 0 && *s != '=')
+		*d++ = *s++;
+	*d = 0;
+	
+	list = P76_download_index;
+	while( list[index_b] )
+	{
+		if( strcasecmp(  list[index_b], name ) == 0 )   /* found ? */
+			break;
+		++index_b;
+	}
+
+	if ( index_a <  index_b ) return -1;
+	if ( index_a >  index_b ) return 1;
+
+	return 0;
+}
+
+
+
+
+
 /* -------------------------------------------------------------------------------------
    sorts the parameter list
    -------------------------------------------------------------------------------------
@@ -1103,9 +1113,20 @@ int compare_download_index_P74 (const void * a, const void * b)
 
 void sort_parameterlist( ac_inv_AxIdent *ax_ident )
 {
-	if( ax_ident->drive_type == 1 )
+	switch( ax_ident->drive_type )
+	{
+		default:
 		qsort( (void*) &ax_ident->p_sorted_parameters, ax_ident->number_of_parameters, sizeof(UDINT), compare_download_index_P84 );
-	else		
+		break;
+
+		case ACPiDriveType_P74:
 		qsort( (void*) &ax_ident->p_sorted_parameters, ax_ident->number_of_parameters, sizeof(UDINT), compare_download_index_P74 );
+		break;
+
+		case ACPiDriveType_P76:
+		case ACPiDriveType_P66:
+		qsort( (void*) &ax_ident->p_sorted_parameters, ax_ident->number_of_parameters, sizeof(UDINT), compare_download_index_P76 );
+		break;
+	}
 }
 
