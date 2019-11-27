@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: AsBrMath
- * File: AsBrMath.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library AsBrMath
- ********************************************************************)
                                                                       
 {REDUND_OK} FUNCTION brmatan2 : REAL               (*calculates the arc tangent of y/x*)
 	VAR_INPUT

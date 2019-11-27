@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: AsIecCon
- * File: AsIecCon.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library AsIecCon
- *******************************************************************.*)
                                                                        
 {REDUND_OK} {REDUND_UNREPLICABLE} FUNCTION swapDT : DATE_AND_TIME        (*swaps the byte order of a DATE_AND_TIME value*)
 	VAR_INPUT

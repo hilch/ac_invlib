@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: DataObj
- * File: DataObj.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library DataObj
- ********************************************************************)
                                                                       
 {REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK DatObjCreate						(*creates a data object*)
 	VAR_INPUT

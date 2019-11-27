@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.4.6.71 SP?>
+<?AutomationStudio Version=4.6.3.55 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Library" Language="Binary" Description="This library contains function interfaces for IEC1131-3 operator functions. For the most part, these are mathematical and logical functions.">Operator</Object>
@@ -9,7 +9,6 @@
     <Object Type="Library" Language="Binary" Description="The BRSystem library provides the user with a number of system functions for e.g. handling permanent memory, accessing exception information, etc.">brsystem</Object>
     <Object Type="Library" Language="Binary" Description="The DataObj library can be used to dynamically create, dynamically delete and copy data objects, etc. ">DataObj</Object>
     <Object Type="Library" Language="Binary" Description="The SYS_LIB library contains functions for memory management and operating system manipulation as well as hardware-specific functions.">sys_lib</Object>
-    <Object Type="Library" Language="Binary" Description="The AsString Library contains FBKs for memory and character string handling.">asstring</Object>
     <Object Type="Library" Language="ANSIC" Description="ACOPOSinverter Library - controls an ACOPOSinverter drive without using the SDC- Library">ac_invlib</Object>
     <Object Type="Library" Language="Binary" Description="The AsEPL library is used to access service data objects of Ethernet-Powerlink stations">AsEPL</Object>
     <Object Type="Library" Language="Binary" Description="The AsArLog library can be used to collect additional error information and for further processing.">AsArLog</Object>
@@ -17,6 +16,5 @@
     <Object Type="Library" Language="Binary" Description="The AsBrStr Library contains FBKs for memory and character string handling.">AsBrStr</Object>
     <Object Type="Library" Language="Binary" Description="The FileIO library provides function blo">FileIO</Object>
     <Object Type="Library" Language="Binary" Description="This library integrates mathematical functions such as angle functions, rounding off, etc. into the program.">AsBrMath</Object>
-    <Object Type="Package">Package</Object>
   </Objects>
 </Package>

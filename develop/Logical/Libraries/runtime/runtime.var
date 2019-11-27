@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: runtime
- * File: runtime.var
- * Author: B+R
- ********************************************************************
- * Local variables of library runtime
- ********************************************************************)
                                                                       
  (*Common Functionblock Status*)
 VAR CONSTANT
@@ -15,6 +6,7 @@ VAR CONSTANT
 	ERR_FUB_ENABLE_FALSE  : UINT := 16#FFFE;	(*function block parameter "enable" is FALSE*)
 	ERR_FUB_BUSY          : UINT := 16#FFFF;	(*function block still working*)
 	ERR_FUB_REDUNDANT     :	UINT := 35688;		(*This FUB can not be used on the standby CPU*)
+	ERR_FB_NOT_IMPLEMENTED: DINT := -1070585592;(*function or function block not implemented for the target system*)
 END_VAR
 
 (*IEC 61131-3 Datatypes*)

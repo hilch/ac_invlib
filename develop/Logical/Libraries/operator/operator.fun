@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: operator
- * File: operator.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library operator
- ********************************************************************)
                                                                       
 {REDUND_OK} FUNCTION SIZEOF : UDINT 		(*determines the size of a variable in bytes*)
 	VAR_INPUT

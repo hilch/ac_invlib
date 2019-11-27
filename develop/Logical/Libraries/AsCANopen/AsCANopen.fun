@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
-* Library: AsCANopen
-* File: AsCANopen.fun
-* Author: B+R
-********************************************************************
-* Functions and function blocks of library AsCANopen
-********************************************************************)
                                                                      
  {REDUND_ERROR} FUNCTION_BLOCK CANopenEnableCyclicSync (*enables or disables cyclic SYNC messages*)
 	VAR_INPUT

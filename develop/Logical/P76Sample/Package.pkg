@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.4.6.71 SP?>
+<?AutomationStudio Version=4.6.3.55 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Program" Language="IEC" Description="P76 - EPL- Sample">P76</Object>
+    <Object Type="Program" Language="IEC" Description="P76 with CAN - Sample">P76C</Object>
   </Objects>
 </Package>

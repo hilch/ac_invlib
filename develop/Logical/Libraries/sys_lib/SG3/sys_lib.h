@@ -29,6 +29,7 @@ extern "C"
 #define ERR_BUR_WR_CHAR         2063    /* invalid ASCII character */
 #define ERR_BUR_NORTC           2073    /* RTC not existing or uninitialized */
 
+#define ERR_BUR_MO_NOTFOUND     3019    /* module not found */
 #define ERR_BUR_NOMEM           3030    /* out of memory */
 #define ERR_BUR_MEMVWBUSY       3035    /* memory management busy */
 #define ERR_BUR_ILLPTR          3104    /* illegal data pointer in MEM_free */

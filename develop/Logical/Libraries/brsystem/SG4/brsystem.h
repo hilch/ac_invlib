@@ -17,6 +17,8 @@ extern "C"
 #endif
 /* Constants */
 #ifdef _REPLACE_CONST
+ #define brWINDOWS_BLUESCREEN 1U
+ #define brWINDOWS_OK 0U
  #define brX2X 10U
  #define brPP 255U
  #define brCPU 1U
@@ -64,6 +66,8 @@ extern "C"
  #ifndef _GLOBAL_CONST
    #define _GLOBAL_CONST _WEAK const
  #endif
+ _GLOBAL_CONST unsigned long brWINDOWS_BLUESCREEN;
+ _GLOBAL_CONST unsigned long brWINDOWS_OK;
  _GLOBAL_CONST unsigned char brX2X;
  _GLOBAL_CONST unsigned char brPP;
  _GLOBAL_CONST unsigned char brCPU;
@@ -290,6 +294,26 @@ typedef struct PMemSize
 	plcbit enable;
 } PMemSize_typ;
 
+typedef struct ARwinWindowsInfo
+{
+	/* VAR_OUTPUT (analog) */
+	unsigned short status;
+	unsigned long windowsStatus;
+	/* VAR_INPUT (digital) */
+	plcbit enable;
+} ARwinWindowsInfo_typ;
+
+typedef struct ARwinEthWinInfo
+{
+	/* VAR_OUTPUT (analog) */
+	unsigned short status;
+	plcstring IPAddr[16];
+	plcstring SubnetMask[16];
+	plcbyte MacAddr[6];
+	/* VAR_INPUT (digital) */
+	plcbit enable;
+} ARwinEthWinInfo_typ;
+
 
 
 /* Prototyping of functions and function blocks */
@@ -307,6 +331,8 @@ _BUR_PUBLIC void ZYKVLenable(struct ZYKVLenable* inst);
 _BUR_PUBLIC void PMemGet(struct PMemGet* inst);
 _BUR_PUBLIC void PMemPut(struct PMemPut* inst);
 _BUR_PUBLIC void PMemSize(struct PMemSize* inst);
+_BUR_PUBLIC void ARwinWindowsInfo(struct ARwinWindowsInfo* inst);
+_BUR_PUBLIC void ARwinEthWinInfo(struct ARwinEthWinInfo* inst);
 
 
 #ifdef __cplusplus

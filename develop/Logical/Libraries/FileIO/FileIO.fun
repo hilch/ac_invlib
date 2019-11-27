@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: FileIO
- * File: FileIO.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library FileIO
- ********************************************************************)
                                                                       
 {REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK FileCreate				(*creates a file; asynchronous execution*)
 	VAR_INPUT

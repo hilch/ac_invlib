@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: AsBrString
- * File: AsBrString.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library AsBrString
- ********************************************************************)
                                                                       
 {REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION brsftoa : UINT		(*converts a REAL value into a character string*)
 	VAR_INPUT

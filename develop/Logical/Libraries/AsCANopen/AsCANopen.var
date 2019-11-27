@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: AsCANopen
- * File: AsCANopen.var
- * Author: B+R
-********************************************************************
- * Local variables of library AsCANopen
-********************************************************************)
                                                                      
 (*Errors for CANopen FUB status output*)
 VAR CONSTANT
@@ -19,6 +10,8 @@ VAR CONSTANT
 	ERR_CANOPEN_INVALID_COBID:		UINT :=	30845; 	(*invalid CAN COB ID (must be 0 <= COBID <= 2047)*)
 	ERR_CANOPEN_INVALID_DATALENGTH:	UINT := 30846; 	(*invalid length of data to be transfered*)
 	ERR_CANOPEN_NO_DATA_AVAILABLE:	UINT := 30847; 	(*no data available*)
+	ERR_CANOPEN_INVALID_MONITORING:	UINT := 30848; 	(*invalid monitoring type*)
+	ERR_CANOPEN_INVALID_TRANSFERMODE:UINT:= 30849; 	(*invalid transfer mode*)
 END_VAR
 
 

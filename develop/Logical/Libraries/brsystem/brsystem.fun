@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: brsystem
- * File: brsystem.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library brsystem
- ********************************************************************)
                                                                       
 {REDUND_CONTEXT} {REDUND_UNREPLICABLE}  FUNCTION_BLOCK MEMInfo				(*returns information about the memory areas available on the system*)
 	VAR_INPUT
@@ -190,5 +181,27 @@ END_FUNCTION_BLOCK
 	VAR_OUTPUT
 		status	:UINT;				(*execution status: ERR_OK, ERR_FUB_ENABLE_FALSE, 0xXXXX = see help*)
 		size	:UDINT;				(*size of permanent memory area*)
+	END_VAR
+END_FUNCTION_BLOCK
+
+{REDUND_ERROR} FUNCTION_BLOCK ARwinWindowsInfo				(*get status of windows system*)
+	VAR_INPUT
+		enable	:BOOL;				(*enables execution*)
+	END_VAR
+	VAR_OUTPUT
+		status	:UINT;				(*execution status: ERR_OK, 0xXXXX = see help*)
+		windowsStatus	:UDINT;		(*windows system status: brWINDOWS_BLUESCREEN, brWINDOWS_OK*)
+	END_VAR
+END_FUNCTION_BLOCK
+
+{REDUND_ERROR} FUNCTION_BLOCK ARwinEthWinInfo				(*get ETH info windows interface*)
+	VAR_INPUT
+		enable	:BOOL;				(*enables execution*)
+	END_VAR
+	VAR_OUTPUT
+		status	:UINT;				(*execution status: ERR_OK, 0xXXXX = see help*)
+		IPAddr	:STRING[15];		(*IP-address of virtual windows IF*)
+		SubnetMask	:STRING[15];	(*netmask of virtual windows IF*)
+		MacAddr	:ARRAY[0..5] OF BYTE;	(*MAC-address of virtual windows IF*)
 	END_VAR
 END_FUNCTION_BLOCK

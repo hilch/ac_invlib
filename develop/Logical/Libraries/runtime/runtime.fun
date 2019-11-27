@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: runtime
- * File: runtime.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library runtime
- ********************************************************************)
                                                                       
 {REDUND_OK} FUNCTION_BLOCK r_trig 			(*for internal use only - do not use this function in user programs*)
 	VAR_INPUT

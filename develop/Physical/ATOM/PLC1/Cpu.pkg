@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.4.6.71 SP?>
+<?AutomationStudio Version=4.6.3.55 SP?>
 <Cpu xmlns="http://br-automation.co.at/AS/Cpu">
   <Objects>
     <Object Type="File" Description="Software configuration">Cpu.sw</Object>
     <Object Type="File" Description="Declaration of permanent variables">Cpu.per</Object>
     <Object Type="File" Description="IO mapping file">IoMap.iom</Object>
     <Object Type="File" Description="PV mapping file">PvMap.vvm</Object>
+    <Object Type="Package">ExternalHardware</Object>
   </Objects>
   <Configuration ClassID="X20CP3585" GeneratePPCode="false" HasNcOperatingSystem="true" LocalVariablesMemory="MemoryPool" ModuleId="X20CP3585" ModuleID="CP3585" OnlineConfigurationName="myNode221" Target="SG4">
-    <AutomationRuntime Version="F4.44" />
+    <AutomationRuntime Version="S4.10" />
     <Build GccVersion="4.1.2" PostBuildStep="rename $(AS_BINARIES_PATH)\$(AS_CONFIGURATION)\PLC1\RUCPackage\RUCPackage.zip myname.zip" />
     <DefaultTargetMemory DataObjects="UserROM" Libraries="UserROM" Tasks="UserROM" />
-    <TaskClasses DefaultIoTaskClass="Automatic" DefaultTaskClass="Cyclic4" />
-    <Transfer AdditionalUserDir="" AddToUserPart="false" AllowInitialTransfer="false" AllowPartitioning="false" AllowWarmRestart="true" DownloadMode="Overload" ExecuteInitExitProgram="true" ForceInitialTransfer="false" GeneratePviTransferList="true" GenerateRUCPackage="true" IdentificationTypeValue="" IgnoreBrDependencies="false" IgnoreTargetOnlyObjects="false" IgnoreVersion="true" KeepNonVolatileMemory="false" ModuleSystemForPip="" PackedArConfig="false" PackedIoMap="false" PreserveVariableValues="false" ProjectConsistent="true" PromptBeforeProject="false" PromptBeforeTask="false" RebootDuringTransfer="false" TargetIdentificationType="Always" TransferOnlyRelevantChanges="false" TryToBootInRunMode="false" UserFilesIgnoreDifference="false" />
-    <Vc FirmwareVersion="V4.15.9" />
     <Io ArConfigDataModule="false" ArConfigDataModulePath="$(AS_CPU_PATH)\AS\CfgData.br" IoMapDataModule="false" IoMapDataModulePath="$(AS_CPU_PATH)\AS\IomData.br" />
+    <TaskClasses DefaultIoTaskClass="Automatic" DefaultTaskClass="Cyclic4" />
+    <Transfer AddToUserPart="false" AdditionalUserDir="" AllowInitialTransfer="false" AllowPartitioning="false" AllowWarmRestart="true" DownloadMode="Overload" ExecuteInitExitProgram="true" ForceInitialTransfer="false" GeneratePviTransferList="true" GenerateRUCPackage="true" IdentificationTypeValue="" IgnoreBrDependencies="false" IgnoreTargetOnlyObjects="false" IgnoreVersion="true" KeepNonVolatileMemory="false" ModuleSystemForPip="" PackedArConfig="false" PackedIoMap="false" PreserveVariableValues="false" ProjectConsistent="true" PromptBeforeProject="false" PromptBeforeTask="false" RebootDuringTransfer="false" TargetIdentificationType="Always" TransferOnlyRelevantChanges="false" TryToBootInRunMode="false" UserFilesIgnoreDifference="false" />
+    <Vc FirmwareVersion="V4.15.9" />
     <OnlineConfiguration Name="X20CP3585_1" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=113" ConnectionParameters="/RT=1000 /AM=* /SDT=5 /DAIP=192.168.0.10 /REPO=11159 /ANSL=1 /PT=11169" Description="" />
   </Configuration>
 </Cpu>

@@ -25,7 +25,7 @@ extern "C"
  #define brmPI_4 0.785398f
  #define brm3PI_4 2.35619f
  #define brmLN2HI 0.693147f
- #define brmLN2LO 1.90821e-010f
+ #define brmLN2LO 1.90821e-10f
  #define brmLOG2E 1.4427f
  #define brmSQRT2 1.41421f
  #define brmSQRT3 1.73205f

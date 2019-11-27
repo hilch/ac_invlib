@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: AsEPL
- * File: AsEPL.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library AsEPL
- ********************************************************************)
                                                                       
 {REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK EplSDORead					(*reads node's object entries when using an SDO transfer*)
 	VAR_INPUT

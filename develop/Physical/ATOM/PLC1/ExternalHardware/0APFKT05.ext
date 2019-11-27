@@ -1,0 +1,11769 @@
+[FileInfo]
+FileName=ACPi_P66_P76.eds
+FileVersion=1
+FileRevision=3
+EDSVersion=4.0
+Description=EDS for ACPi P66/P76 (github/hilch)
+CreationTime=10:54PM
+CreationDate=11-27-19
+ModificationTime=10:54PM
+ModificationDate=11-27-19
+CreatedBy=S.T.I.E.
+ModifiedBy=https://github.com/hilch/ac_invlib
+
+[Comments]
+Lines=10
+Line1=Conforamnce class = S10
+Line2=Product function = Frequency Converter
+Line3=Supported profiles = 402 V3
+Line4=Boot-up time = 100ms
+Line5=Minimum Heartbeat cycle time = 30ms
+Line6=SDO Response time = 50ms
+Line7=PDO turnaround time = 50ms
+Line8=PDO timer event cyclic period = 5ms
+
+[DeviceInfo]
+VendorName=B&R
+VendorNumber=0x0200005A
+ProductName=ACPi_P66_P76
+ProductNumber=320
+RevisionNumber=0x00010207
+OrderCode=0
+BaudRate_10=0
+BaudRate_20=0
+BaudRate_50=1
+BaudRate_125=1
+BaudRate_250=1
+BaudRate_500=1
+BaudRate_800=0
+BaudRate_1000=1
+NrOfRxPDO=3
+NrOfTxPDO=3
+SimpleBootupSlave=1
+SimpleBootupMaster=0
+LSS_Supported=0
+Granularity=8
+DynamicChannelsSupported=0
+GroupMessaging=0
+
+[DummyUsage]
+Dummy0001=0
+Dummy0002=0
+Dummy0003=1
+Dummy0004=0
+Dummy0005=0
+Dummy0006=1
+Dummy0007=0
+
+[MandatoryObjects]
+SupportedObjects=3
+1=0x1000
+2=0x1001
+3=0x1018
+
+[ManufacturerObjects]
+SupportedObjects=73
+1=0x2000
+2=0x2001
+3=0x2002
+4=0x2003
+5=0x2004
+6=0x2005
+7=0x2006
+8=0x200a
+9=0x200c
+10=0x200e
+11=0x2010
+12=0x2012
+13=0x2014
+14=0x2016
+15=0x201a
+16=0x201e
+17=0x2024
+18=0x2028
+19=0x2029
+20=0x202a
+21=0x202b
+22=0x202c
+23=0x202d
+24=0x2032
+25=0x2036
+26=0x2037
+27=0x2038
+28=0x203a
+29=0x203c
+30=0x203d
+31=0x203e
+32=0x2041
+33=0x2042
+34=0x2046
+35=0x204a
+36=0x2050
+37=0x2051
+38=0x2052
+39=0x2053
+40=0x2054
+41=0x2055
+42=0x2057
+43=0x2058
+44=0x2059
+45=0x205a
+46=0x205c
+47=0x205d
+48=0x205e
+49=0x205f
+50=0x2060
+51=0x2061
+52=0x2062
+53=0x2063
+54=0x2064
+55=0x2065
+56=0x2066
+57=0x2067
+58=0x2069
+59=0x206a
+60=0x206c
+61=0x206d
+62=0x206e
+63=0x206f
+64=0x2071
+65=0x2072
+66=0x2074
+67=0x2077
+68=0x2079
+69=0x207b
+70=0x207c
+71=0x207d
+72=0x207e
+73=0x5ffd
+
+[OptionalObjects]
+SupportedObjects=39
+1=0x1003
+2=0x1005
+3=0x1008
+4=0x100c
+5=0x100d
+6=0x1010
+7=0x1011
+8=0x1014
+9=0x1016
+10=0x1017
+11=0x1200
+12=0x1400
+13=0x1401
+14=0x1402
+15=0x1600
+16=0x1601
+17=0x1602
+18=0x1800
+19=0x1801
+20=0x1802
+21=0x1a00
+22=0x1a01
+23=0x1a02
+24=0x603f
+25=0x6040
+26=0x6041
+27=0x6042
+28=0x6043
+29=0x6044
+30=0x6046
+31=0x6048
+32=0x6049
+33=0x604b
+34=0x605a
+35=0x605c
+36=0x6060
+37=0x6061
+38=0x6077
+39=0x6502
+
+[1000]
+ParameterName=Device Type
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=0x410192
+
+[1001]
+ParameterName=Error Register
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=0x0
+
+[1003]
+ParameterName=Pre-defined Error Field
+ObjectType=8
+SubNumber=2
+
+[1003sub0]
+ParameterName=Number of error
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=0
+
+[1003sub1]
+ParameterName=Standard Error Field
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=0
+
+[1005]
+ParameterName=COB-ID SYNC message
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x80
+
+[1008]
+ParameterName=Device Name
+ObjectType=7
+DataType=9
+AccessType=const
+PDOMapping=0
+
+[100c]
+ParameterName=Guard Time
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[100d]
+ParameterName=Life Time Factor
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1010]
+ParameterName=Store Parameters
+ObjectType=8
+SubNumber=3
+
+[1010sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=2
+
+[1010sub1]
+ParameterName=Save all parameters
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1010sub2]
+ParameterName=Save communication parameters
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1011]
+ParameterName=Restore Default Parameters
+ObjectType=8
+SubNumber=3
+
+[1011sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=2
+
+[1011sub1]
+ParameterName=Restore all default parameters
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1011sub2]
+ParameterName=restore comm default parameters
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1014]
+ParameterName=COB-ID Emergency message
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=$NodeID + 0x80
+
+[1016]
+ParameterName=Consumer Heartbeat Time
+ObjectType=8
+SubNumber=2
+
+[1016sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=1
+
+[1016sub1]
+ParameterName=Consumer Heartbeat Time
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x0000
+
+[1017]
+ParameterName=Producer Heartbeat Time
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=500
+
+[1018]
+ParameterName=Identity Object
+ObjectType=9
+SubNumber=4
+
+[1018sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=3
+
+[1018sub1]
+ParameterName=Vendor ID
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=0x0200005A
+
+[1018sub2]
+ParameterName=Product code
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=320
+
+[1018sub3]
+ParameterName=Revision number
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=0x00010207
+
+[1200]
+ParameterName=SDO server parameter
+ObjectType=9
+SubNumber=3
+
+[1200sub0]
+ParameterName=Highest sub-index supported
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=2
+
+[1200sub1]
+ParameterName=COB-ID client -> server (rx)
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=$NodeID + 0x00000600
+
+[1200sub2]
+ParameterName=COB-ID server -> client (tx)
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+DefaultValue=$NodeID + 0x00000580
+
+[1400]
+ParameterName=Receive PDO1 parameter
+ObjectType=9
+SubNumber=3
+
+[1400sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[1400sub1]
+ParameterName=COB-ID
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=$NodeID + 0x0200
+
+[1400sub2]
+ParameterName=Transmission type
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=255
+
+[1401]
+ParameterName=Receive PDO2 parameter
+ObjectType=9
+SubNumber=3
+
+[1401sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[1401sub1]
+ParameterName=COB-ID
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=$NodeID + 0x80000300
+
+[1401sub2]
+ParameterName=Transmission type
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=255
+
+[1402]
+ParameterName=Receive PDO3 parameter
+ObjectType=9
+SubNumber=3
+
+[1402sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[1402sub1]
+ParameterName=COB-ID
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=$NodeID + 0x80000400
+
+[1402sub2]
+ParameterName=Transmission type
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=255
+
+[1600]
+ParameterName=Receive PDO1 mapping
+ObjectType=9
+SubNumber=3
+
+[1600sub0]
+ParameterName=Number of mapped objects
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=2
+
+[1600sub1]
+ParameterName=1.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x60400010
+
+[1600sub2]
+ParameterName=2.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x60420010
+
+[1601]
+ParameterName=Receive PDO2 mapping
+ObjectType=9
+SubNumber=2
+
+[1601sub0]
+ParameterName=Number of mapped objects
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1601sub1]
+ParameterName=Mapping Entry 1
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x0000
+
+[1602]
+ParameterName=Receive PDO3 mapping
+ObjectType=9
+SubNumber=2
+
+[1602sub0]
+ParameterName=Number of mapped objects
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1602sub1]
+ParameterName=Mapping Entry 1
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x0000
+
+[1800]
+ParameterName=Transmit PDO1 parameter
+ObjectType=9
+SubNumber=5
+
+[1800sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=5
+
+[1800sub1]
+ParameterName=COB-ID
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=$NodeID + 0x0180
+
+[1800sub2]
+ParameterName=Transmission type
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=255
+
+[1800sub3]
+ParameterName=Inhibit timer
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=300
+
+[1800sub5]
+ParameterName=Event Timer
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=1000
+
+[1801]
+ParameterName=Transmit PDO2 parameter
+ObjectType=9
+SubNumber=5
+
+[1801sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=5
+
+[1801sub1]
+ParameterName=COB-ID
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=$NodeID + 0x0280
+
+[1801sub2]
+ParameterName=Transmission type
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=255
+
+[1801sub3]
+ParameterName=Inhibit timer
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=300
+
+[1801sub5]
+ParameterName=Event Timer
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=1000
+
+[1802]
+ParameterName=Transmit PDO3 parameter
+ObjectType=9
+SubNumber=5
+
+[1802sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=5
+
+[1802sub1]
+ParameterName=COB-ID
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x80000380
+
+[1802sub2]
+ParameterName=Transmission type
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=255
+
+[1802sub3]
+ParameterName=Inhibit timer
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=300
+
+[1802sub5]
+ParameterName=Event Timer
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+DefaultValue=1000
+
+[1a00]
+ParameterName=Transmit PDO1 mapping
+ObjectType=9
+SubNumber=5
+
+[1a00sub0]
+ParameterName=Number of mapped objects
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=4
+
+[1a00sub1]
+ParameterName=1.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x60410010
+
+[1a00sub2]
+ParameterName=2.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x60440010
+
+[1a00sub3]
+ParameterName=3.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x20020510
+
+[1a00sub4]
+ParameterName=4.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x20020610
+
+[1a01]
+ParameterName=Transmit PDO2 mapping
+ObjectType=9
+SubNumber=5
+
+[1a01sub0]
+ParameterName=Number of mapped objects
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=4
+
+[1a01sub1]
+ParameterName=1.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x20020a10
+
+[1a01sub2]
+ParameterName=2.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x20022910
+
+[1a01sub3]
+ParameterName=3.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x20291610
+
+[1a01sub4]
+ParameterName=4.mapped object
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x20421f10
+
+[1a02]
+ParameterName=Transmit PDO3 mapping
+ObjectType=9
+SubNumber=2
+
+[1a02sub0]
+ParameterName=Number of mapped objects
+ObjectType=7
+DataType=5
+AccessType=rw
+PDOMapping=0
+DefaultValue=0
+
+[1a02sub1]
+ParameterName=Mapping Entry 1
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x0000
+
+[2000]
+ParameterName=Base_interne
+ObjectType=9
+SubNumber=24
+
+[2000sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=64
+
+[2000sub3]
+ParameterName=KEY
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub4]
+ParameterName=COD
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub5]
+ParameterName=COD2
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub7]
+ParameterName=LAC
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000suba]
+ParameterName=PRT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000subc]
+ParameterName=NCV
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000subd]
+ParameterName=VCAL
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000sube]
+ParameterName=NCVI
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000subf]
+ParameterName=VCAI
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub10]
+ParameterName=BFR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000sub11]
+ParameterName=IMAX
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000sub12]
+ParameterName=INV
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub13]
+ParameterName=VMAX
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000sub14]
+ParameterName=FMAX
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub17]
+ParameterName=FRY
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000sub33]
+ParameterName=VGP
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub34]
+ParameterName=VFD
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2000sub35]
+ParameterName=CFG
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2000sub36]
+ParameterName=CCFG
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2000sub3d]
+ParameterName=VFDC
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2000sub3e]
+ParameterName=VFD0
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub3f]
+ParameterName=VFD1
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2000sub40]
+ParameterName=VFD2
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2001]
+ParameterName=Base
+ObjectType=9
+SubNumber=14
+
+[2001sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=31
+
+[2001sub2]
+ParameterName=SFT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2001sub3]
+ParameterName=SFR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2001sub4]
+ParameterName=TFR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2001sub5]
+ParameterName=HSP
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2001sub6]
+ParameterName=LSP
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2001sub7]
+ParameterName=BSP
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2001sub8]
+ParameterName=NRD
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2001sub9]
+ParameterName=RIN
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2001subb]
+ParameterName=FLR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2001subd]
+ParameterName=STRT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2001sub15]
+ParameterName=RPR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2001sub16]
+ParameterName=RFLT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2001sub1f]
+ParameterName=FFM
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2002]
+ParameterName=Base_monitoring
+ObjectType=9
+SubNumber=48
+
+[2002sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=91
+
+[2002sub2]
+ParameterName=ETA
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub3]
+ParameterName=RFR
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub4]
+ParameterName=FRH
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub5]
+ParameterName=LCR
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub6]
+ParameterName=OTR
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub7]
+ParameterName=ETI
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub8]
+ParameterName=ULN
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub9]
+ParameterName=UOP
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002suba]
+ParameterName=THD
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002subc]
+ParameterName=OPR
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002subd]
+ParameterName=THR1
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sube]
+ParameterName=THR2
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002subf]
+ParameterName=THR3
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub11]
+ParameterName=OTRN
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub12]
+ParameterName=SLC
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub14]
+ParameterName=MMF
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub15]
+ParameterName=RFRI
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub16]
+ParameterName=RFRQ
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub17]
+ParameterName=FRHT
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub18]
+ParameterName=MMFQ
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub19]
+ParameterName=SLCR
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub1a]
+ParameterName=SRFR
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub1b]
+ParameterName=SOTR
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub1e]
+ParameterName=SULN
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub1f]
+ParameterName=APH
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub20]
+ParameterName=RTH
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub21]
+ParameterName=RTHI
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub22]
+ParameterName=PTH
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub23]
+ParameterName=UNT
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub24]
+ParameterName=TAC
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2002sub29]
+ParameterName=HMIS
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub2a]
+ParameterName=NTJ
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2002sub2b]
+ParameterName=TAC2
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2002sub33]
+ParameterName=LRS1
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub34]
+ParameterName=LRS2
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub35]
+ParameterName=LRS3
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub36]
+ParameterName=LRS4
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub37]
+ParameterName=LRS5
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub38]
+ParameterName=LRS6
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub39]
+ParameterName=LRS7
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub3a]
+ParameterName=LRS8
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub47]
+ParameterName=WR1
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub48]
+ParameterName=WR2
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub49]
+ParameterName=WR3
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub4a]
+ParameterName=WR4
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2002sub52]
+ParameterName=STFR
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2002sub5b]
+ParameterName=SOPR
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2003]
+ParameterName=Product_version
+ObjectType=9
+SubNumber=63
+
+[2003sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=77
+
+[2003sub2]
+ParameterName=SPN (3301)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub3]
+ParameterName=VDP (3302)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2003sub4]
+ParameterName=VSPE (3303)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub5]
+ParameterName=VSP1 (3304)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub6]
+ParameterName=VSP2 (3305)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003subc]
+ParameterName=SFE1 (3311)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003subd]
+ParameterName=SFE2 (3312)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sube]
+ParameterName=SFE3 (3313)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003subf]
+ParameterName=SFE4 (3314)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub15]
+ParameterName=PCN0 (3320)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub16]
+ParameterName=PCN1 (3321)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub17]
+ParameterName=PCN2 (3322)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub18]
+ParameterName=PCN3 (3323)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub19]
+ParameterName=PCN4 (3324)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub1a]
+ParameterName=PCN5 (3325)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub1b]
+ParameterName=PCN6 (3326)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub1c]
+ParameterName=PCN7 (3327)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub1d]
+ParameterName=PCN8 (3328)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub1e]
+ParameterName=PCN9 (3329)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub1f]
+ParameterName=PCNA (3330)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub20]
+ParameterName=PCNB (3331)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub21]
+ParameterName=PCNC (3332)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub22]
+ParameterName=PCND (3333)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub23]
+ParameterName=PCNE (3334)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub24]
+ParameterName=PCNF (3335)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub25]
+ParameterName=PCNG (3336)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub26]
+ParameterName=PCNH (3337)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub29]
+ParameterName=PAN0 (3340)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub2a]
+ParameterName=PAN1 (3341)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub2b]
+ParameterName=PAN2 (3342)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub2c]
+ParameterName=PAN3 (3343)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub2d]
+ParameterName=PAN4 (3344)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub2e]
+ParameterName=PAN5 (3345)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub2f]
+ParameterName=PAN6 (3346)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub30]
+ParameterName=PAN7 (3347)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub33]
+ParameterName=PN0 (3350)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2003sub34]
+ParameterName=PN1 (3351)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2003sub35]
+ParameterName=PN2 (3352)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2003sub36]
+ParameterName=CPN0 (3353)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub37]
+ParameterName=CPN1 (3354)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub38]
+ParameterName=CPN2 (3355)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub39]
+ParameterName=CPN3 (3356)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub3a]
+ParameterName=CPN4 (3357)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub3b]
+ParameterName=CPN5 (3358)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub3c]
+ParameterName=CPN6 (3359)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub3d]
+ParameterName=CPN7 (3360)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub3e]
+ParameterName=CPN8 (3361)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub3f]
+ParameterName=CPN9 (3362)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub40]
+ParameterName=CPNA (3363)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub41]
+ParameterName=CPNB (3364)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub42]
+ParameterName=CPNC (3365)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub43]
+ParameterName=CPND (3366)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub44]
+ParameterName=CPNE (3367)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub45]
+ParameterName=CPNF (3368)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub46]
+ParameterName=CPNG (3369)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub47]
+ParameterName=CPNH (3370)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub48]
+ParameterName=CSN1 (3371)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub49]
+ParameterName=CSN2 (3372)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub4a]
+ParameterName=CSN3 (3373)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub4b]
+ParameterName=CSN4 (3374)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub4c]
+ParameterName=CIEN (3375)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2003sub4d]
+ParameterName=CIDS (3376)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004]
+ParameterName=Internal_cards_version
+ObjectType=9
+SubNumber=30
+
+[2004sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=45
+
+[2004sub2]
+ParameterName=C1CT (3401)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004sub3]
+ParameterName=C1SC (3402)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub4]
+ParameterName=C1SV (3403)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub5]
+ParameterName=C1SB (3404)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub6]
+ParameterName=C1HV (3405)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub7]
+ParameterName=C1N1 (3406)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004sub8]
+ParameterName=C1N2 (3407)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004sub9]
+ParameterName=C1N3 (3408)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004suba]
+ParameterName=C1N4 (3409)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004subb]
+ParameterName=C1P1 (3410)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004subc]
+ParameterName=C1P2 (3411)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004subd]
+ParameterName=C1P3 (3412)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004sube]
+ParameterName=C1P4 (3413)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2004sub16]
+ParameterName=C2CT (3421)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub17]
+ParameterName=C2SC (3422)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub18]
+ParameterName=C2SV (3423)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub19]
+ParameterName=C2SB (3424)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub1a]
+ParameterName=C2HV (3425)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub1b]
+ParameterName=C2N1 (3426)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub1c]
+ParameterName=C2N2 (3427)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub1d]
+ParameterName=C2N3 (3428)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub1e]
+ParameterName=C2N4 (3429)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub1f]
+ParameterName=C2P1 (3430)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub20]
+ParameterName=C2P2 (3431)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub21]
+ParameterName=C2P3 (3432)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub22]
+ParameterName=C2P4 (3433)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2004sub2b]
+ParameterName=C3SC (3442)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub2c]
+ParameterName=C3SV (3443)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2004sub2d]
+ParameterName=C3SB (3444)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2005]
+ParameterName=Terminals_version
+ObjectType=9
+SubNumber=2
+
+[2005sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=62
+
+[2005sub3e]
+ParameterName=EBHT (3561)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006]
+ParameterName=Option_boards_version
+ObjectType=9
+SubNumber=34
+
+[2006sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=100
+
+[2006sub2]
+ParameterName=O1CT (3601)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub3]
+ParameterName=O1SC (3602)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006sub4]
+ParameterName=O1SV (3603)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006sub5]
+ParameterName=O1SB (3604)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006sub6]
+ParameterName=O1HV (3605)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006sub7]
+ParameterName=O1N1 (3606)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006sub8]
+ParameterName=O1N2 (3607)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006sub9]
+ParameterName=O1N3 (3608)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006suba]
+ParameterName=O1N4 (3609)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2006subb]
+ParameterName=O1C0 (3610)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006subc]
+ParameterName=O1C1 (3611)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006subd]
+ParameterName=O1C2 (3612)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sube]
+ParameterName=O1C3 (3613)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006subf]
+ParameterName=O1C4 (3614)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub10]
+ParameterName=O1C5 (3615)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub11]
+ParameterName=O1C6 (3616)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub12]
+ParameterName=O1C7 (3617)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub13]
+ParameterName=O1C8 (3618)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub14]
+ParameterName=O1C9 (3619)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub15]
+ParameterName=O1CA (3620)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub16]
+ParameterName=O1CB (3621)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub17]
+ParameterName=O1CC (3622)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub18]
+ParameterName=O1CD (3623)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub19]
+ParameterName=O1CE (3624)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub1a]
+ParameterName=O1CF (3625)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub1b]
+ParameterName=O1I1 (3626)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub1c]
+ParameterName=O1I2 (3627)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub1d]
+ParameterName=O1I3 (3628)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub1e]
+ParameterName=O1I4 (3629)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub1f]
+ParameterName=O1I5 (3630)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub20]
+ParameterName=O1I6 (3631)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub21]
+ParameterName=O1CG (3632)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2006sub64]
+ParameterName=INF6 (3699)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[200a]
+ParameterName=Logical_inputs_configuration
+ObjectType=9
+SubNumber=9
+
+[200asub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=23
+
+[200asub2]
+ParameterName=L1D (4001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200asub3]
+ParameterName=L2D (4002)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200asub4]
+ParameterName=L3D (4003)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200asub5]
+ParameterName=L4D (4004)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200asub6]
+ParameterName=L5D (4005)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200asub7]
+ParameterName=L6D (4006)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200asub16]
+ParameterName=LA1D (4021)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200asub17]
+ParameterName=LA2D (4022)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200c]
+ParameterName=Logical_outputs_configuration
+ObjectType=9
+SubNumber=17
+
+[200csub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=94
+
+[200csub2]
+ParameterName=R1S (4201)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub3]
+ParameterName=R2S (4202)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csuba]
+ParameterName=LO1S (4209)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub16]
+ParameterName=R1H (4221)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub17]
+ParameterName=R2H (4222)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub1e]
+ParameterName=LO1H (4229)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub2a]
+ParameterName=R1D (4241)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub2b]
+ParameterName=R2D (4242)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub32]
+ParameterName=LO1D (4249)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub3e]
+ParameterName=DO1S (4261)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub48]
+ParameterName=DO1H (4271)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub52]
+ParameterName=DO1D (4281)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub5b]
+ParameterName=R1F (4290)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub5c]
+ParameterName=R2F (4291)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub5d]
+ParameterName=LO1F (4292)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200csub5e]
+ParameterName=AOF1 (4293)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200e]
+ParameterName=Analog_inputs_configuration
+ObjectType=9
+SubNumber=22
+
+[200esub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=85
+
+[200esub3]
+ParameterName=AI1T (4402)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub4]
+ParameterName=AI2T (4403)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub5]
+ParameterName=AI3T (4404)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esubd]
+ParameterName=UIL1 (4412)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esube]
+ParameterName=UIL2 (4413)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub17]
+ParameterName=UIH1 (4422)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub18]
+ParameterName=UIH2 (4423)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub23]
+ParameterName=CRL3 (4434)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub2d]
+ParameterName=CRH3 (4444)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub35]
+ParameterName=AI1F (4452)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub36]
+ParameterName=AI2F (4453)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub37]
+ParameterName=AI3F (4454)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub3f]
+ParameterName=AI1E (4462)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub40]
+ParameterName=AI2E (4463)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub41]
+ParameterName=AI3E (4464)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub49]
+ParameterName=AI1S (4472)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub4a]
+ParameterName=AI2S (4473)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub4b]
+ParameterName=AI3S (4474)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub53]
+ParameterName=AI1L (4482)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub54]
+ParameterName=AI2L (4483)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[200esub55]
+ParameterName=AI3L (4484)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010]
+ParameterName=Analog_outputs_configuration
+ObjectType=9
+SubNumber=9
+
+[2010sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=72
+
+[2010sub2]
+ParameterName=AO1T (4601)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010subc]
+ParameterName=AO1F (4611)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010sub16]
+ParameterName=UOL1 (4621)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010sub20]
+ParameterName=UOH1 (4631)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010sub2a]
+ParameterName=AOL1 (4641)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010sub34]
+ParameterName=AOH1 (4651)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010sub3e]
+ParameterName=ASL1 (4661)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2010sub48]
+ParameterName=ASH1 (4671)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012]
+ParameterName=Inputs_affectations
+ObjectType=9
+SubNumber=15
+
+[2012sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=72
+
+[2012sub2]
+ParameterName=L1A (4801)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub3]
+ParameterName=L2A (4802)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub4]
+ParameterName=L3A (4803)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub5]
+ParameterName=L4A (4804)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub6]
+ParameterName=L5A (4805)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub7]
+ParameterName=L6A (4806)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub10]
+ParameterName=LA1A (4815)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub11]
+ParameterName=LA2A (4816)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub16]
+ParameterName=AI1A (4821)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub17]
+ParameterName=AI2A (4822)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub18]
+ParameterName=AI3A (4823)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub3e]
+ParameterName=AV1A (4861)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub3f]
+ParameterName=AV2A (4862)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2012sub48]
+ParameterName=PIA (4871)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2014]
+ParameterName=Outputs_affectations
+ObjectType=9
+SubNumber=6
+
+[2014sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=32
+
+[2014sub2]
+ParameterName=R1 (5001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2014sub3]
+ParameterName=R2 (5002)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2014suba]
+ParameterName=LO1 (5009)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2014sub16]
+ParameterName=AO1 (5021)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2014sub20]
+ParameterName=DO1 (5031)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2016]
+ParameterName=IO_values
+ObjectType=9
+SubNumber=24
+
+[2016sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=96
+
+[2016sub2]
+ParameterName=IL1I (5201)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2016sub3]
+ParameterName=IL1R (5202)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2016subc]
+ParameterName=OL1I (5211)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2016subd]
+ParameterName=OL1R (5212)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2016sub17]
+ParameterName=AI1I (5222)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub18]
+ParameterName=AI2I (5223)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub19]
+ParameterName=AI3I (5224)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2016sub21]
+ParameterName=AI1R (5232)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub22]
+ParameterName=AI2R (5233)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub23]
+ParameterName=AI3R (5234)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub2b]
+ParameterName=AI1C (5242)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub2c]
+ParameterName=AI2C (5243)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub2d]
+ParameterName=AI3C (5244)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub34]
+ParameterName=AO1I (5251)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub3e]
+ParameterName=AO1R (5261)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2016sub48]
+ParameterName=AO1C (5271)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2016sub52]
+ParameterName=AIV1 (5281)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2016sub54]
+ParameterName=AIV2 (5283)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2016sub55]
+ParameterName=AIC2 (5284)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2016sub5c]
+ParameterName=SAI1 (5291)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub5d]
+ParameterName=SAI2 (5292)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub5e]
+ParameterName=SAI3 (5293)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2016sub60]
+ParameterName=SAO1 (5295)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[201a]
+ParameterName=Encoder_management
+ObjectType=9
+SubNumber=10
+
+[201asub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=44
+
+[201asub5]
+ParameterName=PGI (5604)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201asub7]
+ParameterName=ENU (5606)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201asub9]
+ParameterName=ENS (5608)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201asubb]
+ParameterName=PDI (5610)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201asubc]
+ParameterName=PUC (5611)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201asub29]
+ParameterName=LANF (5640)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201asub2a]
+ParameterName=TANF (5641)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201asub2b]
+ParameterName=FANF (5642)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201asub2c]
+ParameterName=DANF (5643)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201e]
+ParameterName=Product_communication
+ObjectType=9
+SubNumber=15
+
+[201esub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=60
+
+[201esub2]
+ParameterName=ADD (6001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201esub4]
+ParameterName=TBR (6003)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201esub5]
+ParameterName=TFO (6004)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201esub6]
+ParameterName=TTO (6005)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201esubb]
+ParameterName=M1EC (6010)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201esubc]
+ParameterName=M1CT (6011)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201esub2d]
+ParameterName=M3EC (6044)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201esub2e]
+ParameterName=M3CT (6045)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201esub34]
+ParameterName=ADCO (6051)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201esub36]
+ParameterName=BDCO (6053)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[201esub39]
+ParameterName=ERCO (6056)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201esub3a]
+ParameterName=NMTS (6057)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201esub3b]
+ParameterName=TEC1 (6058)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[201esub3c]
+ParameterName=REC1 (6059)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2024]
+ParameterName=Option_communication
+ObjectType=9
+SubNumber=23
+
+[2024sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=95
+
+[2024sub2]
+ParameterName=ADRC (6601)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub4]
+ParameterName=BDR (6603)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub7]
+ParameterName=PRC (6606)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub8]
+ParameterName=GLB (6607)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub34]
+ParameterName=AMOC (6651)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub3d]
+ParameterName=BDRU (6660)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub42]
+ParameterName=PRFL (6665)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub43]
+ParameterName=DPMA (6666)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub44]
+ParameterName=CIOA (6667)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub45]
+ParameterName=CIO2 (6668)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub47]
+ParameterName=BTUA (6670)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub48]
+ParameterName=BTUC (6671)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub4a]
+ParameterName=BTPI (6673)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2024sub51]
+ParameterName=HUN1 (6680)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2024sub52]
+ParameterName=HUN2 (6681)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2024sub53]
+ParameterName=HUN3 (6682)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2024sub54]
+ParameterName=HUN4 (6683)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2024sub56]
+ParameterName=DMN (6685)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2024sub5b]
+ParameterName=ECSS (6690)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub5c]
+ParameterName=ECSA (6691)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub5d]
+ParameterName=ECAA (6692)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2024sub5f]
+ParameterName=NTID (6694)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028]
+ParameterName=Fault_behaviour
+ObjectType=9
+SubNumber=18
+
+[2028sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=91
+
+[2028sub3]
+ParameterName=IPL (7002)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub5]
+ParameterName=STP (7004)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub6]
+ParameterName=SDD (7005)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub7]
+ParameterName=EPL (7006)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub9]
+ParameterName=OHL (7008)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028suba]
+ParameterName=OLL (7009)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028subb]
+ParameterName=SLL (7010)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028subc]
+ParameterName=COL (7011)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028subd]
+ParameterName=TNL (7012)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sube]
+ParameterName=LFL3 (7013)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub10]
+ParameterName=CLL (7015)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub13]
+ParameterName=SCL3 (7018)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub15]
+ParameterName=DCFF (7020)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2028sub17]
+ParameterName=OPL1 (7022)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2028sub51]
+ParameterName=LFF (7080)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2028sub52]
+ParameterName=ODT (7081)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2028sub5b]
+ParameterName=LET (7090)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029]
+ParameterName=Fault_management
+ObjectType=9
+SubNumber=19
+
+[2029sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=51
+
+[2029sub2]
+ParameterName=DF1
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2029sub3]
+ParameterName=DF2
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2029sub4]
+ParameterName=DF3
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2029sub5]
+ParameterName=DF4
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2029sub6]
+ParameterName=DF5
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2029sub7]
+ParameterName=DF6
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2029sub16]
+ParameterName=LFT
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2029sub17]
+ParameterName=ATR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub18]
+ParameterName=TAR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub19]
+ParameterName=RSF
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub1a]
+ParameterName=INH
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub1d]
+ParameterName=RP
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub1e]
+ParameterName=RPA
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub1f]
+ParameterName=CIC
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub20]
+ParameterName=ETF
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2029sub21]
+ParameterName=CNF
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2029sub23]
+ParameterName=ILF1
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2029sub33]
+ParameterName=HRFC
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[202a]
+ParameterName=Last_fault_records
+ObjectType=9
+SubNumber=91
+
+[202asub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=99
+
+[202asub1]
+ParameterName=DP0 (7200)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub2]
+ParameterName=DP1 (7201)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub3]
+ParameterName=DP2 (7202)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub4]
+ParameterName=DP3 (7203)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub5]
+ParameterName=DP4 (7204)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub6]
+ParameterName=DP5 (7205)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub7]
+ParameterName=DP6 (7206)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub8]
+ParameterName=DP7 (7207)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub9]
+ParameterName=DP8 (7208)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asubb]
+ParameterName=EP0 (7210)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asubc]
+ParameterName=EP1 (7211)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asubd]
+ParameterName=EP2 (7212)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asube]
+ParameterName=EP3 (7213)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asubf]
+ParameterName=EP4 (7214)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub10]
+ParameterName=EP5 (7215)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub11]
+ParameterName=EP6 (7216)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub12]
+ParameterName=EP7 (7217)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub13]
+ParameterName=EP8 (7218)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub15]
+ParameterName=IP0 (7220)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub16]
+ParameterName=IP1 (7221)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub17]
+ParameterName=IP2 (7222)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub18]
+ParameterName=IP3 (7223)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub19]
+ParameterName=IP4 (7224)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub1a]
+ParameterName=IP5 (7225)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub1b]
+ParameterName=IP6 (7226)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub1c]
+ParameterName=IP7 (7227)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub1d]
+ParameterName=IP8 (7228)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub1f]
+ParameterName=CMP0 (7230)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub20]
+ParameterName=CMP1 (7231)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub21]
+ParameterName=CMP2 (7232)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub22]
+ParameterName=CMP3 (7233)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub23]
+ParameterName=CMP4 (7234)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub24]
+ParameterName=CMP5 (7235)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub25]
+ParameterName=CMP6 (7236)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub26]
+ParameterName=CMP7 (7237)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub27]
+ParameterName=CMP8 (7238)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub29]
+ParameterName=LCP0 (7240)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub2a]
+ParameterName=LCP1 (7241)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub2b]
+ParameterName=LCP2 (7242)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub2c]
+ParameterName=LCP3 (7243)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub2d]
+ParameterName=LCP4 (7244)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub2e]
+ParameterName=LCP5 (7245)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub2f]
+ParameterName=LCP6 (7246)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub30]
+ParameterName=LCP7 (7247)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub31]
+ParameterName=LCP8 (7248)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub33]
+ParameterName=RFP0 (7250)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub34]
+ParameterName=RFP1 (7251)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub35]
+ParameterName=RFP2 (7252)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub36]
+ParameterName=RFP3 (7253)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub37]
+ParameterName=RFP4 (7254)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub38]
+ParameterName=RFP5 (7255)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub39]
+ParameterName=RFP6 (7256)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub3a]
+ParameterName=RFP7 (7257)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub3b]
+ParameterName=RFP8 (7258)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202asub3d]
+ParameterName=RTP0 (7260)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub3e]
+ParameterName=RTP1 (7261)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub3f]
+ParameterName=RTP2 (7262)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub40]
+ParameterName=RTP3 (7263)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub41]
+ParameterName=RTP4 (7264)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub42]
+ParameterName=RTP5 (7265)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub43]
+ParameterName=RTP6 (7266)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub44]
+ParameterName=RTP7 (7267)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub45]
+ParameterName=RTP8 (7268)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub47]
+ParameterName=ULP0 (7270)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub48]
+ParameterName=ULP1 (7271)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub49]
+ParameterName=ULP2 (7272)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub4a]
+ParameterName=ULP3 (7273)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub4b]
+ParameterName=ULP4 (7274)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub4c]
+ParameterName=ULP5 (7275)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub4d]
+ParameterName=ULP6 (7276)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub4e]
+ParameterName=ULP7 (7277)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub4f]
+ParameterName=ULP8 (7278)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub51]
+ParameterName=THP0 (7280)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub52]
+ParameterName=THP1 (7281)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub53]
+ParameterName=THP2 (7282)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub54]
+ParameterName=THP3 (7283)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub55]
+ParameterName=THP4 (7284)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub56]
+ParameterName=THP5 (7285)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub57]
+ParameterName=THP6 (7286)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub58]
+ParameterName=THP7 (7287)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub59]
+ParameterName=THP8 (7288)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub5b]
+ParameterName=CRP0 (7290)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub5c]
+ParameterName=CRP1 (7291)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub5d]
+ParameterName=CRP2 (7292)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub5e]
+ParameterName=CRP3 (7293)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub5f]
+ParameterName=CRP4 (7294)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub60]
+ParameterName=CRP5 (7295)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub61]
+ParameterName=CRP6 (7296)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub62]
+ParameterName=CRP7 (7297)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202asub63]
+ParameterName=CRP8 (7298)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202b]
+ParameterName=Last_fault_records_2
+ObjectType=9
+SubNumber=47
+
+[202bsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=94
+
+[202bsub15]
+ParameterName=HS0 (7320)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub16]
+ParameterName=HS1 (7321)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub17]
+ParameterName=HS2 (7322)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub18]
+ParameterName=HS3 (7323)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub19]
+ParameterName=HS4 (7324)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub1a]
+ParameterName=HS5 (7325)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub1b]
+ParameterName=HS6 (7326)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub1c]
+ParameterName=HS7 (7327)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub1d]
+ParameterName=HS8 (7328)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub1f]
+ParameterName=OTP0 (7330)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub20]
+ParameterName=OTP1 (7331)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub21]
+ParameterName=OTP2 (7332)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub22]
+ParameterName=OTP3 (7333)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub23]
+ParameterName=OTP4 (7334)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub24]
+ParameterName=OTP5 (7335)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub25]
+ParameterName=OTP6 (7336)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub26]
+ParameterName=OTP7 (7337)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub27]
+ParameterName=OTP8 (7338)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[202bsub29]
+ParameterName=TDP0 (7340)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub2a]
+ParameterName=TDP1 (7341)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub2b]
+ParameterName=TDP2 (7342)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub2c]
+ParameterName=TDP3 (7343)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub2d]
+ParameterName=TDP4 (7344)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub2e]
+ParameterName=TDP5 (7345)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub2f]
+ParameterName=TDP6 (7346)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub30]
+ParameterName=TDP7 (7347)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub31]
+ParameterName=TDP8 (7348)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub33]
+ParameterName=TJP0 (7350)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub34]
+ParameterName=TJP1 (7351)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub35]
+ParameterName=TJP2 (7352)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub36]
+ParameterName=TJP3 (7353)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub37]
+ParameterName=TJP4 (7354)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub38]
+ParameterName=TJP5 (7355)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub39]
+ParameterName=TJP6 (7356)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub3a]
+ParameterName=TJP7 (7357)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub3b]
+ParameterName=TJP8 (7358)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub3d]
+ParameterName=SFP0 (7360)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub3e]
+ParameterName=SFP1 (7361)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub3f]
+ParameterName=SFP2 (7362)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub40]
+ParameterName=SFP3 (7363)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub41]
+ParameterName=SFP4 (7364)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub42]
+ParameterName=SFP5 (7365)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub43]
+ParameterName=SFP6 (7366)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub44]
+ParameterName=SFP7 (7367)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub45]
+ParameterName=SFP8 (7368)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202bsub5e]
+ParameterName=FNB (7393)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202c]
+ParameterName=Last_fault_records_3
+ObjectType=9
+SubNumber=81
+
+[202csub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=99
+
+[202csub2]
+ParameterName=SR11 (7401)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub3]
+ParameterName=SR12 (7402)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub4]
+ParameterName=SR13 (7403)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub5]
+ParameterName=SR14 (7404)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub6]
+ParameterName=SR15 (7405)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub7]
+ParameterName=SR16 (7406)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub8]
+ParameterName=SR17 (7407)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub9]
+ParameterName=SR18 (7408)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csubc]
+ParameterName=SR21 (7411)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csubd]
+ParameterName=SR22 (7412)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csube]
+ParameterName=SR23 (7413)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csubf]
+ParameterName=SR24 (7414)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub10]
+ParameterName=SR25 (7415)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub11]
+ParameterName=SR26 (7416)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub12]
+ParameterName=SR27 (7417)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub13]
+ParameterName=SR28 (7418)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub16]
+ParameterName=SRA1 (7421)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub17]
+ParameterName=SRA2 (7422)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub18]
+ParameterName=SRA3 (7423)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub19]
+ParameterName=SRA4 (7424)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub1a]
+ParameterName=SRA5 (7425)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub1b]
+ParameterName=SRA6 (7426)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub1c]
+ParameterName=SRA7 (7427)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub1d]
+ParameterName=SRA8 (7428)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub20]
+ParameterName=SRB1 (7431)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub21]
+ParameterName=SRB2 (7432)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub22]
+ParameterName=SRB3 (7433)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub23]
+ParameterName=SRB4 (7434)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub24]
+ParameterName=SRB5 (7435)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub25]
+ParameterName=SRB6 (7436)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub26]
+ParameterName=SRB7 (7437)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub27]
+ParameterName=SRB8 (7438)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub2a]
+ParameterName=SRC1 (7441)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub2b]
+ParameterName=SRC2 (7442)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub2c]
+ParameterName=SRC3 (7443)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub2d]
+ParameterName=SRC4 (7444)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub2e]
+ParameterName=SRC5 (7445)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub2f]
+ParameterName=SRC6 (7446)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub30]
+ParameterName=SRC7 (7447)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub31]
+ParameterName=SRC8 (7448)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub34]
+ParameterName=SRD1 (7451)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub35]
+ParameterName=SRD2 (7452)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub36]
+ParameterName=SRD3 (7453)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub37]
+ParameterName=SRD4 (7454)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub38]
+ParameterName=SRD5 (7455)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub39]
+ParameterName=SRD6 (7456)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub3a]
+ParameterName=SRD7 (7457)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub3b]
+ParameterName=SRD8 (7458)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub3e]
+ParameterName=SRE1 (7461)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub3f]
+ParameterName=SRE2 (7462)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub40]
+ParameterName=SRE3 (7463)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub41]
+ParameterName=SRE4 (7464)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub42]
+ParameterName=SRE5 (7465)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub43]
+ParameterName=SRE6 (7466)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub44]
+ParameterName=SRE7 (7467)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub45]
+ParameterName=SRE8 (7468)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub48]
+ParameterName=SRF1 (7471)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub49]
+ParameterName=SRF2 (7472)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub4a]
+ParameterName=SRF3 (7473)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub4b]
+ParameterName=SRF4 (7474)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub4c]
+ParameterName=SRF5 (7475)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub4d]
+ParameterName=SRF6 (7476)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub4e]
+ParameterName=SRF7 (7477)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub4f]
+ParameterName=SRF8 (7478)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub52]
+ParameterName=SRG1 (7481)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub53]
+ParameterName=SRG2 (7482)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub54]
+ParameterName=SRG3 (7483)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub55]
+ParameterName=SRG4 (7484)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub56]
+ParameterName=SRG5 (7485)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub57]
+ParameterName=SRG6 (7486)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub58]
+ParameterName=SRG7 (7487)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub59]
+ParameterName=SRG8 (7488)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub5c]
+ParameterName=SRH1 (7491)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub5d]
+ParameterName=SRH2 (7492)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub5e]
+ParameterName=SRH3 (7493)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub5f]
+ParameterName=SRH4 (7494)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub60]
+ParameterName=SRH5 (7495)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub61]
+ParameterName=SRH6 (7496)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub62]
+ParameterName=SRH7 (7497)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202csub63]
+ParameterName=SRH8 (7498)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202d]
+ParameterName=Last_fault_records_4
+ObjectType=9
+SubNumber=33
+
+[202dsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=39
+
+[202dsub2]
+ParameterName=SRI1 (7501)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub3]
+ParameterName=SRI2 (7502)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub4]
+ParameterName=SRI3 (7503)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub5]
+ParameterName=SRI4 (7504)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub6]
+ParameterName=SRI5 (7505)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub7]
+ParameterName=SRI6 (7506)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub8]
+ParameterName=SRI7 (7507)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub9]
+ParameterName=SRI8 (7508)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsubc]
+ParameterName=SRJ1 (7511)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsubd]
+ParameterName=SRJ2 (7512)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsube]
+ParameterName=SRJ3 (7513)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsubf]
+ParameterName=SRJ4 (7514)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub10]
+ParameterName=SRJ5 (7515)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub11]
+ParameterName=SRJ6 (7516)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub12]
+ParameterName=SRJ7 (7517)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub13]
+ParameterName=SRJ8 (7518)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub16]
+ParameterName=SRK1 (7521)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub17]
+ParameterName=SRK2 (7522)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub18]
+ParameterName=SRK3 (7523)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub19]
+ParameterName=SRK4 (7524)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub1a]
+ParameterName=SRK5 (7525)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub1b]
+ParameterName=SRK6 (7526)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub1c]
+ParameterName=SRK7 (7527)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub1d]
+ParameterName=SRK8 (7528)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub20]
+ParameterName=SRL1 (7531)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub21]
+ParameterName=SRL2 (7532)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub22]
+ParameterName=SRL3 (7533)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub23]
+ParameterName=SRL4 (7534)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub24]
+ParameterName=SRL5 (7535)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub25]
+ParameterName=SRL6 (7536)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub26]
+ParameterName=SRL7 (7537)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[202dsub27]
+ParameterName=SRL8 (7538)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2032]
+ParameterName=Configuration_management
+ObjectType=9
+SubNumber=12
+
+[2032sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=93
+
+[2032sub2]
+ParameterName=SCS (8001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2032sub3]
+ParameterName=FCS (8002)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2032sub4]
+ParameterName=CGTY (8003)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2032sub15]
+ParameterName=CNFS (8020)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2032sub16]
+ParameterName=CNF1 (8021)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2032sub17]
+ParameterName=CNF2 (8022)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2032sub1a]
+ParameterName=CHM (8025)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2032sub2a]
+ParameterName=ULR (8041)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2032sub2b]
+ParameterName=DLR (8042)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2032sub5c]
+ParameterName=CO1C (8091)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2032sub5d]
+ParameterName=CO1G (8092)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2036]
+ParameterName=Channel_management
+ObjectType=9
+SubNumber=18
+
+[2036sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=92
+
+[2036sub2]
+ParameterName=CHCF (8401)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub3]
+ParameterName=COP (8402)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub4]
+ParameterName=CSB (8403)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036subc]
+ParameterName=RFC (8411)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036subd]
+ParameterName=RCB (8412)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sube]
+ParameterName=FR1 (8413)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036subf]
+ParameterName=FR2 (8414)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub10]
+ParameterName=FR1B (8415)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub16]
+ParameterName=CCS (8421)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub18]
+ParameterName=CD1 (8423)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub19]
+ParameterName=CD2 (8424)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub20]
+ParameterName=FLO (8431)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub21]
+ParameterName=FLOC (8432)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub22]
+ParameterName=FLOT (8433)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2036sub2a]
+ParameterName=CRC (8441)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2036sub2b]
+ParameterName=CCC (8442)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2036sub5c]
+ParameterName=SPM (8491)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2037]
+ParameterName=Command
+ObjectType=9
+SubNumber=22
+
+[2037sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=100
+
+[2037sub2]
+ParameterName=CMD (8501)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub3]
+ParameterName=LFR (8502)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2037sub4]
+ParameterName=PISP (8503)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub5]
+ParameterName=CMI (8504)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037subc]
+ParameterName=CMD1 (8511)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037subd]
+ParameterName=CMD2 (8512)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sube]
+ParameterName=CMD3 (8513)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub14]
+ParameterName=CMDA (8519)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2037sub15]
+ParameterName=LFRL (8520)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2037sub16]
+ParameterName=LFR1 (8521)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2037sub17]
+ParameterName=LFR2 (8522)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2037sub18]
+ParameterName=LFR3 (8523)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2037sub1e]
+ParameterName=LFRA (8529)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2037sub20]
+ParameterName=PIR1 (8531)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub21]
+ParameterName=PIR2 (8532)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub22]
+ParameterName=PIR3 (8533)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub28]
+ParameterName=PIRA (8539)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2037sub2a]
+ParameterName=CMI1 (8541)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub2b]
+ParameterName=CMI2 (8542)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub2c]
+ParameterName=CMI3 (8543)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2037sub64]
+ParameterName=PS2K (8599)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038]
+ParameterName=Drivecom
+ObjectType=9
+SubNumber=25
+
+[2038sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=53
+
+[2038sub2]
+ParameterName=CMDD (8601)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038sub3]
+ParameterName=LFRD (8602)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2038sub4]
+ParameterName=ETAD (8603)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2038sub5]
+ParameterName=RFRD (8604)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2038sub6]
+ParameterName=FRHD (8605)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2038sub7]
+ParameterName=ERRD (8606)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2038sub8]
+ParameterName=SMIL (8607)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038sub9]
+ParameterName=SMIH (8608)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038suba]
+ParameterName=SMAL (8609)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038subb]
+ParameterName=SMAH (8610)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038subc]
+ParameterName=SPAL (8611)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038subd]
+ParameterName=SPAH (8612)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038sube]
+ParameterName=SPAT (8613)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038subf]
+ParameterName=SPDL (8614)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038sub10]
+ParameterName=SPDH (8615)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038sub11]
+ParameterName=SPDT (8616)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2038sub20]
+ParameterName=LFD1 (8631)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2038sub21]
+ParameterName=LFD2 (8632)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2038sub22]
+ParameterName=LFD3 (8633)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2038sub2a]
+ParameterName=FROD (8641)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2038sub2b]
+ParameterName=SPFN (8642)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2038sub2c]
+ParameterName=SPFD (8643)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2038sub34]
+ParameterName=QSTD (8651)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2038sub35]
+ParameterName=DOTD (8652)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203a]
+ParameterName=APP_Parameters
+ObjectType=9
+SubNumber=27
+
+[203asub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=27
+
+[203asub2]
+ParameterName=AP01 (8801)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203asub3]
+ParameterName=AP02 (8802)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub4]
+ParameterName=AP03 (8803)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub5]
+ParameterName=AP04 (8804)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub6]
+ParameterName=AP05 (8805)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub7]
+ParameterName=AP06 (8806)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub8]
+ParameterName=AP07 (8807)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub9]
+ParameterName=AP08 (8808)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asuba]
+ParameterName=AP09 (8809)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asubb]
+ParameterName=AP10 (8810)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asubc]
+ParameterName=AP11 (8811)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asubd]
+ParameterName=AP12 (8812)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asube]
+ParameterName=AP13 (8813)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asubf]
+ParameterName=AP14 (8814)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub10]
+ParameterName=AP15 (8815)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub11]
+ParameterName=AP16 (8816)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub12]
+ParameterName=AP17 (8817)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub13]
+ParameterName=AP18 (8818)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub14]
+ParameterName=AP19 (8819)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub15]
+ParameterName=AP20 (8820)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub16]
+ParameterName=AP21 (8821)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub17]
+ParameterName=AP22 (8822)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub18]
+ParameterName=AP23 (8823)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub19]
+ParameterName=AP24 (8824)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub1a]
+ParameterName=AP25 (8825)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203asub1b]
+ParameterName=AP26 (8826)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203c]
+ParameterName=Ramps
+ObjectType=9
+SubNumber=16
+
+[203csub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=23
+
+[203csub2]
+ParameterName=ACC (9001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub3]
+ParameterName=DEC (9002)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub4]
+ParameterName=BRA (9003)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203csub5]
+ParameterName=RPT (9004)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub6]
+ParameterName=TA1 (9005)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub7]
+ParameterName=TA2 (9006)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub8]
+ParameterName=TA3 (9007)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub9]
+ParameterName=TA4 (9008)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csubb]
+ParameterName=RPS (9010)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203csubc]
+ParameterName=FRT (9011)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203csubd]
+ParameterName=AC2 (9012)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csube]
+ParameterName=DE2 (9013)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub15]
+ParameterName=INR (9020)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203csub16]
+ParameterName=FRO (9021)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[203csub17]
+ParameterName=FROT (9022)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[203d]
+ParameterName=Speed_loop
+ObjectType=9
+SubNumber=6
+
+[203dsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=17
+
+[203dsub4]
+ParameterName=SPG (9103)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203dsub5]
+ParameterName=SIT (9104)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203dsub6]
+ParameterName=SFC (9105)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203dsub10]
+ParameterName=FFH (9115)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203dsub11]
+ParameterName=CRTF (9116)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203e]
+ParameterName=Torque_current_management
+ObjectType=9
+SubNumber=13
+
+[203esub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=61
+
+[203esub2]
+ParameterName=CLI (9201)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203esub3]
+ParameterName=LC2 (9202)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203esub4]
+ParameterName=CL2 (9203)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203esubb]
+ParameterName=TLA (9210)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203esubc]
+ParameterName=TLIM (9211)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203esubd]
+ParameterName=TLIG (9212)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203esube]
+ParameterName=TLC (9213)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203esubf]
+ParameterName=TAA (9214)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203esub10]
+ParameterName=INTP (9215)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203esub29]
+ParameterName=SSB (9240)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[203esub2a]
+ParameterName=STO (9241)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[203esub3d]
+ParameterName=INT (9260)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2041]
+ParameterName=ENT_parameters
+ObjectType=9
+SubNumber=47
+
+[2041sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=47
+
+[2041sub2]
+ParameterName=EN0 (9501)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub3]
+ParameterName=EN1 (9502)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub4]
+ParameterName=EN2 (9503)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub5]
+ParameterName=EN3 (9504)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub6]
+ParameterName=EN4 (9505)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub7]
+ParameterName=EN5 (9506)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub8]
+ParameterName=EN6 (9507)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub9]
+ParameterName=EN7 (9508)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041suba]
+ParameterName=EN8 (9509)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041subb]
+ParameterName=EN9 (9510)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041subc]
+ParameterName=EN10 (9511)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041subd]
+ParameterName=EN11 (9512)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sube]
+ParameterName=EN12 (9513)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041subf]
+ParameterName=EN13 (9514)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub10]
+ParameterName=EN14 (9515)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub11]
+ParameterName=EN15 (9516)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub12]
+ParameterName=EN16 (9517)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub13]
+ParameterName=EN17 (9518)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub14]
+ParameterName=EN18 (9519)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub15]
+ParameterName=EN19 (9520)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub16]
+ParameterName=EN20 (9521)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub17]
+ParameterName=EN21 (9522)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub18]
+ParameterName=EN22 (9523)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub19]
+ParameterName=EN23 (9524)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub1a]
+ParameterName=EN24 (9525)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub1b]
+ParameterName=EN25 (9526)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub1c]
+ParameterName=EN26 (9527)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub1d]
+ParameterName=EN27 (9528)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub1e]
+ParameterName=EN28 (9529)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub1f]
+ParameterName=EN29 (9530)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub20]
+ParameterName=EN30 (9531)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub21]
+ParameterName=EN31 (9532)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub22]
+ParameterName=EN32 (9533)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub23]
+ParameterName=EN33 (9534)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub24]
+ParameterName=EN34 (9535)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub25]
+ParameterName=EN35 (9536)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub26]
+ParameterName=EN36 (9537)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub27]
+ParameterName=EN37 (9538)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub28]
+ParameterName=EN38 (9539)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub29]
+ParameterName=EN39 (9540)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub2a]
+ParameterName=EN40 (9541)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub2b]
+ParameterName=EN41 (9542)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub2c]
+ParameterName=EN42 (9543)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub2d]
+ParameterName=EN43 (9544)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub2e]
+ParameterName=EN44 (9545)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2041sub2f]
+ParameterName=EN45 (9546)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042]
+ParameterName=Motor_1
+ObjectType=9
+SubNumber=54
+
+[2042sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=100
+
+[2042sub2]
+ParameterName=UNS
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub3]
+ParameterName=FRS
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub4]
+ParameterName=NCR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub5]
+ParameterName=NSP
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub7]
+ParameterName=COS
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub8]
+ParameterName=CTT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub9]
+ParameterName=TUN
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042suba]
+ParameterName=TUS
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042subb]
+ParameterName=TUL
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042subc]
+ParameterName=OPL
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042subd]
+ParameterName=THT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sube]
+ParameterName=NPR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042subf]
+ParameterName=MPC
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub10]
+ParameterName=AUT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub11]
+ParameterName=MTM
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub12]
+ParameterName=STUN
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub13]
+ParameterName=PPN
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub14]
+ParameterName=TUNU
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub17]
+ParameterName=ITH
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub18]
+ParameterName=UFR
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub19]
+ParameterName=PFL
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub1a]
+ParameterName=SLP
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub1e]
+ParameterName=SPGU
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub1f]
+ParameterName=THR
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2042sub20]
+ParameterName=I2TA
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub21]
+ParameterName=I2TI
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub22]
+ParameterName=I2TT
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub23]
+ParameterName=I2TM
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2042sub28]
+ParameterName=MPTS
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub2b]
+ParameterName=RSA
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub2c]
+ParameterName=RSAI (9643)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub2e]
+ParameterName=SMOT (9645)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2042sub35]
+ParameterName=IDA (9652)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub36]
+ParameterName=IDAI (9653)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub3f]
+ParameterName=LFA (9662)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub40]
+ParameterName=LFAI (9663)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub44]
+ParameterName=TRA (9667)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub45]
+ParameterName=TRAI (9668)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub47]
+ParameterName=NCRS (9670)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub48]
+ParameterName=NSPS (9671)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub49]
+ParameterName=PPNS (9672)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub4a]
+ParameterName=PHS (9673)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub4b]
+ParameterName=LDS (9674)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub4c]
+ParameterName=LQS (9675)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub4d]
+ParameterName=RDAE (9676)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2042sub50]
+ParameterName=FRSS (9679)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub53]
+ParameterName=RSAS (9682)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub54]
+ParameterName=RASI (9683)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub55]
+ParameterName=TQS (9684)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2042sub56]
+ParameterName=PHSI (9685)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub5d]
+ParameterName=LDSI (9692)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub61]
+ParameterName=LQSI (9696)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2042sub64]
+ParameterName=FMX (9699)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046]
+ParameterName=Brake_sequence
+ObjectType=9
+SubNumber=23
+
+[2046sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=76
+
+[2046sub2]
+ParameterName=BLC (10001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2046sub4]
+ParameterName=BEN (10003)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2046sub5]
+ParameterName=BRT (10004)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046sub6]
+ParameterName=BET (10005)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046sub7]
+ParameterName=IBR (10006)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046sub8]
+ParameterName=BIP (10007)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046sub9]
+ParameterName=BST (10008)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2046suba]
+ParameterName=BCI (10009)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2046subb]
+ParameterName=TBE (10010)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046subc]
+ParameterName=IRD (10011)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046subd]
+ParameterName=BIR (10012)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2046sube]
+ParameterName=JDC (10013)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2046sub10]
+ParameterName=BRR (10015)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046sub15]
+ParameterName=BED (10020)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046sub17]
+ParameterName=TTR (10022)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2046sub33]
+ParameterName=BRH (10050)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2046sub47]
+ParameterName=PES (10070)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2046sub48]
+ParameterName=LP1 (10071)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2046sub49]
+ParameterName=CP1 (10072)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+
+[2046sub4a]
+ParameterName=LP2 (10073)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2046sub4b]
+ParameterName=CP2 (10074)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+
+[2046sub4c]
+ParameterName=IBRA (10075)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[204a]
+ParameterName=Automatic_DC_Injection
+ObjectType=9
+SubNumber=7
+
+[204asub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=100
+
+[204asub2]
+ParameterName=ADC (10401)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[204asub3]
+ParameterName=TDC1 (10402)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[204asub4]
+ParameterName=SDC1 (10403)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[204asub5]
+ParameterName=TDC2 (10404)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[204asub6]
+ParameterName=SDC2 (10405)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[204asub64]
+ParameterName=TAFI (10499)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2050]
+ParameterName=Threshold
+ObjectType=9
+SubNumber=11
+
+[2050sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=22
+
+[2050sub2]
+ParameterName=CTD (11001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2050sub3]
+ParameterName=TTD (11002)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2050sub4]
+ParameterName=FTD (11003)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2050sub5]
+ParameterName=F2D (11004)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2050sub7]
+ParameterName=TTD2 (11006)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2050sub8]
+ParameterName=TTD3 (11007)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2050suba]
+ParameterName=THA (11009)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2050sub10]
+ParameterName=TTL (11015)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2050sub11]
+ParameterName=TTH (11016)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2050sub16]
+ParameterName=SAT (11021)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2051]
+ParameterName=Terminal_block_control
+ObjectType=9
+SubNumber=9
+
+[2051sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=13
+
+[2051sub2]
+ParameterName=TCC (11101)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2051sub3]
+ParameterName=TCT (11102)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2051sub4]
+ParameterName=RUN (11103)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2051sub5]
+ParameterName=FRD (11104)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2051sub6]
+ParameterName=RRS (11105)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2051subb]
+ParameterName=JOG (11110)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2051subc]
+ParameterName=JGF (11111)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2051subd]
+ParameterName=JGT (11112)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2052]
+ParameterName=Stop_settings
+ObjectType=9
+SubNumber=11
+
+[2052sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=31
+
+[2052sub2]
+ParameterName=STT (11201)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2052sub3]
+ParameterName=NST (11202)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2052sub4]
+ParameterName=DCI (11203)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2052sub5]
+ParameterName=FST (11204)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2052subb]
+ParameterName=IDC (11210)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2052subc]
+ParameterName=TDC (11211)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2052subd]
+ParameterName=IDC2 (11212)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2052sube]
+ParameterName=TDI (11213)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2052sub15]
+ParameterName=FFT (11220)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2052sub1f]
+ParameterName=DCF (11230)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2053]
+ParameterName=Jump_frequency
+ObjectType=9
+SubNumber=5
+
+[2053sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=12
+
+[2053sub2]
+ParameterName=JPF (11301)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2053sub3]
+ParameterName=JF2 (11302)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2053sub4]
+ParameterName=JF3 (11303)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2053subc]
+ParameterName=JFH (11311)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054]
+ParameterName=Preset_speeds
+ObjectType=9
+SubNumber=20
+
+[2054sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=25
+
+[2054sub2]
+ParameterName=PS2 (11401)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2054sub3]
+ParameterName=PS4 (11402)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2054sub4]
+ParameterName=PS8 (11403)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2054sub5]
+ParameterName=PS16 (11404)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2054subb]
+ParameterName=SP2 (11410)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054subc]
+ParameterName=SP3 (11411)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054subd]
+ParameterName=SP4 (11412)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sube]
+ParameterName=SP5 (11413)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054subf]
+ParameterName=SP6 (11414)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub10]
+ParameterName=SP7 (11415)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub11]
+ParameterName=SP8 (11416)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub12]
+ParameterName=SP9 (11417)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub13]
+ParameterName=SP10 (11418)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub14]
+ParameterName=SP11 (11419)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub15]
+ParameterName=SP12 (11420)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub16]
+ParameterName=SP13 (11421)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub17]
+ParameterName=SP14 (11422)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub18]
+ParameterName=SP15 (11423)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2054sub19]
+ParameterName=SP16 (11424)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2055]
+ParameterName=Upper_and_lower_speed
+ObjectType=9
+SubNumber=8
+
+[2055sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=22
+
+[2055sub2]
+ParameterName=USP (11501)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2055sub3]
+ParameterName=DSP (11502)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2055sub4]
+ParameterName=STR (11503)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2055sub5]
+ParameterName=PMV (11504)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2055sub6]
+ParameterName=SRP (11505)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2055sub15]
+ParameterName=USI (11520)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2055sub16]
+ParameterName=DSI (11521)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2057]
+ParameterName=Stop_on_prolonged_speed
+ObjectType=9
+SubNumber=2
+
+[2057sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[2057sub2]
+ParameterName=TLS (11701)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2058]
+ParameterName=Summing_reference
+ObjectType=9
+SubNumber=11
+
+[2058sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=35
+
+[2058sub2]
+ParameterName=SA2 (11801)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2058sub3]
+ParameterName=SA3 (11802)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2058subc]
+ParameterName=DA2 (11811)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2058subd]
+ParameterName=DA3 (11812)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2058sub16]
+ParameterName=MA2 (11821)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2058sub17]
+ParameterName=MA3 (11822)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2058sub20]
+ParameterName=MFR (11831)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2058sub21]
+ParameterName=MFR1 (11832)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2058sub22]
+ParameterName=MFR2 (11833)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2058sub23]
+ParameterName=MFR3 (11834)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059]
+ParameterName=PI_regulator
+ObjectType=9
+SubNumber=33
+
+[2059sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=85
+
+[2059sub2]
+ParameterName=PIF (11901)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub5]
+ParameterName=PIF1 (11904)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub6]
+ParameterName=PIF2 (11905)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub7]
+ParameterName=PIP1 (11906)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub8]
+ParameterName=PIP2 (11907)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub9]
+ParameterName=PII (11908)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059suba]
+ParameterName=PR2 (11909)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059subb]
+ParameterName=PR4 (11910)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub15]
+ParameterName=RPI (11920)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub16]
+ParameterName=RP2 (11921)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub17]
+ParameterName=RP3 (11922)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub18]
+ParameterName=RP4 (11923)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub29]
+ParameterName=PIC (11940)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub2a]
+ParameterName=RPG (11941)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub2b]
+ParameterName=RIG (11942)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub2c]
+ParameterName=RDG (11943)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub2d]
+ParameterName=PIS (11944)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub33]
+ParameterName=FPI (11950)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub34]
+ParameterName=PSR (11951)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub35]
+ParameterName=POL (11952)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2059sub36]
+ParameterName=POH (11953)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[2059sub37]
+ParameterName=PIM (11954)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub3d]
+ParameterName=RSL (11960)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub3e]
+ParameterName=PAL (11961)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub3f]
+ParameterName=PAH (11962)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub40]
+ParameterName=PER (11963)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2059sub47]
+ParameterName=PAU (11970)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2059sub51]
+ParameterName=RPE (11980)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2059sub52]
+ParameterName=RPF (11981)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2059sub53]
+ParameterName=RPC (11982)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2059sub54]
+ParameterName=RPO (11983)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2059sub55]
+ParameterName=PRP (11984)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205a]
+ParameterName=Customer_Unit
+ObjectType=9
+SubNumber=8
+
+[205asub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=11
+
+[205asub2]
+ParameterName=SDS (12001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205asub3]
+ParameterName=USPL (12002)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[205asub4]
+ParameterName=USPH (12003)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[205asub5]
+ParameterName=SPD (12004)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[205asub9]
+ParameterName=SPD1 (12008)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[205asuba]
+ParameterName=SPD2 (12009)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[205asubb]
+ParameterName=SPD3 (12010)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[205c]
+ParameterName=Traverse_control
+ObjectType=9
+SubNumber=15
+
+[205csub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=15
+
+[205csub2]
+ParameterName=TRC (12201)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205csub3]
+ParameterName=TRH (12202)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csub4]
+ParameterName=TRL (12203)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csub5]
+ParameterName=QSH (12204)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csub6]
+ParameterName=QSL (12205)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csub7]
+ParameterName=TUP (12206)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csub8]
+ParameterName=TDN (12207)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csub9]
+ParameterName=TBO (12208)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csuba]
+ParameterName=EBOT (12209)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[205csubb]
+ParameterName=RTR (12210)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205csubc]
+ParameterName=DTF (12211)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205csubd]
+ParameterName=SNC (12212)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205csube]
+ParameterName=EBO (12213)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205csubf]
+ParameterName=TSY (12214)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205d]
+ParameterName=High_speed_hoisting
+ObjectType=9
+SubNumber=13
+
+[205dsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=23
+
+[205dsub2]
+ParameterName=HSO (12301)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205dsub3]
+ParameterName=CLO (12302)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205dsub4]
+ParameterName=COF (12303)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205dsub5]
+ParameterName=COR (12304)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205dsub6]
+ParameterName=OSP (12305)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205dsub7]
+ParameterName=SCL (12306)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205dsub8]
+ParameterName=TOS (12307)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[205dsubc]
+ParameterName=DLD (12311)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205dsubd]
+ParameterName=TLD (12312)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+
+[205dsube]
+ParameterName=DLB (12313)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205dsub16]
+ParameterName=RSD (12321)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205dsub17]
+ParameterName=RSTL (12322)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205e]
+ParameterName=Volts_per_hertz_control_type
+ObjectType=9
+SubNumber=11
+
+[205esub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=13
+
+[205esub4]
+ParameterName=U1 (12403)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esub5]
+ParameterName=F1 (12404)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esub6]
+ParameterName=U2 (12405)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esub7]
+ParameterName=F2 (12406)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esub8]
+ParameterName=U3 (12407)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esub9]
+ParameterName=F3 (12408)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esuba]
+ParameterName=U4 (12409)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esubb]
+ParameterName=F4 (12410)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esubc]
+ParameterName=U5 (12411)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205esubd]
+ParameterName=F5 (12412)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205f]
+ParameterName=Positioning_by_switches
+ObjectType=9
+SubNumber=15
+
+[205fsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=25
+
+[205fsub2]
+ParameterName=SAF (12501)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub3]
+ParameterName=SAR (12502)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub4]
+ParameterName=DAF (12503)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub5]
+ParameterName=DAR (12504)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub6]
+ParameterName=DSF (12505)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub7]
+ParameterName=PAS (12506)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub8]
+ParameterName=CLS (12507)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub9]
+ParameterName=SAL (12508)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsuba]
+ParameterName=DAL (12509)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsubc]
+ParameterName=NLS (12511)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub16]
+ParameterName=STD (12521)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub17]
+ParameterName=SFD (12522)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub18]
+ParameterName=MSTP (12523)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[205fsub19]
+ParameterName=PRST (12524)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2060]
+ParameterName=Surge_voltage_on_motor_cables
+ObjectType=9
+SubNumber=3
+
+[2060sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=3
+
+[2060sub2]
+ParameterName=SVL (12601)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2060sub3]
+ParameterName=SOP (12602)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061]
+ParameterName=Com_Scanner
+ObjectType=9
+SubNumber=33
+
+[2061sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=69
+
+[2061sub2]
+ParameterName=NMA1 (12701)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub3]
+ParameterName=NMA2 (12702)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub4]
+ParameterName=NMA3 (12703)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub5]
+ParameterName=NMA4 (12704)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub6]
+ParameterName=NMA5 (12705)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub7]
+ParameterName=NMA6 (12706)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub8]
+ParameterName=NMA7 (12707)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub9]
+ParameterName=NMA8 (12708)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub16]
+ParameterName=NCA1 (12721)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub17]
+ParameterName=NCA2 (12722)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub18]
+ParameterName=NCA3 (12723)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub19]
+ParameterName=NCA4 (12724)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub1a]
+ParameterName=NCA5 (12725)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub1b]
+ParameterName=NCA6 (12726)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub1c]
+ParameterName=NCA7 (12727)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub1d]
+ParameterName=NCA8 (12728)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2061sub2a]
+ParameterName=NM1 (12741)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub2b]
+ParameterName=NM2 (12742)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub2c]
+ParameterName=NM3 (12743)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub2d]
+ParameterName=NM4 (12744)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub2e]
+ParameterName=NM5 (12745)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub2f]
+ParameterName=NM6 (12746)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub30]
+ParameterName=NM7 (12747)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub31]
+ParameterName=NM8 (12748)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2061sub3e]
+ParameterName=NC1 (12761)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2061sub3f]
+ParameterName=NC2 (12762)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2061sub40]
+ParameterName=NC3 (12763)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2061sub41]
+ParameterName=NC4 (12764)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2061sub42]
+ParameterName=NC5 (12765)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2061sub43]
+ParameterName=NC6 (12766)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2061sub44]
+ParameterName=NC7 (12767)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2061sub45]
+ParameterName=NC8 (12768)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2062]
+ParameterName=Alarm_Management
+ObjectType=9
+SubNumber=10
+
+[2062sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=10
+
+[2062sub2]
+ParameterName=GA11 (12801)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062sub3]
+ParameterName=GA12 (12802)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062sub4]
+ParameterName=GA21 (12803)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062sub5]
+ParameterName=GA22 (12804)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062sub6]
+ParameterName=GA31 (12805)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062sub7]
+ParameterName=GA32 (12806)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062sub8]
+ParameterName=GA13 (12807)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062sub9]
+ParameterName=GA23 (12808)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2062suba]
+ParameterName=GA33 (12809)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2063]
+ParameterName=Parameter_switching
+ObjectType=9
+SubNumber=65
+
+[2063sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=86
+
+[2063sub1]
+ParameterName=CFPS (12900)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2063sub2]
+ParameterName=VAL (12901)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub3]
+ParameterName=CHA1 (12902)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2063sub4]
+ParameterName=CHA2 (12903)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2063subc]
+ParameterName=AD01 (12911)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063subd]
+ParameterName=AD02 (12912)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sube]
+ParameterName=AD03 (12913)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063subf]
+ParameterName=AD04 (12914)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub10]
+ParameterName=AD05 (12915)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub11]
+ParameterName=AD06 (12916)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub12]
+ParameterName=AD07 (12917)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub13]
+ParameterName=AD08 (12918)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub14]
+ParameterName=AD09 (12919)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub15]
+ParameterName=AD10 (12920)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub16]
+ParameterName=AD11 (12921)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub17]
+ParameterName=AD12 (12922)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub18]
+ParameterName=AD13 (12923)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub19]
+ParameterName=AD14 (12924)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub1a]
+ParameterName=AD15 (12925)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub20]
+ParameterName=S101 (12931)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub21]
+ParameterName=S102 (12932)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub22]
+ParameterName=S103 (12933)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub23]
+ParameterName=S104 (12934)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub24]
+ParameterName=S105 (12935)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub25]
+ParameterName=S106 (12936)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub26]
+ParameterName=S107 (12937)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub27]
+ParameterName=S108 (12938)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub28]
+ParameterName=S109 (12939)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub29]
+ParameterName=S110 (12940)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub2a]
+ParameterName=S111 (12941)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub2b]
+ParameterName=S112 (12942)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub2c]
+ParameterName=S113 (12943)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub2d]
+ParameterName=S114 (12944)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub2e]
+ParameterName=S115 (12945)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub34]
+ParameterName=S201 (12951)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub35]
+ParameterName=S202 (12952)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub36]
+ParameterName=S203 (12953)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub37]
+ParameterName=S204 (12954)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub38]
+ParameterName=S205 (12955)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub39]
+ParameterName=S206 (12956)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub3a]
+ParameterName=S207 (12957)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub3b]
+ParameterName=S208 (12958)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub3c]
+ParameterName=S209 (12959)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub3d]
+ParameterName=S210 (12960)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub3e]
+ParameterName=S211 (12961)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub3f]
+ParameterName=S212 (12962)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub40]
+ParameterName=S213 (12963)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub41]
+ParameterName=S214 (12964)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub42]
+ParameterName=S215 (12965)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub48]
+ParameterName=S301 (12971)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub49]
+ParameterName=S302 (12972)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub4a]
+ParameterName=S303 (12973)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub4b]
+ParameterName=S304 (12974)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub4c]
+ParameterName=S305 (12975)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub4d]
+ParameterName=S306 (12976)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub4e]
+ParameterName=S307 (12977)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub4f]
+ParameterName=S308 (12978)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub50]
+ParameterName=S309 (12979)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub51]
+ParameterName=S310 (12980)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub52]
+ParameterName=S311 (12981)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub53]
+ParameterName=S312 (12982)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub54]
+ParameterName=S313 (12983)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub55]
+ParameterName=S314 (12984)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2063sub56]
+ParameterName=S315 (12985)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064]
+ParameterName=CANopen_parameters_1131
+ObjectType=9
+SubNumber=33
+
+[2064sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=72
+
+[2064sub2]
+ParameterName=RP31 (13001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064sub3]
+ParameterName=RP32 (13002)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064sub4]
+ParameterName=RP33 (13003)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064sub5]
+ParameterName=RP34 (13004)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064sub6]
+ParameterName=NRP3 (13005)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064subc]
+ParameterName=TP31 (13011)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064subd]
+ParameterName=TP32 (13012)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064sube]
+ParameterName=TP33 (13013)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064subf]
+ParameterName=TP34 (13014)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064sub10]
+ParameterName=NTP3 (13015)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub16]
+ParameterName=RP21 (13021)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub17]
+ParameterName=RP22 (13022)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub18]
+ParameterName=RP23 (13023)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub19]
+ParameterName=RP24 (13024)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub1a]
+ParameterName=NRP2 (13025)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub20]
+ParameterName=TP21 (13031)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub21]
+ParameterName=TP22 (13032)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub22]
+ParameterName=TP23 (13033)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub23]
+ParameterName=TP24 (13034)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub24]
+ParameterName=NTP2 (13035)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub2a]
+ParameterName=RP11 (13041)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub2b]
+ParameterName=RP12 (13042)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub2c]
+ParameterName=RP13 (13043)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub2d]
+ParameterName=RP14 (13044)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub2e]
+ParameterName=NRP1 (13045)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub34]
+ParameterName=TP11 (13051)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub35]
+ParameterName=TP12 (13052)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub36]
+ParameterName=TP13 (13053)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub37]
+ParameterName=TP14 (13054)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub38]
+ParameterName=NTP1 (13055)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2064sub47]
+ParameterName=NBTP (13070)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2064sub48]
+ParameterName=NBRP (13071)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2065]
+ParameterName=Downstream_contactor
+ObjectType=9
+SubNumber=5
+
+[2065sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=5
+
+[2065sub2]
+ParameterName=DBS (13101)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2065sub3]
+ParameterName=DAS (13102)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2065sub4]
+ParameterName=RCA (13103)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2065sub5]
+ParameterName=OCC (13104)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2066]
+ParameterName=PTC_treatment
+ObjectType=9
+SubNumber=3
+
+[2066sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=6
+
+[2066sub4]
+ParameterName=PTCL (13203)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2066sub6]
+ParameterName=PTCI (13205)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2067]
+ParameterName=Pulse_input
+ObjectType=9
+SubNumber=8
+
+[2067sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=9
+
+[2067sub3]
+ParameterName=PIL (13302)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2067sub4]
+ParameterName=PFR (13303)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2067sub5]
+ParameterName=PFI (13304)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2067sub6]
+ParameterName=PIFR (13305)
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[2067sub7]
+ParameterName=PFRI (13306)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2067sub8]
+ParameterName=PFRC (13307)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2067sub9]
+ParameterName=HSC (13308)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2069]
+ParameterName=Function_keys_management
+ObjectType=9
+SubNumber=14
+
+[2069sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=30
+
+[2069sub2]
+ParameterName=FN1 (13501)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub3]
+ParameterName=FN2 (13502)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub4]
+ParameterName=FN3 (13503)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub5]
+ParameterName=FN4 (13504)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub16]
+ParameterName=FJOG (13521)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub17]
+ParameterName=FPS1 (13522)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub18]
+ParameterName=FPS2 (13523)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub19]
+ParameterName=FPR1 (13524)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub1a]
+ParameterName=FPR2 (13525)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub1b]
+ParameterName=FUSP (13526)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub1c]
+ParameterName=FDSP (13527)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub1d]
+ParameterName=FTK (13528)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2069sub1e]
+ParameterName=BMP (13529)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206a]
+ParameterName=Input_line_contactor
+ObjectType=9
+SubNumber=4
+
+[206asub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=4
+
+[206asub2]
+ParameterName=LES (13601)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206asub3]
+ParameterName=LLC (13602)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206asub4]
+ParameterName=LCT (13603)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206c]
+ParameterName=DC_bus_management
+ObjectType=9
+SubNumber=11
+
+[206csub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=52
+
+[206csub2]
+ParameterName=URES (13801)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206csub3]
+ParameterName=USL (13802)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206csub4]
+ParameterName=USB (13803)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206csub5]
+ParameterName=UST (13804)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206csubc]
+ParameterName=UPL (13811)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206csubd]
+ParameterName=TBS (13812)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[206csube]
+ParameterName=TSM (13813)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[206csubf]
+ParameterName=STM (13814)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[206csub33]
+ParameterName=DCCM (13850)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206csub34]
+ParameterName=DCCC (13851)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206d]
+ParameterName=Motor_fluxing
+ObjectType=9
+SubNumber=8
+
+[206dsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=28
+
+[206dsub2]
+ParameterName=FLI (13901)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206dsub3]
+ParameterName=FLU (13902)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[206dsubb]
+ParameterName=BOA (13910)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206dsubc]
+ParameterName=FAB (13911)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206dsubd]
+ParameterName=BOO (13912)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+
+[206dsub1a]
+ParameterName=AST (13925)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206dsub1c]
+ParameterName=ASOD (13927)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[206e]
+ParameterName=Drive_boards_group
+ObjectType=9
+SubNumber=3
+
+[206esub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[206esub1]
+ParameterName=PPII (14000)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[206esub2]
+ParameterName=PPI (14001)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[206f]
+ParameterName=Braking_transistor
+ObjectType=9
+SubNumber=2
+
+[206fsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[206fsub2]
+ParameterName=VBR (14101)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2071]
+ParameterName=Load_sharing
+ObjectType=9
+SubNumber=7
+
+[2071sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=7
+
+[2071sub2]
+ParameterName=LBA (14301)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2071sub3]
+ParameterName=LBC (14302)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2071sub4]
+ParameterName=LBC1 (14303)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2071sub5]
+ParameterName=LBC2 (14304)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2071sub6]
+ParameterName=LBC3 (14305)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2071sub7]
+ParameterName=LBF (14306)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2072]
+ParameterName=Motor_load_management
+ObjectType=9
+SubNumber=12
+
+[2072sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=26
+
+[2072sub2]
+ParameterName=SRB (14401)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2072subc]
+ParameterName=ULT (14411)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2072subd]
+ParameterName=UDL (14412)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2072sube]
+ParameterName=FTU (14413)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2072subf]
+ParameterName=RMUD (14414)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2072sub10]
+ParameterName=LUL (14415)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2072sub11]
+ParameterName=LUN (14416)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2072sub16]
+ParameterName=TOL (14421)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2072sub17]
+ParameterName=ODL (14422)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2072sub18]
+ParameterName=FTO (14423)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2072sub1a]
+ParameterName=LOC (14425)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2074]
+ParameterName=Frequency_meter
+ObjectType=9
+SubNumber=10
+
+[2074sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=10
+
+[2074sub2]
+ParameterName=FQF (14601)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2074sub3]
+ParameterName=FQC (14602)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2074sub4]
+ParameterName=FQS (14603)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2074sub5]
+ParameterName=FQA (14604)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2074sub6]
+ParameterName=TDS (14605)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2074sub7]
+ParameterName=FDT (14606)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2074sub8]
+ParameterName=FQT (14607)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2074sub9]
+ParameterName=TQB (14608)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2074suba]
+ParameterName=FQL (14609)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077]
+ParameterName=Functions_Blocs
+ObjectType=9
+SubNumber=52
+
+[2077sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=96
+
+[2077sub1]
+ParameterName=IA01 (14900)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub2]
+ParameterName=IA02 (14901)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub3]
+ParameterName=IA03 (14902)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub4]
+ParameterName=IA04 (14903)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub5]
+ParameterName=IA05 (14904)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub6]
+ParameterName=IA06 (14905)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub7]
+ParameterName=IA07 (14906)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub8]
+ParameterName=IA08 (14907)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub9]
+ParameterName=IA09 (14908)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077suba]
+ParameterName=IA10 (14909)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub15]
+ParameterName=IL01 (14920)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub16]
+ParameterName=IL02 (14921)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub17]
+ParameterName=IL03 (14922)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub18]
+ParameterName=IL04 (14923)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub19]
+ParameterName=IL05 (14924)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub1a]
+ParameterName=IL06 (14925)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub1b]
+ParameterName=IL07 (14926)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub1c]
+ParameterName=IL08 (14927)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub1d]
+ParameterName=IL09 (14928)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub1e]
+ParameterName=IL10 (14929)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub29]
+ParameterName=LA01 (14940)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub2a]
+ParameterName=LA02 (14941)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub2b]
+ParameterName=LA03 (14942)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub2c]
+ParameterName=LA04 (14943)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub2d]
+ParameterName=LA05 (14944)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub2e]
+ParameterName=LA06 (14945)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub2f]
+ParameterName=LA07 (14946)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub30]
+ParameterName=LA08 (14947)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub3d]
+ParameterName=FBST (14960)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2077sub3e]
+ParameterName=FBFT (14961)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2077sub3f]
+ParameterName=FBCD (14962)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub40]
+ParameterName=FBRM (14963)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub41]
+ParameterName=FBSM (14964)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub42]
+ParameterName=FBDF (14965)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2077sub47]
+ParameterName=M001 (14970)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub48]
+ParameterName=M002 (14971)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub49]
+ParameterName=M003 (14972)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub4a]
+ParameterName=M004 (14973)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub4b]
+ParameterName=M005 (14974)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub4c]
+ParameterName=M006 (14975)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub4d]
+ParameterName=M007 (14976)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub4e]
+ParameterName=M008 (14977)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub51]
+ParameterName=S001 (14980)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub52]
+ParameterName=S002 (14981)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub56]
+ParameterName=S006 (14985)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub5b]
+ParameterName=BNV (14990)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2077sub5c]
+ParameterName=CTV (14991)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2077sub5d]
+ParameterName=BNS (14992)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2077sub5e]
+ParameterName=BVER (14993)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2077sub5f]
+ParameterName=BNVD (14994)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2077sub60]
+ParameterName=CTVD (14995)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2079]
+ParameterName=FctCommutationHSP
+ObjectType=9
+SubNumber=7
+
+[2079sub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=13
+
+[2079sub2]
+ParameterName=SH2 (15101)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2079sub3]
+ParameterName=SH4 (15102)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[2079suba]
+ParameterName=HSU (15109)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[2079subb]
+ParameterName=HSP2 (15110)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2079subc]
+ParameterName=HSP3 (15111)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[2079subd]
+ParameterName=HSP4 (15112)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207b]
+ParameterName=Functional_Safety
+ObjectType=9
+SubNumber=57
+
+[207bsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=94
+
+[207bsub1]
+ParameterName=SLSA (15300)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub2]
+ParameterName=SLT (15301)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub3]
+ParameterName=SLSP (15302)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub4]
+ParameterName=SLTT (15303)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub5]
+ParameterName=SLSS (15304)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub6]
+ParameterName=SLWT (15305)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsubb]
+ParameterName=SS1A (15310)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsubc]
+ParameterName=SSRT (15311)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsubd]
+ParameterName=SSRU (15312)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsube]
+ParameterName=SSSL (15313)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsubf]
+ParameterName=SSTT (15314)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub10]
+ParameterName=SS1S (15315)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub15]
+ParameterName=STOA (15320)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub16]
+ParameterName=PWRM (15321)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub17]
+ParameterName=STOS (15322)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub1f]
+ParameterName=LIDT (15330)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub20]
+ParameterName=LIRT (15331)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub29]
+ParameterName=SCRC (15340)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub2a]
+ParameterName=SSS (15341)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub2b]
+ParameterName=PWDS (15342)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub2c]
+ParameterName=SPWD (15343)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub2d]
+ParameterName=SFTY (15344)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub2e]
+ParameterName=SDPW (15345)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub2f]
+ParameterName=CRC2 (15346)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub30]
+ParameterName=SFFE (15347)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub33]
+ParameterName=SAF1 (15350)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub34]
+ParameterName=SF00 (15351)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub35]
+ParameterName=SF01 (15352)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub36]
+ParameterName=SF02 (15353)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub37]
+ParameterName=SF03 (15354)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub38]
+ParameterName=SF04 (15355)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub39]
+ParameterName=SF05 (15356)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub3a]
+ParameterName=SF06 (15357)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub3b]
+ParameterName=SF07 (15358)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub3c]
+ParameterName=SAF2 (15359)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub3d]
+ParameterName=SF08 (15360)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub3e]
+ParameterName=SF09 (15361)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub3f]
+ParameterName=SF10 (15362)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub40]
+ParameterName=SF11 (15363)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub47]
+ParameterName=SLS1 (15370)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub48]
+ParameterName=SLS2 (15371)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub49]
+ParameterName=SS11 (15372)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub4a]
+ParameterName=SS12 (15373)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub4b]
+ParameterName=STO1 (15374)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub4c]
+ParameterName=STO2 (15375)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub4d]
+ParameterName=SMS1 (15376)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub4e]
+ParameterName=SMS2 (15377)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub51]
+ParameterName=SMSA (15380)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub52]
+ParameterName=SMLL (15381)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub53]
+ParameterName=SMLH (15382)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub54]
+ParameterName=SMLS (15383)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub55]
+ParameterName=SMSS (15384)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207bsub5b]
+ParameterName=GDLA (15390)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub5c]
+ParameterName=GLLD (15391)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub5d]
+ParameterName=GLSD (15392)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207bsub5e]
+ParameterName=GDLS (15393)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207c]
+ParameterName=Option_Scanner
+ObjectType=9
+SubNumber=13
+
+[207csub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=27
+
+[207csub2]
+ParameterName=OMA1 (15401)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub3]
+ParameterName=OMA2 (15402)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub4]
+ParameterName=OMA3 (15403)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub5]
+ParameterName=OMA4 (15404)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub6]
+ParameterName=OMA5 (15405)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub7]
+ParameterName=OMA6 (15406)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub16]
+ParameterName=OCA1 (15421)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub17]
+ParameterName=OCA2 (15422)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub18]
+ParameterName=OCA3 (15423)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub19]
+ParameterName=OCA4 (15424)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub1a]
+ParameterName=OCA5 (15425)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207csub1b]
+ParameterName=OCA6 (15426)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207d]
+ParameterName=Option_Command
+ObjectType=9
+SubNumber=6
+
+[207dsub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=12
+
+[207dsub2]
+ParameterName=OCMD (15501)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207dsub3]
+ParameterName=MCMD (15502)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=1
+
+[207dsub4]
+ParameterName=MACD (15503)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[207dsub5]
+ParameterName=PRCD (15504)
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=1
+
+[207dsubc]
+ParameterName=OETA (15511)
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[207e]
+ParameterName=HF_Injection
+ObjectType=9
+SubNumber=10
+
+[207esub0]
+ParameterName=number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=9
+
+[207esub1]
+ParameterName=HFI (15600)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub2]
+ParameterName=FRI (15601)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub3]
+ParameterName=HIR (15602)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub4]
+ParameterName=SPB (15603)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub5]
+ParameterName=SPF (15604)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub6]
+ParameterName=ILR (15605)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub7]
+ParameterName=SIR (15606)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub8]
+ParameterName=MCR (15607)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[207esub9]
+ParameterName=PEC (15608)
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[5ffd]
+ParameterName=Data Tunnel Object
+ObjectType=8
+SubNumber=2
+
+[5ffdsub0]
+ParameterName=Number of Tunnel Object
+ObjectType=7
+DataType=5
+AccessType=ro
+PDOMapping=0
+DefaultValue=1
+
+[5ffdsub1]
+ParameterName=Data Tunnel Object #1
+ObjectType=7
+DataType=15
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x0
+
+[603f]
+ParameterName=Error Code
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[6040]
+ParameterName=CMDD
+ObjectType=7
+DataType=6
+AccessType=rww
+PDOMapping=1
+
+[6041]
+ParameterName=ETAD
+ObjectType=7
+DataType=6
+AccessType=ro
+PDOMapping=1
+
+[6042]
+ParameterName=LFRD
+ObjectType=7
+DataType=3
+AccessType=rww
+PDOMapping=1
+DefaultValue=0x0
+
+[6043]
+ParameterName=Velocity Demand
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[6044]
+ParameterName=RFRD
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+
+[6046]
+ParameterName=Velocity Min Max Amount
+ObjectType=8
+SubNumber=3
+
+[6046sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[6046sub1]
+ParameterName=Velocity Min Amount
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+
+[6046sub2]
+ParameterName=Velocity Max Amount
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+
+[6048]
+ParameterName=Velocity Acceleration
+ObjectType=9
+SubNumber=3
+
+[6048sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[6048sub1]
+ParameterName=Delta Speed
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+
+[6048sub2]
+ParameterName=Delta Time
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[6049]
+ParameterName=Velocity Deceleration
+ObjectType=9
+SubNumber=3
+
+[6049sub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[6049sub1]
+ParameterName=Delta Speed
+ObjectType=7
+DataType=7
+AccessType=rw
+PDOMapping=0
+
+[6049sub2]
+ParameterName=Delta Time
+ObjectType=7
+DataType=6
+AccessType=rw
+PDOMapping=0
+
+[604b]
+ParameterName=Set-Point Factor
+ObjectType=8
+SubNumber=3
+
+[604bsub0]
+ParameterName=Number of entries
+ObjectType=7
+DataType=5
+AccessType=const
+PDOMapping=0
+DefaultValue=2
+
+[604bsub1]
+ParameterName=Set-Point Factor Numerator
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x1
+
+[604bsub2]
+ParameterName=Set-Point Factor Denominator
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x1
+
+[605a]
+ParameterName=Quick stop option code
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x6
+
+[605c]
+ParameterName=Disable option code
+ObjectType=7
+DataType=3
+AccessType=rw
+PDOMapping=0
+DefaultValue=0x1
+
+[6060]
+ParameterName=Modes Of Operation
+ObjectType=7
+DataType=2
+AccessType=rw
+PDOMapping=0
+
+[6061]
+ParameterName=Modes Of Operation Display
+ObjectType=7
+DataType=2
+AccessType=ro
+PDOMapping=0
+
+[6077]
+ParameterName=Torque Actual Value
+ObjectType=7
+DataType=3
+AccessType=ro
+PDOMapping=1
+DefaultValue=0x0
+
+[6502]
+ParameterName=Supported drive modes
+ObjectType=7
+DataType=7
+AccessType=ro
+PDOMapping=0
+

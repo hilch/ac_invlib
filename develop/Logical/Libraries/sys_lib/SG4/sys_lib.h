@@ -1,13 +1,3 @@
-/****************************************************************************/
-/*                                                                          */
-/*  sys_lib.h                                                               */
-/*  Declarations and Prototypes for libsys_lib.a                            */
-/*                                                                          */
-/*      Automation Studio                                                   */
-/*  Copyright Bernecker&Rainer 1998                                         */
-/*                                                                          */
-/****************************************************************************/
-
 /* Automation Studio generated header file */
 /* Do not edit ! */
 

@@ -36,6 +36,7 @@ extern "C"
  #define IEC_DATATYPE_INT 3U
  #define IEC_DATATYPE_SINT 2U
  #define IEC_DATATYPE_BOOL 1U
+ #define ERR_FB_NOT_IMPLEMENTED (-1070585592)
  #define ERR_FUB_REDUNDANT 35688U
  #define ERR_FUB_BUSY 65535U
  #define ERR_FUB_ENABLE_FALSE 65534U
@@ -66,6 +67,7 @@ extern "C"
  _GLOBAL_CONST unsigned short IEC_DATATYPE_INT;
  _GLOBAL_CONST unsigned short IEC_DATATYPE_SINT;
  _GLOBAL_CONST unsigned short IEC_DATATYPE_BOOL;
+ _GLOBAL_CONST signed long ERR_FB_NOT_IMPLEMENTED;
  _GLOBAL_CONST unsigned short ERR_FUB_REDUNDANT;
  _GLOBAL_CONST unsigned short ERR_FUB_BUSY;
  _GLOBAL_CONST unsigned short ERR_FUB_ENABLE_FALSE;
@@ -412,9 +414,9 @@ typedef struct ArFBStateInternalType
 	unsigned long DoneRef;
 	unsigned long ErrorRef;
 	unsigned long ActiveRef;
-	unsigned long FBInit;
+	unsigned long StatusRef;
 	unsigned long FBCyclic;
-	unsigned long FBCleanup;
+	unsigned long AsyfumaState;
 	unsigned long FBResetOut;
 	unsigned long Argument;
 	unsigned long State;

@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: AsArLog
- * File: AsArLog.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library AsArLog
- ********************************************************************)
                                                                       
 {REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK AsArLogCreate					(*creates an AR logger user module; asynchronous execution*)
 	VAR_INPUT

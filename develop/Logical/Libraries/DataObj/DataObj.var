@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: DataObj
- * File: DataObj.var
- * Author: B+R
- ********************************************************************
- * Local variables of library DataObj
- ********************************************************************)
                                                                       
 VAR CONSTANT
 	doERR_TOOLONG_MODULNAME	: UINT	:= 20613;	(*module name too long (max. 10 characters)*)

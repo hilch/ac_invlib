@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: astime
- * File: astime.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library astime
- ********************************************************************)
                                                                       
 {REDUND_OK} FUNCTION_BLOCK DTExSetTime					(*sets the current time using the DATE_AND_TIME data type*)
 	VAR_INPUT

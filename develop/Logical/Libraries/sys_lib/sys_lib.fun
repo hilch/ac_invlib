@@ -1,12 +1,3 @@
-(********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
- ********************************************************************
- * Library: sys_lib
- * File: sys_lib.fun
- * Author: B+R
- ********************************************************************
- * Functions and function blocks of library sys_lib
- ********************************************************************)
                                                                       
 {REDUND_CONTEXT} {REDUND_UNREPLICABLE} FUNCTION_BLOCK Byte2Bit 				(*converts a byte array into a bit array*)
 	VAR_INPUT
