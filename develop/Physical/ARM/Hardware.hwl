@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="X20BB57" Type="X20BB57" X="85" Y="85" />
+    <Module Name="X20PS9600" Type="X20PS9600" X="110" Y="85" />
+    <Module Name="X20TB12" Type="X20TB12" X="110" Y="112" />
+    <Module Name="X20CP0410" Type="X20CP0410" X="85" Y="85" />
+    <Module Name="ACPi_P66_P76" Type="FBC.0x0200005A.320.ACPi_P66_P76" X="125" Y="234" />
+  </Modules>
+  <Links>
+    <Link From="ACPi_P66_P76" To="X20BB57" FromPort="CAN1" ToPort="IF7" IsRoutedByUser="False">
+      <Point X="144" Y="253" />
+      <Point X="144" Y="253" />
+      <Point X="144" Y="233" />
+      <Point X="144" Y="134" />
+      <Point X="126" Y="134" />
+      <Point X="121" Y="134" />
+      <Point X="121" Y="134" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

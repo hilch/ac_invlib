@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.6.3.55?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="ACPi_P66_P76" Type="FBC.0x0200005A.320.ACPi_P66_P76" Version="1.3" OrderNumber="ACPi_P66_P76">
+    <Connection Connector="CAN1" TargetModule="X20BB57" TargetConnector="IF7" />
+  </Module>
+  <Module Name="X20BB57" Type="X20BB57" Version="1.1.0.0">
+    <Connector Name="IF7">
+      <Parameter ID="Baudrate" Value="250000" />
+      <Parameter ID="ActivateCANIO" Value="0" />
+      <Parameter ID="ActivateCanOpen" Value="1" />
+      <Parameter ID="p100c_parametervalue" Value="1000" />
+      <Parameter ID="p100d_parametervalue" Value="3" />
+    </Connector>
+  </Module>
+  <Module Name="X20CP0410" Type="X20CP0410" Version="1.2.0.0">
+    <Connection Connector="SL" TargetModule="X20BB57" TargetConnector="SL1" />
+    <Connector Name="IF2">
+      <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.35" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="develop_ARM" />
+    <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
+    <Parameter ID="Cyclic1Duration" Value="10000" />
+    <Parameter ID="Cyclic1Tolerance" Value="10000" />
+    <Parameter ID="Cyclic2Duration" Value="20000" />
+    <Parameter ID="Cyclic2Tolerance" Value="20000" />
+    <Parameter ID="Cyclic3Duration" Value="50000" />
+    <Parameter ID="Cyclic3Tolerance" Value="50000" />
+    <Parameter ID="Cyclic4Duration" Value="100000" />
+    <Parameter ID="Cyclic4Tolerance" Value="100000" />
+    <Parameter ID="Cyclic5Duration" Value="200000" />
+    <Parameter ID="Cyclic5Tolerance" Value="200000" />
+    <Parameter ID="Cyclic6Duration" Value="500000" />
+    <Parameter ID="Cyclic6Tolerance" Value="500000" />
+    <Parameter ID="Cyclic7Duration" Value="1000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic8Duration" Value="10000" />
+    <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+  </Module>
+  <Module Name="X20PS9600" Type="X20PS9600" Version="1.2.0.0">
+    <Connection Connector="PS" TargetModule="X20BB57" TargetConnector="PS1" />
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+</Hardware>

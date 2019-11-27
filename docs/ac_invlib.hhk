@@ -56,12 +56,20 @@
 		<param name="Local" value="Data%20types%20and%20constants/Data%20types/ac_inv_Mapping.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
-		<param name="Name" value="Powerlink device configuration">
-		<param name="Local" value="How%20To%20Use/Powerlink%20device%20configuration.html">
+		<param name="Name" value="P84 & P74 EPL configuration">
+		<param name="Local" value="How%20To%20Use/P84%20&amp;%20P74%20EPL%20configuration.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
-		<param name="Name" value="CANopen device configuration">
-		<param name="Local" value="How%20To%20Use/CANopen%20device%20configuration.html">
+		<param name="Name" value="P66 & P76 EPL configuration">
+		<param name="Local" value="How%20To%20Use/P66%20&amp;%20P76%20EPL%20configuration.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P84 CANopen configuration">
+		<param name="Local" value="How%20To%20Use/P84%20CANopen%20configuration.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P66 & P76 CANopen configuration">
+		<param name="Local" value="How%20To%20Use/P66%20&amp;%20P76%20CANopen%20configuration.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="Parameter Logging">

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalHardware>
+  <Modules>
+    <Module ModuleID="FBC.0x0200005A.320.ACPi_P66_P76" Version="1.3" OrderNumber="ACPi_P66_P76">
+      <SourceFile OriginalFile="ACPi_P66_P76.eds" TranslationFile="CQ24LVL5.ext" />
+    </Module>
+  </Modules>
+</ExternalHardware>

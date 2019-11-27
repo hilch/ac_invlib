@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>P84 CANopen configuration</title>
+   <meta name="ORDER" content="3">
+   <meta charset="UTF-8">
+    <base href="/" target="_blank">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Configuration of ACOPOSinverter P84 connected to CANopen</h1>
+    <a href="/EDS_P84.zip">download and import CANopen-EDS data sheet for P84</a>
+    <p></a> description of the device name can be read from the physical view:</p>
+    <p><img src="/canopen_device_path.jpg" align=TOP hspace=8></p>
+
+    <h2>Open the I/O - Configuration and change the 'Channels' section.</h2>
+    the following parameters have to be changed compared to their default values:
+    <p><b>ETI</b></p>
+    <p><img src="/canopen_mapping_configuration_ETI.png" align=TOP hspace=8></p>
+    <p><b>THD</b></p>
+    <p><img src="/canopen_mapping_configuration_THD.png" align=TOP hspace=8></p>
+    <b>OL1R</b>
+    <p><img src="/canopen_mapping_configuration_OL1R.png" align=TOP hspace=8></p>
+    <b>AO1R</b>
+    <p><img src="/canopen_mapping_configuration_AO1R.png" align=TOP hspace=8></p>
+    <b>LFT</b>
+    <p><img src="/canopen_mapping_configuration_LFT.png" align=TOP hspace=8></p>
+    <b>THR</b>
+    <p><img src="/canopen_mapping_configuration_THR.png" align=TOP hspace=8></p>
+    <b>OTR</b>
+    <p><img src="/canopen_mapping_configuration_OTR.png" align=TOP hspace=8></p>
+    <b>Change the 'Network management parameters' - section to active the 'Heart beat'
+	<p><img src="/canopen_network_management.png" align=TOP hspace=8 ></p>	
+	<h2>Open the I/O - Mapping and connect the 'io_mapping'- elements</h2>
+	<p><img src="/canopen_io_mapping.png" align=TOP hspace=8></p>
+</body>
+
+</html>
