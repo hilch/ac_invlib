@@ -279,6 +279,16 @@ void ac_inv(struct ac_inv* inst)
 			strcat( ax_ident->log_info, tempstring );
 			strcat( ax_ident->log_info, ":" );
 			strcat( ax_ident->log_info, ax_ident->device_name );
+			strcat( ax_ident->log_info, "(" );
+			switch( ax_ident->drive_type )
+			{
+				case ACPiDriveType_P84: strcat( ax_ident->log_info, "P84" ); break;
+				case ACPiDriveType_P74: strcat( ax_ident->log_info, "P74" ); break;
+				case ACPiDriveType_P76: strcat( ax_ident->log_info, "P76" ); break;
+				case ACPiDriveType_P66: strcat( ax_ident->log_info, "P66" ); break;
+				default: strcat( ax_ident->log_info, "??" ); break;
+			}
+			strcat( ax_ident->log_info, ")" );
 			ax_ident->fub_log_write.logLevel = arlogLEVEL_INFO;
 			ax_ident->fub_log_write.errornr = 0;
 			ax_ident->fub_log_write.mem = (UDINT) &ax_ident->node_number;
@@ -289,6 +299,7 @@ void ac_inv(struct ac_inv* inst)
 		}
 		break;
 
+
 		case STEP_W_LOG_DEVICE_TYPE:
 			if( ax_ident->fub_log_write.status != 65535 )
 			{
@@ -298,6 +309,11 @@ void ac_inv(struct ac_inv* inst)
 					strcpy( inst->drive_state, "????" );
 					strcpy( inst->fault_code, "????" );
 					ax_ident->step_init = STEP_INTERNAL_ERROR;
+				}
+				/* if no parameter module is given rely on parameters in physical view and don't reset the inverter */
+				else if( (ax_ident->p_alloc->pcfgpar[0]==0) && (ax_ident->p_alloc->pcfgpar[1]==0) && (ax_ident->p_alloc->pcfgpar[2]== 0) )
+				{
+					ax_ident->step_init = STEP_READ_KV;
 				}
 				else if( ax_ident->drive_type == ACPiDriveType_P74 )    /* P74 */
 				{
