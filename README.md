@@ -1,7 +1,7 @@
 # ac_invlib [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 [B&amp;R](https://www.br-automation.com) Automation Studio Library for ACOPOSinverter
 
-![ac_inv()](https://github.com/hilch/ac_invlib/blob/master/Screenshot1.PNG)
+![ac_inv()](https://github.com/hilch/ac_invlib/blob/master/Screenshot1.png)
 
 
 ## Mission of the library:
