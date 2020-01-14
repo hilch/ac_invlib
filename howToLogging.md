@@ -7,11 +7,13 @@ Set the filter conditions to „ac_invlog“
 Examples
 ![example_logging](https://github.com/hilch/ac_invlib/blob/master/docs/sample_logging.png)
 
+## Download Sequence
+All inverters require a correct sequence for downloading all parameters.  The correct sequence is listed in the Automation Studio hardware tree.
+The library takes this into account and sorts all parameters that are specified in the data module, unless input 'no_parameter_sort' in the 'ac_inv_alloc' block is set.
+
 ## Known problems
-ACOPOSinverters (and original Schneider Altivars) are some sensitive to the order of parameters.
-If input *'.no_parameter_sort'* is set to *FALSE* the library will sort the parameters before downloading them
-to the drive.
-Nevertheless some configurations are problematic:
+ACOPOSinverters (and original Schneider Altivars) are some sensitive to the order and timing of downloading parameters.
+So some configurations with the library are problematic and need workaround:
 
 ###'CFI' after setting 'bLc'
 currently this issue could be solved by setting *'.no_parameter_sort'* to *TRUE* and add some 'waits' in
