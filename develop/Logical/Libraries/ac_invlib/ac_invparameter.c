@@ -178,6 +178,7 @@ Library.
 #include <ac_inv_global.h>
 
 #include <ac_invparameter.h>
+#include <P86_registers.h>
 #include <P84_registers.h>
 #include <P74_registers.h>
 #include <P76_registers.h>
@@ -196,7 +197,11 @@ int find_parameter( char *name, UINT *index, USINT *subindex, ac_inv_DriveType d
 
 	switch( drive_type )
 	{
-		default: 		
+		default: 	
+		regs = p86reg; 
+		break;
+		
+		case ACPiDriveType_P84: 
 		regs = p84reg; 
 		break;
 
@@ -245,17 +250,21 @@ char *find_value_constant( char *name, UINT value, ac_inv_DriveType drive_type )
 	switch( drive_type )
 	{
 		default: 	
-		regs = p84reg; 
-		break;
+			regs = p86reg; 
+			break;
+		
+		case ACPiDriveType_P84: 
+			regs = p84reg; 
+			break;
 
-		case ACPiDriveType_P74: 	
-		regs = p74reg; 
-		break;
+		case ACPiDriveType_P74: 		
+			regs = p74reg; 
+			break;
 
-		case ACPiDriveType_P76: 
-		case ACPiDriveType_P66:	
-		regs = p76reg; 
-		break;
+		case ACPiDriveType_P76:
+		case ACPiDriveType_P66: 	
+			regs = p76reg; 
+			break;
 	}
 
 
@@ -299,17 +308,21 @@ int find_numeric_value( char *name, char *constant, ac_inv_DriveType drive_type 
 	switch( drive_type )
 	{
 		default: 	
-		regs = p84reg; 
-		break;
+			regs = p86reg; 
+			break;
+		
+		case ACPiDriveType_P84: 
+			regs = p84reg; 
+			break;
 
-		case ACPiDriveType_P74: 	
-		regs = p74reg; 
-		break;
+		case ACPiDriveType_P74: 		
+			regs = p74reg; 
+			break;
 
-		case ACPiDriveType_P76: 	
-		case ACPiDriveType_P66:
-		regs = p76reg; 
-		break;
+		case ACPiDriveType_P76:
+		case ACPiDriveType_P66: 	
+			regs = p76reg; 
+			break;
 	}
 
 

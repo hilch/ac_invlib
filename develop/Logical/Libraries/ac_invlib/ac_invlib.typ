@@ -84,9 +84,10 @@ TYPE
 	ac_inv_DriveType : 
 		(
 		ACPiDriveType_unknown := 0,
-		ACPiDriveType_P84 := 1,
-		ACPiDriveType_P74 := 2,
-		ACPiDriveType_P76 := 3,
-		ACPiDriveType_P66 := 4
+		ACPiDriveType_P86 := 1,
+		ACPiDriveType_P84 := 2,
+		ACPiDriveType_P74 := 3,
+		ACPiDriveType_P76 := 4,
+		ACPiDriveType_P66 := 5
 		);
 END_TYPE

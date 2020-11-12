@@ -1,5 +1,5 @@
 (********************************************************************
-* Parameter for ACOPOSinverter P84 
+* Parameter for ACOPOSinverter P86 size 4-5
 ********************************************************************
 * Author: github/hilch
 * Created: 
@@ -9,19 +9,20 @@
 * "<parametername> = <symbolic constant>
 * values are given in decimal notation
 ********************************************************************)
+"CTT = VVC"		; Motor CTRL Type VVC = Sensorless flux vector V
 "bFr = 50"		; Standard mot. freq [50/60]
 "IPL = nO"		; Input phase loss (3ph only)
-"nPr = 18"		; Rated motor power [* 10W]
-"UnS = 400"		; Rated motor volt. [V]
-"nCr = 14"		; Rated mot. current [* 0.1 A]
+"nPr = 145"		; Rated motor power [* 100W  bzw. 0.1 kW] 
+"UnS = 230"		; Rated motor volt. [V]
+"nCr = 210"		; Rated mot. current [* 0.1 A]
 "FrS = 500"		; Rated motor freq. [* 0.1 Hz]
-"nSP = 880"     ; Rated motor speed [1/min]
+"nSP = 1400"     ; Rated motor speed [1/min]
 "tFr = 600"		; Max frequency [* 0.1 Hz]
-"tUn = YES"		; Auto tuning [nO/YES]
 "PHr = AbC"		; Output Phase rotation [AbC/ACb]
-"ItH = 12"		; Thermischer Motornennstrom [* 0.1A]
-"ACC = 5"		; Acceleration [s]
-"dEC = 5"		; Deceleration [s]
+"ItH = 210"		; Thermischer Motornennstrom [* 0.1A]
+"ACC = 4"		; Acceleration [s]
+"dEC = 4"		; Deceleration [s]
 "LSP = 0"		; Low speed [* 0.1 Hz]
 "HSP = 600"		; High speed [* 0.1 Hz]
-
+"COS = 71"		; Cosinus Phi [0.01]
+"OPL = nO"		; Output Phase Loss

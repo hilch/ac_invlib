@@ -244,7 +244,7 @@ void ac_inv(struct ac_inv* inst)
 		case STEP_READ_DEVICE_NAME:  /* read device name */
 			if( ax_ident->sdo_read_step == 0 )
 			{
-				/*0 = unknown, 1 = P84, 2 = P74, 3 = P76, 4=P66 */
+				/*0 = unknown, 1 = P84, 2 = P74, 3 = P76, 4=P66, 5 = P86*/
 				if( !strcmp( ax_ident->device_name, "ACOPOS Inverter P74" ) )
 					ax_ident->drive_type = ACPiDriveType_P74;
 				else if( !strcmp( ax_ident->device_name, "8I0IF248.300-1" ) )
@@ -261,8 +261,21 @@ void ac_inv(struct ac_inv* inst)
 					if( !ax_ident->isCANopen )
 						ax_ident->use_rpm = 1;  /* P66 EPL: settings in physical view are used here */
 				}
-				else
-					ax_ident->drive_type = ACPiDriveType_unknown;
+					else if( !strcmp( ax_ident->device_name, "8I0IF108.400-4" ) )
+					{
+						ax_ident->drive_type = ACPiDriveType_P86;
+						if( !ax_ident->isCANopen )
+							ax_ident->use_rpm = 1;  /* P86 EPL: settings in physical view are used here */
+					}
+					else if( !strcmp( ax_ident->device_name, "8I0IF108.400-5" ) )
+					{
+						ax_ident->drive_type = ACPiDriveType_P86;
+						
+						if( !ax_ident->isCANopen )
+							ax_ident->use_rpm = 1;  /* P86 EPL: settings in physical view are used here */
+					}
+					else
+						ax_ident->drive_type = ACPiDriveType_unknown;
 				inst->drive_type = ax_ident->drive_type;
 				ax_ident->step_init = STEP_LOG_DEVICE_TYPE;
 			}
@@ -282,6 +295,7 @@ void ac_inv(struct ac_inv* inst)
 			strcat( ax_ident->log_info, "(" );
 			switch( ax_ident->drive_type )
 			{
+				case ACPiDriveType_P86: strcat( ax_ident->log_info, "P86" ); break;
 				case ACPiDriveType_P84: strcat( ax_ident->log_info, "P84" ); break;
 				case ACPiDriveType_P74: strcat( ax_ident->log_info, "P74" ); break;
 				case ACPiDriveType_P76: strcat( ax_ident->log_info, "P76" ); break;
@@ -325,14 +339,14 @@ void ac_inv(struct ac_inv* inst)
 					ax_ident->step_init = STEP_W_FACTORY_RESET_P74;
 				}
 				/* P76, P66 HWX: CMI is not included */
-				else if(  (ax_ident->drive_type == ACPiDriveType_P76 || ax_ident->drive_type == ACPiDriveType_P66 ) && !ax_ident->isCANopen  )     /* P76, P66 by EPL */
+				else if(  (ax_ident->drive_type == ACPiDriveType_P76 || ax_ident->drive_type == ACPiDriveType_P66 || ax_ident->drive_type == ACPiDriveType_P86) && !ax_ident->isCANopen  )     /* P76, P66 by EPL */
 				{
 					strcpy( ax_ident->sdo_write_par_name, "CMI" );
 					strcpy( ax_ident->sdo_write_value_constant,  "32768" );   /* 32768 = 0x8000 = disable parameter checking */
 					ax_ident->sdo_write_step = 1;
 					ax_ident->step_init = STEP_W_DISABLE_PCHECK_P76;
 				}
-				else    /* P84 and CANopen drives */
+				else    /* P84  and CANopen drives */
 				{
 					ax_ident->step_init = STEP_W_FACTORY_RESET_P84;
 				}
@@ -468,7 +482,7 @@ void ac_inv(struct ac_inv* inst)
 
 
 
-			/* ------------------ P74 & P84 & P76 & P66 ------------------------- */
+			/* ------------------P86 & P74 & P84 & P76 & P66 ------------------------- */
 
 		case STEP_W_REFERENCE_CHANNEL_SET: /* wait until reference channel is set */
 			if( !MODULE_OK )
@@ -518,7 +532,8 @@ void ac_inv(struct ac_inv* inst)
 					if( inst->status == 0 )
 					{
 						ax_ident->timer = 0;
-						if( ax_ident->drive_type == ACPiDriveType_P76 ||  ax_ident->drive_type == ACPiDriveType_P66 )  
+						if( ax_ident->drive_type == ACPiDriveType_P76 ||  ax_ident->drive_type == ACPiDriveType_P66 
+								|| ax_ident->drive_type == ACPiDriveType_P86)  
 						{   /* P76 & P66 */
 							strcpy( ax_ident->sdo_write_par_name, "CMI" );
 							strcpy( ax_ident->sdo_write_value_constant,  "0" );   /* 0 = enable parameter checking */
@@ -695,7 +710,8 @@ void ac_inv(struct ac_inv* inst)
 			}
 			else
 			{
-				if( inst->quickstop && inst->activate_tuning && inst->ctrl_is_on == 0 && inst->ctrl_on == 1 && ax_ident->drive_type == ACPiDriveType_P84 )
+				if( inst->quickstop && inst->activate_tuning && inst->ctrl_is_on == 0 && inst->ctrl_on == 1 
+					&& (ax_ident->drive_type == ACPiDriveType_P84  ))
 				{
 					ax_ident->ctrl_on_internal = 0;
 					strcpy( ax_ident->sdo_write_par_name, "tUn" );
@@ -706,7 +722,8 @@ void ac_inv(struct ac_inv* inst)
 				else if( inst->quickstop && inst->activate_tuning && inst->ctrl_is_on == 0 && inst->ctrl_on == 1 
 							&& (  (ax_ident->drive_type == ACPiDriveType_P74)
 								 || (ax_ident->drive_type == ACPiDriveType_P76)	
-								 || (ax_ident->drive_type == ACPiDriveType_P66)	)
+								 || (ax_ident->drive_type == ACPiDriveType_P66)
+								 || ax_ident->drive_type == ACPiDriveType_P86)
 						)
 				{
 					ax_ident->ctrl_on_internal = 0;
@@ -872,11 +889,20 @@ void ac_inv(struct ac_inv* inst)
 		{
 			inst->PRA_detected = 0;
 		}
-		if( hmis == 12 )  /* PrA - Power removal */
+		if (inst->drive_type == ACPiDriveType_P86)
 		{
-			inst->PRA_detected = 1;
+			if(hmis == 30) // STO active
+			{
+				inst->PRA_detected = 1;
+			}
 		}
-
+		else
+		{
+			if( hmis == 12)  /* PrA - Power removal */
+			{
+				inst->PRA_detected = 1;
+			}
+		}
 
 
 		/* CiA 402 state machine */
