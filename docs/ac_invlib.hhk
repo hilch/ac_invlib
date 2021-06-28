@@ -72,6 +72,10 @@
 		<param name="Local" value="How%20To%20Use/P66%20&amp;%20P76%20CANopen%20configuration.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P86 configuration">
+		<param name="Local" value="How%20To%20Use/P86%20configuration.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="Parameter Logging">
 		<param name="Local" value="How%20To%20Use/Parameter%20Logging.html">
 	</OBJECT>
@@ -140,6 +144,18 @@
 		<param name="Local" value="Examples/Structured%20Text/P76/P76Init.st.html">
 	</OBJECT>
 	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P86.var ">
+		<param name="Local" value="Examples/Structured%20Text/P86/P86.var.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P86Cyclic.st ">
+		<param name="Local" value="Examples/Structured%20Text/P86/P86Cyclic.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P86Init.st ">
+		<param name="Local" value="Examples/Structured%20Text/P86/P86Init.st.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="P66config.dat ">
 		<param name="Local" value="Examples/Data%20Objects/P66config/P66config.dat.html">
 	</OBJECT>
@@ -154,6 +170,10 @@
 	<LI><OBJECT type="text/sitemap">
 		<param name="Name" value="P84config.dat ">
 		<param name="Local" value="Examples/Data%20Objects/P84config/P84config.dat.html">
+	</OBJECT>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="P86config.dat ">
+		<param name="Local" value="Examples/Data%20Objects/P86config/P86config.dat.html">
 	</OBJECT>
 </UL>
 </BODY>
