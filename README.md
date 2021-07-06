@@ -1,6 +1,12 @@
 # ac_invlib [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 [B&amp;R](https://www.br-automation.com) Automation Studio Library for ACOPOSinverter
 
+## ac_inv_alloc
+connect to io mapping and parameter data moduls.
+![ac_inv_alloc()](fb_ac_inv_alloc.png)
+
+## ac_inv
+control the inverter, read and writer parameter
 ![ac_inv()](fb_ac_inv.png)
 
 
