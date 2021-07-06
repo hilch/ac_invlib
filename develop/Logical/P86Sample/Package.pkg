@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.8.2.72?>
+<?AutomationStudio Version=4.6.6.68 SP?>
 <Package xmlns="http://br-automation.co.at/AS/Package">
   <Objects>
     <Object Type="Program" Language="IEC" Description="P86- EPL- Sample">P86</Object>
-    <Object Type="Program" Language="IEC" Description="P86 der größe 4-5">P86_4_5</Object>
+    <Object Type="Program" Language="IEC" Description="P86 size 4-5 - Sample">P86_4_5</Object>
   </Objects>
 </Package>

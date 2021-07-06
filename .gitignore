@@ -5,3 +5,5 @@ as
 /develop/*.isopen
 *.chm
 
+
+/develop/Logical/Libraries/ac_invlib/Help/*.chm
