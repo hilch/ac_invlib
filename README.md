@@ -5,14 +5,14 @@
 
 
 ## Mission of the library:
-This Library controls an ACOPOSinverter without use of SDC ("smart device control"). Supported drives: P84 (EPL+CANopen), P74 (EPL) , P76 (EPL+CANopen), P66 (EPL+CANopen)
+This Library controls an ACOPOSinverter without use of ACP10SDC ("smart device control") or mappMotion. Supported drives: P84 (EPL+CANopen), P74 (EPL) , P76 (EPL+CANopen), P66 (EPL+CANopen), P86 (EPL)
 For additional information refer to the builtin *.chm help file (Press F1 in AS)
 
 ## Warranty
 This library is **not an official B&amp;R product!** For this reason the use is at your own risk and there is NO claim on support or maintenance.
 
 ## Features
-* simple handling of ACOPOSinverters with minimal cpu load.
+* simple handling of ACOPOSinverters with minimal cpu load (no SDC, no mappMotion)
 * use data modules for parameters
 
 ![dataobject](https://github.com/hilch/ac_invlib/blob/master/docs/sample_data_object.jpg)
