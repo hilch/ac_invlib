@@ -13,6 +13,7 @@ This library is **not an official B&amp;R product!** For this reason the use is 
 
 ## Features
 * simple handling of ACOPOSinverters with minimal cpu load (no SDC, no mappMotion)
+* use the same function block for all inverter types
 * use data modules for parameters
 
 ![dataobject](https://github.com/hilch/ac_invlib/blob/master/docs/sample_data_object.jpg)
